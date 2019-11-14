@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кэт энерджи - форма заказа</title>
+
+  </head>
+
+  <body>
+    <header class="page-header">
+      <!-- Содержимое page-header будет вставлено после отработки на index.html -->
+    </header>
+
+    <main class="page-main inner-page">
+      <div class="page-main__wrapper">
+
+        <h1 class="page-main__title">Подбор программы</h1>
+
+        <form class="customer-form" action="https://echo.htmlacademy.ru"
+              method="post">
+          <p class="customer-form__title">Заполните анкету и мы подберем
+            программу</p>
+
+          <fieldset class="customer-form__personal-data personal-data">
+            <label for="cat-name"><span>Имя:*</span></label>
+            <input type="text" name="cat-name" id="cat-name"
+                   placeholder="БАРСИК" required>
+
+            <label for="cat-weight"><span>Вес (кг):*</span></label>
+            <input type="text" name="cat-weight" id="cat-weight" placeholder="7"
+                   required>
+
+            <label for="cat-age"><span>Возраст (лет):</span></label>
+            <input type="text" name="cat-age" id="cat-age" placeholder="7">
+          </fieldset>
+
+          <fieldset class="customer-form__personal-program personal-program">
+            <input type="radio" name="cat-program" value="cat-grace"
+                   id="cat-grace">
+            <label for="cat-grace"><span>Похудение</span></label>
+
+            <input type="radio" name="cat-program" value="cat-power"
+                   id="cat-power">
+            <label for="cat-power"><span>Набор массы</span>
+            </label>
+
+            <input type="radio" name="cat-program" value="cat-advice"
+                   id="cat-advice">
+            <label for="cat-advice"><span>Не знаю (Нужен ваш
+                совет)</span></label>
+          </fieldset>
+
+          <fieldset class="customer-form__personal-contacts personal-contacts">
+            <legend>
+              <span>Контактные данные (владельца кота)</span>
+            </legend>
+
+            <label for="customer-email"><span>E-mail:*</span></label>
+            <input type="text" name="customer-email" id="customer-email"
+                   placeholder="kuklachev@gmail.com" required>
+
+            <label for="customer-phone"><span>Телефон:*</span></label>
+            <input type="text" name="customer-phone" id="customer-phone"
+                   placeholder="8 (960) 900-60-90" required>
+          </fieldset>
+
+
+          <fieldset class="customer-form__personal-comment personal-comment">
+            <legend>
+              <span>Комментарий</span>
+            </legend>
+            <!-- <p> -->
+            <textarea name="cat-description"
+                      placeholder="   РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
+                      rows="10" cols="40"></textarea>
+            <!-- </p> -->
+          </fieldset>
+
+          <fieldset
+                    class="customer-form__additional-product additional-product">
+            <legend>
+              <span>Дополнительно</span>
+            </legend>
+            <ul class="additional-product__list">
+              <li class="additional-product__item food-item">
+                <input type="checkbox" name="food-item-1" value="sweetener"
+                       id="food-item-1" checked>
+                <label for="food-item-1"><span>Сахарозаменитель</span></label>
+              </li>
+              <li class="additional-product__item food-item">
+                <input type="checkbox" name="food-item-2" value="aqua"
+                       id="food-item-2">
+                <label for="food-item-2"><span>Питьевая вода</span></label>
+              </li>
+              <li class="additional-product__item food-item">
+                <input type="checkbox" name="food-item-3" value="milk"
+                       id="food-item-3">
+                <label for="food-item-3"><span>Молоко</span></label>
+              </li>
+              <li class="additional-product__item food-item">
+                <input type="checkbox" name="food-item-4" value="vitamins"
+                       id="food-item-4">
+                <label for="food-item-4"><span>Витамины</span></label>
+              </li>
+            </ul>
+          </fieldset>
+          <p><button class="customer-form__button button"
+                    type="submit">Отправить заявку</button></p>
+
+          <p class="customer-form__notice">* — Обязательные поля</p>
+        </form>
+
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <!-- Содержимое page-footer будет вставлено после отработки на index.html -->
+    </footer>
+
+  </body>
+
+</html>

@@ -12,25 +12,21 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="logo-block">
-          <a class="logo-block__link logo-link" href="#">
-            <img class="logo-link__image" src="blocks/logo/img/logo_mobile.svg"
-                 alt="КЭТ ЭНЕРДЖИ" width="33" height="38">
-          </a>
 
-          <a class="logo-block__link logo-link" href="#">
-            <img class="logo-link__image"
-                 src="blocks/logo/img/logo_mobile_header.svg"
-                 alt="Интернет-магазин фитнес еды для котиков" width="101"
-                 height="18">
-          </a>
-        </div>
+        <a class="page-header__link logo-link" href="#">
+          <img class="logo-link__image" src="blocks/logo/img/logo_mobile.svg"
+               alt="КЭТ ЭНЕРДЖИ" width="33" height="38">
+        </a>
+
+        <a class="page-header__brand brand-link" href="#">
+          <img class="brand-link__image"
+               src="blocks/logo/img/logo_mobile_header.svg"
+               alt="Интернет-магазин фитнес еды для котиков" width="101"
+               height="18">
+        </a>
 
         <nav class="main-nav">
-          <p class="main-nav__toggles">
-            <button class="main-nav__toggle" type="button">открыть меню</button>
-            <button class="main-nav__toggle" type="button">закрыть меню</button>
-          </p>
+          <button class="main-nav__toggle" type="button">открыть меню</button>
           <!-- <img src="blocks/main-nav/img/mobile_menu.svg"
              alt="Открыть меню сайта" width="24" height="18">
         <img src="blocks/main-nav/img/mobile_menu_close.svg"
@@ -52,6 +48,7 @@
             </ul>
           </div>
         </nav>
+
       </div>
     </header>
 
@@ -124,6 +121,7 @@
 
       <section class="example">
         <div class="example__wrapper">
+
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -131,37 +129,41 @@
             этом он не менял своих привычек и по-прежнему спит по 16 часов в
             день.
           </p>
-          <ul class="example__list">
-            <li class="example__item example-item">
-              <span>5 кг</span>
-              <span>снижение веса</span>
-            </li>
-            <li class="example__item">
-              <span>60 дней</span>
-              <span>затрачено времени</span>
-            </li>
-            <li class="example__item">
-              <span>Затраты на питание: 15 000 руб.</span>
-            </li>
-          </ul>
 
-          <div class="example__slider example-slider">
-            <div class="example-slider__photos">
-              <img class="example-slider__photo"
+          <div class="example__keypoints keypoints">
+            <div class="keypoints__wrapper">
+              <div class="keypoints__item">
+                <span>5 кг</span>
+                <span>снижение веса</span>
+              </div>
+
+              <div class="example__item">
+                <span>60 дней</span>
+                <span>затрачено времени</span>
+              </div>
+            </div>
+          </div>
+          <div class="example__item">
+            <span>Затраты на питание: 15 000 руб.</span>
+          </div>
+
+          <div class="example__slider slider">
+            <div class="slider__photocards">
+              <img class="slider__photo"
                    src="blocks/example/img/before_mobile.png"
                    alt="Кот до начала программы оздоровления" width="311"
                    height="232">
-              <img class="example-slider__photo"
-                   src="blocks/example/img/after_mobile.png"
-                   alt="Кот по окончании программы оздоровления" width="251"
-                   height="240">
+              <!-- <img class="example-slider__photo"
+                 src="blocks/example/img/after_mobile.png"
+                 alt="Кот по окончании программы оздоровления" width="251"
+                 height="240"> -->
             </div>
-            <p class="example-slider__toggles">
-              <button class="example-slider__toggle" type="button">Было</button>
-              <button class="example-slider__toggle"
-                      type="button">Стало</button>
+            <p class="slider__toggles">
+              <button class="slider__toggle" type="button">Было</button>
+              <button class="slider__toggle" type="button">Стало</button>
             </p>
           </div>
+
         </div>
       </section>
 
@@ -193,19 +195,19 @@
 
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vk-icon"
+            <a class="social__link social__link--vk"
                href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--insta-icon"
+            <a class="social__link social__link--insta"
                href="https://instagram.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb-icon"
+            <a class="social__link social__link--fb"
                href="https://facebook.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Facebook</span>
             </a>

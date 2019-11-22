@@ -1,0 +1,63 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.social {
+  // display: block;
+}
+
+.social__item {
+  // display: block;
+}
+
+.social__link {
+  // position: relative;
+  width: 30px;
+  height: 30px;
+
+  &::after {
+    content: "";
+    // position: absolute;
+
+    display: inline-block;
+    // top: 0;
+    // left: 0;
+    // background-image: url("../img/vk.svg");
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.social__link--vk {
+  &::after {
+    width: 23px;
+    height: 13px;
+
+    background-image: url("../img/icon-vk.svg");
+  }
+}
+
+.social__link--insta {
+  &::after {
+    width: 17px;
+    height: 17px;
+
+    background-image: url("../img/icon-insta.svg");
+  }
+}
+
+.social__link--fb {
+  &::after {
+    width: 11px;
+    height: 20px;
+
+    background-image: url("../img/icon-fb.svg");
+  }
+}
+
+// icon-fb.svg  11x20
+// icon-vk.svg 23x13
+// icon-insta.svg 17x17

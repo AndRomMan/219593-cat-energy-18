@@ -1,0 +1,58 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+
+.products-proposal {
+  // display: block;
+  // position: relative;
+  padding: 25px 0 25px 0;
+
+  border: 1px solid $card_border_color;
+
+  &::before {
+    content: "";
+    // position: absolute;
+    // top: 10px;
+    // left: 50%;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.products-proposal__title {
+  // display: block;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include font(16px, 400, $title_font_color);
+}
+
+.products-proposal__subtitle {
+  // display: block;
+  line-height: 16px;
+
+  @include font_arial (12px, 400, $text_font_color);
+}
+
+.products-proposal__button {
+  display: block;
+  width: 100%;
+
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $main_grey_color;
+  border: none;
+
+  @include font (16px, 400, $text_font_color);
+}

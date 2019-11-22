@@ -1,0 +1,27 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.basic-products {
+  // display: block;
+}
+
+.basic-products__wrapper {
+  // display: block;
+}
+
+.basic-products__title {
+  line-height: 60px;
+
+  @include font(30px, 400, $title_font_color);
+}
+
+.basic-products__list {
+  // display: block;
+}
+
+.basic-products__item {
+  // products-item
+  // display: block;
+}

@@ -1,0 +1,52 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.additional-item {
+  // display: block;
+  padding: 10px 0 10px 0;
+
+  border-bottom: 1px solid $border_color;
+}
+
+.additional-item__title {
+  // display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @include font(16px, 400, $additional_font_color);
+}
+
+.additional-item__wrap {
+  // display: block;
+  line-height: 14px;
+
+  @include font_arial(14px, 400, $text_font_color);
+}
+
+.additional-item__package {
+  line-height: 14px;
+
+  @include font_arial(14px, 400, $text_font_color);
+}
+
+.additional-item__price {
+  // display: block;
+  line-height: 14px;
+
+  @include font_arial(14px, 400, $text_font_color);
+}
+
+.additional-item__button {
+  // button
+  width: 100%;
+
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: $main_green_color;
+  border: none;
+
+  @include font (16px, 400, $light_font_color);
+}

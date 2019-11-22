@@ -1,0 +1,24 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.additional-products {
+  // display: block;
+}
+
+.additional-products__title {
+  // display: block;
+  line-height: 24px;
+
+  @include font(24px, 400, $title_font_color);
+}
+
+.additional-products__list {
+  // display: block;
+}
+
+.additional-products__item {
+  // additional-item
+  // display: block;
+}

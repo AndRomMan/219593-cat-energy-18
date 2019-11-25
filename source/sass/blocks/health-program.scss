@@ -1,0 +1,66 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.health-program {
+  // display: block;
+}
+
+.health-program__back {
+  // display: block;
+  background-color: $main_green_color;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 305px;
+}
+
+.health-program__header {
+  // display: flex;
+  // flex-direction: column;
+
+  img {
+    width: 280px;
+    height: 271px;
+  }
+}
+
+.health-program__title {
+  line-height: 36px;
+  text-align: center;
+
+  @include font(36px, 400, $light_font_color);
+  // display: block;
+}
+
+.health-program__slogan {
+  // display: block;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font(14px, 400, $light_font_color);
+}
+
+.health-program__link {
+  display: block;
+
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  // button
+  // display: block;
+
+  background-color: $main_green_color;
+
+  @include font(14px, 400, $light_font_color);
+}
+
+.health-program__list {
+  // display: block;
+}
+
+.health-program__item {
+  // display: block;
+}

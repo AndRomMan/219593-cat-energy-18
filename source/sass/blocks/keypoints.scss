@@ -1,0 +1,43 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.keypoints {
+  // display: block;
+}
+
+.keypoints__value {
+  // Text: 5 кг
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @include font(24px, 400, $title_font_color);
+}
+
+.keypoints__option {
+  // Text: снижение веса
+  line-height: 12px;
+
+  @include font(12px, 400, $text_font_color);
+}
+
+.keypoints__value-option {
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @include font(14px, 400, $title_font_color);
+}
+
+.keypoints__wrapper {
+  // display: block;
+}
+
+.keypoints__item {
+  // display: block;
+}
+
+.keypoints__item--border {
+  border: 1px solid $border_color;
+  border-radius: 3px;
+}

@@ -1,0 +1,91 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.health-program-item {
+  background-color: $main_grey_color;
+  // display: block;
+}
+
+.health-program-item__title {
+  position: relative;
+
+  line-height: 37px;
+
+  @include font(24px, 400, $title_font_color);
+}
+
+.program-icon {
+  &::before {
+    content: "";
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    vertical-align: middle;
+
+    background-color: $main_green_color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.program-icon--slim::after {
+  top: 0;
+  left: 5px;
+
+  width: 35px;
+  height: 49px;
+
+  background-image: url("../img/icon-cat-slim.svg");
+  // background-size: 35px 49px;
+}
+
+.program-icon--pro::after {
+  top: 10px;
+  left: -10px;
+
+  width: 67px;
+  height: 28px;
+
+  background-image: url("../img/icon-cat-pro.svg");
+  // background-size: 67px 28px;
+}
+
+.health-program-item__description {
+  // display: block;
+  line-height: 18px;
+
+  @include font_arial(14px, 400, $text_font_color);
+}
+
+.health-program-item__link {
+  // display: block;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @include font(16px, 400, $title_font_color);
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 25px;
+    height: 12px;
+
+    vertical-align: middle;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

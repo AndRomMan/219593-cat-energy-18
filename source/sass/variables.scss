@@ -1,0 +1,69 @@
+// checking sass
+body {
+  // background-color: #f8823d;
+}
+
+// 320 mobile
+// $xs: <576px;
+$xs-container: 320px;
+$xs-wrapper: 280px;
+// $sm: 576px;
+// $sm-container: 540px;
+// // 768 tablet
+// $md: 768px;
+// $md-container: 720px;
+// $lg: 992px;
+// $lg-container: 960px;
+// // 1300 desktop
+// $xl: 1200px;
+// $xl-container: 1140px;
+
+// --------------------------
+// basic colors
+// font
+$light_font_color: #ffffff;
+$title_font_color: #111111;
+$text_font_color: #444444;
+// background
+$main_grey_color: #f2f2f2;
+$main_green_color: #68b738;
+// border
+$border_color: #cdcdcd;
+// --------------------------
+// catalog
+// fonts
+$additional_font_color: #222222;
+// border
+// $additional_border_color: #cdcdcd;
+$card_border_color: #ededed;
+// --------------------------
+// form
+// border
+$button_order_color_hvr: #5eaa2f;
+$button_show_color_hvr: #ebebeb;
+// $button_show_color: #f2f2f2;
+
+// input
+$additional_font_color: #222222;
+// $input_font_color: #222222;
+
+$border_color: #cdcdcd;
+// $input_border_color: #cdcdcd;
+$input_border_color_active: #444444;
+$input_border_color_error: #ff8282;
+
+// checkbox
+$checkbox_border_color: #cdcdcd;
+$checkbox_border_color_hvr: #bababa;
+// radiobutton
+$radio_border_color: #cdcdcd;
+$radio_border_color_hvr: #bababa;
+
+// icon colors
+// index
+$arrow_color: #3e4242;
+// header
+$menu_icon_color: #222222;
+// footer
+$footer_icon_color: #666666;
+$footer_icon_color_hvr: #68b738;

@@ -1,0 +1,59 @@
+// checking sass
+body {
+  // background-color: #3df87b;
+}
+
+// .container {
+//   width: $xs-container;
+//   margin: auto;
+
+//   outline: 2px solid rgb(14, 95, 11);
+// }
+
+.wrapper {
+  width: $xs-wrapper;
+  margin: auto;
+
+  outline: 2px solid rgb(228, 24, 24);
+}
+
+@mixin font($size, $weight, $color) {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: $size;
+    weight: $weight;
+  };
+  color: $color;
+}
+
+@mixin font_arial($size, $weight, $color) {
+  font: {
+    family: "Arial", sans-serif;
+    size: $size;
+    weight: $weight;
+  };
+  color: $color;
+}
+
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+// TODO проверить свойства кнопок на страницах, вынести общие в класс button
+.button {
+  // display: block;
+}

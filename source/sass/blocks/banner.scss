@@ -1,0 +1,35 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.banner {
+  // display: block;
+  padding: 100px 0 100px 0;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 55px;
+    height: 65px;
+    margin: auto;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.banner__text {
+  // display: block;
+  line-height: 20px;
+
+  @include font_arial(16px, 400, $light_font_color);
+}

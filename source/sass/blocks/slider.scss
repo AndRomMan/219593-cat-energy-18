@@ -1,0 +1,36 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.slider {
+  // display: block;
+}
+
+.slider__photocards {
+  // position: relative;
+  // display: block;
+}
+
+.slider__photo {
+  // position: absolute;
+  // display: block;
+  width: 311px;
+  height: 232px;
+}
+
+.slider__toggles {
+  // display: block;
+}
+
+.slider__toggle {
+  // display: block;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  @include font(16px, 400, $title_font_color);
+}
+// before-mobile@1x.png

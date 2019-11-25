@@ -1,0 +1,35 @@
+// current checking sass compiling
+body {
+  // background-color: #92cf30;
+}
+
+.main-nav {
+  // display: block;
+}
+
+.main-nav__toggle {
+  // display: block;
+  width: 24px;
+  height: 18px;
+
+  background-color: transparent;
+  // background-image: url("../img/icon-mobile-menu.svg");
+  // background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-nav__wrapper {
+  // display: flex;
+}
+
+.main-nav__list {
+  // nav-list
+  // display: block;
+}

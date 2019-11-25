@@ -1,0 +1,46 @@
+@import "base-normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "blocks/button";
+
+// page-header
+@import "blocks/page-header";
+@import "blocks/logo-link";
+@import "blocks/main-nav";
+@import "blocks/nav-list";
+
+// page-footer
+@import "blocks/page-footer";
+@import "blocks/contacts";
+@import "blocks/social";
+@import "blocks/copyright";
+
+// index page-main
+@import "blocks/page-main";
+@import "blocks/health-program";
+@import "blocks/health-program-item";
+@import "blocks/advantages";
+@import "blocks/example";
+@import "blocks/keypoints";
+@import "blocks/slider";
+
+// catalog-main
+@import "blocks/catalog-main";
+@import "blocks/basic-products";
+@import "blocks/basic-item";
+@import "blocks/products-proposal";
+@import "blocks/additional-products";
+@import "blocks/additional-item";
+@import "blocks/banner";
+
+
+// form-main
+@import "blocks/form-main";
+@import "blocks/customer-form";
+@import "blocks/form";
+// @import "blocks/personal-data";
+// @import "blocks/personal-program";
+// @import "blocks/personal-comment";
+// @import "blocks/additional-product";
+// @import "blocks/food-item";

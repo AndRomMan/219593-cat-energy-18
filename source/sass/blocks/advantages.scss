@@ -1,0 +1,103 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.advantages {
+  // display: block;
+}
+
+.advantages__wrapper {
+  // display: block;
+}
+
+.advantages__title {
+  line-height: 60px;
+
+  @include font(36px, 400, $title_font_color);
+}
+
+.advantages__list {
+  // display: block;
+}
+
+.advantages__item {
+  // display: block;
+  width: 176px;
+  margin-bottom: 60px;
+
+  line-height: 18px;
+
+  @include font_arial(14px, 400, $text_font_color);
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: -80px;
+
+  //   display: inline-block;
+  //   width: 60px;
+  //   height: 60px;
+
+  //   vertical-align: middle;
+
+  //   background-color: $main_green_color;
+  // }
+}
+
+.advantages-icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    // position: absolute;
+    left: -80px;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    vertical-align: middle;
+
+    background-color: $main_green_color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.advantages-icon--leaf::after {
+  width: 26px;
+  height: 29px;
+
+  background-image: url("../img/advantage-leaf@1x.png");
+  // background-size: 100%;
+}
+
+.advantages-icon--powder::after {
+  width: 31px;
+  height: 31px;
+
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.advantages-icon--dining::after {
+  width: 23px;
+  height: 30px;
+
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.advantages-icon--clock::after {
+  width: 26px;
+  height: 31px;
+
+  background-image: url("../img/advantage-clock@1x.png");
+}

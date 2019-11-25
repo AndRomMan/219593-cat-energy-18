@@ -1,0 +1,43 @@
+// current checking sass compiling
+body {
+  // background-color: #92cf30;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list__item {
+  display: inline-block;
+  // display: block;
+  height: 30px;
+
+  line-height: 20px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font(20px, 500, $title_font_color);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav-list__item--active a {
+  // width: 169px;
+  // height: 2px;
+  border-bottom: 2px solid #68b738;
+}
+
+
+// .button:hover,
+// .button:focus,
+// .button:active {
+//   background-color: #663d15;
+// }

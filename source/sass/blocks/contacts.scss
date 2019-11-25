@@ -1,0 +1,77 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.contacts__wrapper {
+  // display: block;
+}
+
+.contacts__title {
+  // display: block;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include font(16px, 400, $title_font_color);
+}
+
+.contacts__address {
+  // display: block;
+  line-height: 20px;
+
+  @include font_arial(14px, 400, $text_font_color);
+}
+
+.contacts__mapframe {
+  width: 100%;
+}
+
+.contacts__map {
+  position: relative;
+  // right: 0;
+  // left: 0;
+  z-index: 0;
+
+  height: 400px;
+  // margin: auto;
+
+  // background-color: $main_grey_color;
+}
+
+.contacts__img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 320px;
+  height: 400px;
+  margin: auto;
+  // background-color: $main_grey_color;
+
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    // top: 150px;
+    // left: calc(50% - 50px);
+    top: 180px;
+    left: 130px;
+    // z-index: 3;
+
+    display: inline-block;
+    width: 55px;
+    height: 53px;
+
+    vertical-align: top;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}

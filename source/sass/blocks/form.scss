@@ -4,75 +4,326 @@ body {
 }
 
 .form {
-  // display: block;
-  fieldset {
-    border: none;
-    border-bottom: 1px solid $card_border_color;
+  //
+}
+
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .form__fieldset {
+    flex-basis: 100%;
+
+    // @media (min-width: $tablet-breakpoint) {
+    //
+    // }
+
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: 50%;
+    }
   }
 }
 
+.form__list {
+  // display: flex;
+}
+
+.pet-list {
+  .form__item {
+    display: flex;
+
+    .form__input {
+      // flex-basis: 50%;
+      flex-grow: 1;
+    }
+  }
+}
+
+.pet-owner-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .form__item {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+
+    .form__input {
+      // flex-basis: 50%;
+      flex-grow: 1;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .form__item {
+    flex-basis: 100%;
+
+    @media (min-width: $tablet-breakpoint) {
+      flex-basis: 50%;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: 25%;
+    }
+  }
+}
+
+
+// .form__item {
+//   outline: 1px solid rgb(252, 150, 150);
+
+//   @media (min-width: $tablet-breakpoint) {
+//     flex-basis: 50%;
+//   }
+
+//   @media (min-width: $desktop-breakpoint) {
+//     flex-basis: 25%;
+//   }
+// }
+
+// .list-pet-parameters {
+// display: flex;
+// flex-direction: column;
+// flex-wrap: wrap;
+
+// .form__item {
+// display: flex;
+// flex-basis: 100%;
+// justify-content: space-between;
+
+// outline: 1px solid rgb(252, 150, 150);
+
+
+//     @media (min-width: $tablet-breakpoint) {
+//       flex-basis: 50%;
+//     }
+
+//     @media (min-width: $desktop-breakpoint) {
+//       flex-basis: 25%;
+//     }
+//   }
+// }
+
+// .list-program {
+//   //
+// }
+
+// .list-contacts {
+//   //
+// }
+
+// .list-foods {
+// .form__item {
+//   @media (min-width: $tablet-breakpoint) {
+//     flex-basis: 50%;
+//   }
+
+//   @media (min-width: $desktop-breakpoint) {
+//     flex-basis: 25%;
+//   }
+// }
+// }
+
+
 .form__title {
   // display: block;
-  line-height: 60px;
-
+  // line-height: 60px;
   @include font(36px, 400, $title_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 60px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .form__proposal {
   // display: block;
-  line-height: 18px;
+  // line-height: 18px;
   text-transform: uppercase;
 
   @include font(14px, 400, $title_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 20px;
+    // line-height: 30px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .form__fieldset {
-  // display: block;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+
+  border: none;
+  // TODO убрать обводку
+  outline: 1px solid blue;
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+
+.form__fieldset--wide-border {
+  position: relative;
+  // background-color: aqua;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -20px;
+
+    width: 320px;
+    height: 100%;
+
+    border: 1px solid $card_border_color;
+    // border: 1px solid $border_color;
+    // opacity: 0.5;
+
+    @media (min-width: $tablet-breakpoint) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    // border: 1px solid $border_color;
+    border: 1px solid $card_border_color;
+    // opacity: 0.5;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .form__field {
   position: relative;
+  // line-height: 18px;
 
-  line-height: 18px;
   text-transform: uppercase;
 
   @include font(16px, 400, $additional_font_color);
 
+
+  @media (min-width: $tablet-breakpoint) {
+    // line-height: 20px;
+    font-size: 20px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.form__icon {
+  position: relative;
+
   &::after {
     content: "";
     position: absolute;
-    left: 250px;
-
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-
-    vertical-align: top;
-
+    // top: 0;
+    right: 10px;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+
+
+    // @media (min-width: $tablet-breakpoint) {
+    //
+    // }
+
+    // @media (min-width: $desktop-breakpoint) {
+    //
+    // }
   }
 }
 
-.form__input {
-  // display: block;
-  border: 1px solid $border_color;
-}
-
-.form__field--icon-email::after {
+.form__icon--email::after {
+  width: 17px;
+  height: 17px;
   background-image: url("../img/icon-mail.svg");
+
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
-.form__field--icon-phone::after {
+.form__icon--phone::after {
+  width: 20px;
+  height: 20px;
   background-image: url("../img/icon-phone.svg");
+
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.form__input {
+  // line-height: 18px;
+  text-transform: uppercase;
+  // display: block;
+  // border: 1px solid $border_color;
+
+  border: 1px solid $card_border_color;
+
+  @include font(16px, 400, $text_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    // line-height: 20px;
+    font-size: 20px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .form__section-title {
   position: relative;
-
-  line-height: 24px;
+  // line-height: 24px;
 
   @include font(24px, 400, $title_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    // line-height: 36px;
+    font-size: 36px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+
 
   &::after {
     content: "";
@@ -87,30 +338,87 @@ body {
     vertical-align: top;
 
     background-color: $main_green_color;
+
+
+    // @media (min-width: $tablet-breakpoint) {
+    //
+    // }
+
+    // @media (min-width: $desktop-breakpoint) {
+    //
+    // }
   }
-}
-
-.form__button {
-  width: 100%;
-
-  line-height: 20px;
-  text-transform: uppercase;
-
-  background-color: $main_green_color;
-  border: none;
-
-  @include font(16px, 400, $light_font_color);
-}
-
-.form__notice {
-  line-height: 16px;
-
-  @include font_arial(14px, 400, $text_font_color);
 }
 
 .form__response {
   width: 100%;
   height: 100px;
+  // line-height: 18px;
 
-  border: 1px solid $border_color;
+  text-transform: uppercase;
+
+  border: 1px solid $card_border_color;
+  // border: 1px solid $border_color;
+
+  @include font(16px, 400, $text_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    // line-height: 30px;
+    font-size: 20px;
+  }
+
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.flex-wrapper {
+  display: flex;
+  // flex-direction: raw;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-breakpoint) {
+    // flex-basis: 50%;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.form__button {
+  // Text: Отправить заявку
+
+  @media (min-width: $tablet-breakpoint) {
+    // display: inline-block;
+    flex-basis: 50%;
+    // width: 200px;
+
+    font-size: 20px;
+    // vertical-align: top;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.form__notice {
+  // line-height: 16px;
+  // display: inline-block;
+  // vertical-align: top;
+  @include font_arial(14px, 400, $text_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 50%;
+    // width: 200px;
+
+    font-size: 16px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }

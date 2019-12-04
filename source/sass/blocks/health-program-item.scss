@@ -4,30 +4,140 @@ body {
 }
 
 .health-program-item {
+  position: relative;
+  // border-bottom: 1px solid transparent;
+
+  padding: 40px 20px 40px 20px;
+
   background-color: $main_grey_color;
-  // display: block;
+  // // TODO убрать обводку
+  outline: 1px solid rgb(24, 106, 228);
 }
 
 .health-program-item__title {
-  position: relative;
-
-  line-height: 37px;
+  margin-bottom: 40px;
+  padding-left: 100px;
+  // line-height: 24px;
 
   @include font(24px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 375px;
+    padding-left: 0;
+
+    font-size: 36px;
+    // line-height: 37px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 50px;
+    padding-left: 150px;
+  }
 }
 
-.program-icon {
-  &::before {
+.health-program-item__description {
+  margin-bottom: 20px;
+  // line-height: 18px;
+
+  border-bottom: 1px solid $border_color;
+
+  @include font_arial(14px, 400, $text_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 375px;
+
+    font-size: 16px;
+    // line-height: 24px;
+
+    border: none;
+  }
+}
+
+.health-program-item__link {
+  display: block;
+  padding-top: 10px;
+  // line-height: 16px;
+
+  text-transform: uppercase;
+
+  @include font(16px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 375px;
+
+    font-size: 20px;
+    // line-height: 20px;
+  }
+
+  &::after {
     content: "";
 
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 12px;
 
     vertical-align: middle;
 
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  // TODO убрать hover и focus
+  &:hover,
+  &:focus {
+    &::after {
+      content: "";
+
+      display: inline-block;
+      // width: 25px;
+      // width: 24px;
+      width: 33px;
+      height: 12px;
+
+      vertical-align: middle;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program-item__icon {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 40px;
+
+    width: 50px;
+    height: 50px;
+
     background-color: $main_green_color;
     border-radius: 50%;
+
+    @media (min-width: $tablet-breakpoint) {
+      top: 60px;
+      left: 450px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      top: 30px;
+      left: 40px;
+
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &::after {
@@ -39,53 +149,54 @@ body {
   }
 }
 
-.program-icon--slim::after {
-  top: 0;
-  left: 5px;
+.program-item__icon--slim::after {
+  top: 28px;
+  left: 48px;
 
   width: 35px;
-  height: 49px;
+  height: 50px;
 
   background-image: url("../img/icon-cat-slim.svg");
-  // background-size: 35px 49px;
+
+  @media (min-width: $tablet-breakpoint) {
+    top: 60px;
+    left: 470px;
+
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    top: 28px;
+    left: 48px;
+
+    width: 70px;
+    height: 97px;
+  }
 }
 
-.program-icon--pro::after {
-  top: 10px;
-  left: -10px;
+.program-item__icon--pro::after {
+  top: 41px;
+  left: 31px;
 
   width: 67px;
   height: 28px;
 
   background-image: url("../img/icon-cat-pro.svg");
-  // background-size: 67px 28px;
-}
 
-.health-program-item__description {
-  // display: block;
-  line-height: 18px;
+  @media (min-width: $tablet-breakpoint) {
+    top: 101px;
+    left: 419px;
 
-  @include font_arial(14px, 400, $text_font_color);
-}
+    width: 268px;
+    height: 112px;
+  }
 
-.health-program-item__link {
-  // display: block;
-  line-height: 16px;
-  text-transform: uppercase;
+  @media (min-width: $desktop-breakpoint) {
+    top: 21px;
+    left: 20px;
 
-  @include font(16px, 400, $title_font_color);
-
-  &::after {
-    content: "";
-
-    display: inline-block;
-    width: 25px;
-    height: 12px;
-
-    vertical-align: middle;
-
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    width: 134px;
+    height: 56px;
   }
 }

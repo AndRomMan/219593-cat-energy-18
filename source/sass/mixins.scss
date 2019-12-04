@@ -3,18 +3,26 @@ body {
   // background-color: #3df87b;
 }
 
-// .container {
-//   width: $xs-container;
-//   margin: auto;
-
-//   outline: 2px solid rgb(14, 95, 11);
-// }
-
 .wrapper {
-  width: $xs-wrapper;
-  margin: auto;
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding-right: $mobile-padding;
+  padding-left: $mobile-padding;
+  // TODO убрать обводку wrapper
 
   outline: 2px solid rgb(228, 24, 24);
+
+  @media (min-width: $tablet-breakpoint) {
+    width: $tablet-wrapper;
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-wrapper;
+    padding-right: $desktop-padding;
+    padding-left: $desktop-padding;
+  }
 }
 
 @mixin font($size, $weight, $color) {
@@ -35,6 +43,12 @@ body {
   color: $color;
 }
 
+.wrapper--product-cards {
+  @media (max-width: $tablet-breakpoint) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -51,9 +65,4 @@ body {
 
   clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
-}
-
-// TODO проверить свойства кнопок на страницах, вынести общие в класс button
-.button {
-  // display: block;
 }

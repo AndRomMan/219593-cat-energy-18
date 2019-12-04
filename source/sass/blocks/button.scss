@@ -4,5 +4,67 @@ body {
 }
 
 .button {
-  // display: block;
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border: none;
 }
+
+.button--green {
+  // Text: Подобрать программу
+  // Text: Заказать
+  // Text: Отправить заявку
+  line-height: 20px;
+
+  background-color: $main_green_color;
+
+  @include font(16px, 400, $light_font_color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $green_button_color_hvr;
+  }
+
+  &:active {
+    color: rgba($light_font_color, 0.3);
+  }
+}
+
+// background-color: #68b738
+// hover:
+// $green_button_color_hvr: #5eaa2f;
+// down:
+// $green_button_color_hvr: #5eaa2f;
+// opacity: 0.3
+
+.button--grey {
+  line-height: 20px;
+  // Text: Показать все
+
+  background-color: $main_grey_color;
+
+  @include font(16px, 400, $text_font_color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $grey_button_color_hvr;
+  }
+
+  &:active {
+    color: rgba($text_font_color, 0.3);
+  }
+}
+
+// $button_show_color_hvr: #ebebeb;
+// $main_grey_color: #f2f2f2;
+// hover:
+// $grey_button_color_hvr: #f2f2f2;
+// down:
+// $grey_button_color_hvr: #f2f2f2;
+// opacity: 0.3

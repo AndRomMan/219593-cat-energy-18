@@ -4,49 +4,134 @@ body {
 }
 
 .additional-item {
-  // display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // flex-direction: column;
   padding: 10px 0 10px 0;
 
   border-bottom: 1px solid $border_color;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    border: 1px solid $border_color;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid $border_color;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    border: none;
+    border-top: 1px solid $border_color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
 .additional-item__title {
+  flex-basis: 100%;
   // display: block;
-  line-height: 16px;
+  // line-height: 16px;
+  // line-height: 1;
+
   text-transform: uppercase;
 
   @include font(16px, 400, $additional_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 50%;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 33.3333%;
+  }
 }
 
-.additional-item__wrap {
-  // display: block;
-  line-height: 14px;
+// .additional-item__wrap {
+// display: block;
+// line-height: 14px;
+// @include font_arial(14px, 400, $text_font_color);
+
+// @media (min-width: $tablet-breakpoint) {
+// line-height: 20px;
+//   font-size: 16px;
+// }
+
+// @media (min-width: $desktop-breakpoint) {
+//
+// }
+// }
+
+.additional-item__content {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // line-height: 14px;
 
   @include font_arial(14px, 400, $text_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 50%;
+    // line-height: 20px;
+
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 33.3333%;
+  }
 }
 
 .additional-item__package {
-  line-height: 14px;
+  // line-height: 14px;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
 
-  @include font_arial(14px, 400, $text_font_color);
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .additional-item__price {
   // display: block;
-  line-height: 14px;
+  // line-height: 14px;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
 
-  @include font_arial(14px, 400, $text_font_color);
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .additional-item__button {
-  // button
-  width: 100%;
+  flex-basis: 100%;
+  // Text: Заказать
+  // line-height: 20px;
 
-  line-height: 20px;
-  text-transform: uppercase;
+  @include font(16px, 400, $light_font_color);
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
 
-  background-color: $main_green_color;
-  border: none;
-
-  @include font (16px, 400, $light_font_color);
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 33.3333%;
+  }
 }
+
+// width: 280px
+// height: 40px
+
+// ==================== tab
+// width: 633px;
+
+// ==================== desctop
+// width: 245px;

@@ -5,8 +5,6 @@ body {
 
 .header-nav {
   // display: block;
-  // // TODO убрать обводку
-  // outline: 2px solid rgb(24, 106, 228);
 }
 
 .header-nav__toggle {
@@ -38,44 +36,30 @@ body {
 .header-nav__list {
   display: flex;
   flex-direction: column;
-  // TODO убрать обводку
-
-  outline: 2px solid rgb(24, 106, 228);
-
 
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // TODO можно задать ширину контейнера навигации для tablet
+    // TODO ширина контейнера навигации - tablet
     width: 438px;
+    // height: 100px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // TODO можно задать ширину контейнера навигации для tablet
+    // TODO ширина контейнера навигации - desctop
     width: 480px;
   }
 }
 
 .header-nav__item {
-  // height: 30px;
-  padding: 10px 0 10px 0;
   // line-height: 20px;
-
   text-align: center;
   text-transform: uppercase;
 
   border-top: 1px solid $border_color;
 
   @include font(20px, 500, $title_font_color);
-
-  // &:last-child {
-  // border-bottom: 1px solid $border_color;
-
-  // @media (min-width: $tablet-breakpoint) {
-  //   border: none;
-  // }
-  // }
 
   &:hover {
     opacity: 0.6;
@@ -86,19 +70,29 @@ body {
   }
 
   @media (min-width: $tablet-breakpoint) {
-    // margin: 0 0 0 10px;
-    // padding: 0;
+    font-size: 18px;
+    // line-height: 24px;
+
     border: none;
+    // TODO проверить на ошибку в дизайне
+    // color: $additional_font_color;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  // padding-top: 10px;
-  // padding-bottom: 10px;
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    color: $light_font_color;
+  }
 }
 
 .header-nav__item--active a {
   // width: 169px;
   // height: 2px;
   border-bottom: 2px solid #68b738;
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  @media (min-width: $desktop-breakpoint) {
+    border-bottom: 2px solid $light_font_color;
+  }
 }

@@ -11,60 +11,54 @@
 
   <body>
     <header class="page-header wrapper">
+      <!-- <div class="wrapper"> -->
       <a class="page-header__link logo-link" href="#">
-        <img class="logo-link__image" src="img/logo-mobile.svg" alt="КЭТ ЭНЕРДЖИ" width="192" height="39">
+        <img class="logo-link__image" src="img/logo-mobile.svg" alt="КЭТ ЭНЕРДЖИ" width="192" height="38">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"> </button>
+      <nav class="page-header__nav header-nav">
+        <button class="header-nav__toggle" type="button"> </button>
         <!-- alt="Открыть меню сайта" width="24" height="18" -->
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list nav-list">
-            <li class="nav-list__item nav-list__item--active">
-              <!-- <a href="index.html">главная</a> -->
-              <a href="#">главная</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="catalog.html">каталог продукции</a>
-              <!-- <a>каталог продукции</a> -->
-            </li>
-            <li class="nav-list__item">
-              <a href="form.html">подбор программы</a>
-              <!-- <a>подбор программы</a> -->
-            </li>
-          </ul>
-        </div>
+        <ul class="header-nav__list">
+          <li class="header-nav__item header-nav__item--active">
+            <!-- <a href="index.html">главная</a> -->
+            <a href="#">главная</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="catalog.html">каталог продукции</a>
+            <!-- <a>каталог продукции</a> -->
+          </li>
+          <li class="header-nav__item">
+            <a href="form.html">подбор программы</a>
+            <!-- <a>подбор программы</a> -->
+          </li>
+        </ul>
       </nav>
+      <!-- </div> -->
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин функционального питания для ваших любимых котиков
       </h1>
       <section class="health-program">
-        <!-- <div class="health-program__wrapper"> -->
         <h2 class="visually-hidden">Подобрать программу здоровья</h2>
-        <header class="health-program__header">
-          <div class=" health-program__back">
-            <div class="wrapper">
-              <h2 class="health-program__title">Функциональное питание для котов
-              </h2>
-              <p class="health-program__slogan">Занялся собой? Займись котом!</p>
-              <img src="../img/index-can-mobile@1x.png" alt="Кэт-энерджи с курицей для вашего кота" width="280" height="271">
-            </div>
-          </div>
-          <a class="health-program__link button wrapper" href="form.html">Подобрать программу</a>
+        <header class="health-program__header wrapper">
+          <h2 class="health-program__title">Функциональное питание для котов
+          </h2>
+          <p class="health-program__slogan">Занялся собой? Займись котом!</p>
+          <img class="health-program__img" src="../img/index-can-mobile@1x.png" alt="Кэт-энерджи с курицей для вашего кота" width="280" height="271">
+          <a class="health-program__link button button--green" href="form.html">Подобрать программу</a>
         </header>
 
         <div class="wrapper">
           <ul class="health-program__list">
             <li class="health-program__item health-program-item">
-
-              <h3 class="health-program-item__title program-icon program-icon--slim">Похудение</h3>
+              <h3 class="health-program-item__title program-item__icon program-item__icon--slim">Похудение</h3>
               <p class="health-program-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить
                 лишний вес.</p>
               <a class="health-program-item__link" href="catalog.html">Каталог Slim</a>
             </li>
             <li class="health-program__item health-program-item">
-              <h3 class="health-program-item__title program-icon program-icon--pro">Набор массы</h3>
+              <h3 class="health-program-item__title program-item__icon program-item__icon--pro">Набор массы</h3>
               <p class="health-program-item__description">
                 Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые
@@ -76,32 +70,31 @@
         </div>
       </section>
 
-      <section class="advantages">
-        <div class="advantages__wrapper wrapper">
-          <h2 class="advantages__title">Как это работает</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages-icon advantages-icon--leaf">
-              Функциональное питание содержит только полезные питательные
-              вещества.
-            </li>
-            <li class="advantages__item advantages-icon advantages-icon--powder">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и
-              готово.
-            </li>
-            <li class="advantages__item advantages-icon  advantages-icon--dining">
-              Замените один-два приема обычной еды на наше функциональное
-              питание.
-            </li>
-            <li class="advantages__item advantages-icon  advantages-icon--clock">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего
-              питомца!
-            </li>
-          </ul>
-        </div>
+      <section class="advantages wrapper">
+        <!-- <div class="wrapper"> -->
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__icon advantages__icon--leaf">
+            Функциональное питание содержит только полезные питательные
+            вещества.
+          </li>
+          <li class="advantages__item advantages__icon advantages__icon--powder">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и
+            готово.
+          </li>
+          <li class="advantages__item advantages__icon  advantages__icon--dining">
+            Замените один-два приема обычной еды на наше функциональное
+            питание.
+          </li>
+          <li class="advantages__item advantages__icon  advantages__icon--clock">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего
+            питомца!
+          </li>
+        </ul>
+        <!-- </div> -->
       </section>
-
-      <section class="example">
-        <div class="wrapper">
+      <section class="example wrapper">
+        <div class="example__text-wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -111,95 +104,94 @@
           </p>
 
           <div class="example__keypoints keypoints">
-            <div class="keypoints__wrapper">
-              <div class="keypoints__item keypoints__item--border">
-                <span class="keypoints__value">5 кг</span>
-                <span class="keypoints__option">снижение веса</span>
-              </div>
+            <div class="keypoints__item keypoints__item--weight keypoints__item--border">
+              <span class="keypoints__value">5 кг</span>
+              <span class="keypoints__option">снижение веса</span>
+            </div>
 
-              <div class="keypoints__item keypoints__item--border">
-                <span class="keypoints__value">60 дней</span>
-                <span class="keypoints__option">затрачено времени</span>
-              </div>
+            <div class="keypoints__item keypoints__item--time-spent keypoints__item--border">
+              <span class="keypoints__value">60 дней</span>
+              <span class="keypoints__option">затрачено времени</span>
+            </div>
+            <div class="keypoints__item keypoints__item--food-cost keypoints__item--grow">
+              <span class="keypoints__value">Затраты на питание:</span>
+              <span class="keypoints__option">15 000 руб.</span>
             </div>
           </div>
-          <div class="keypoints__item">
-            <span class="keypoints__value-option">Затраты на питание: 15 000 руб.</span>
-          </div>
-          <div class="example__slider slider">
-            <div class="slider__photocards">
-              <img class="slider__photo" src="../img/before-mobile@1x.png" alt="Кот до начала программы оздоровления" width="311" height="232">
-              <!-- <img class="example-slider__photo"
+        </div>
+        <div class="example__slider slider">
+          <div class="slider__photocards">
+            <img class="slider__photo" src="../img/before-mobile@1x.png" alt="Кот до начала программы оздоровления" width="311" height="232">
+            <!-- <img class="example-slider__photo"
                  src="blocks/example/img/after_mobile.png"
                  alt="Кот по окончании программы оздоровления" width="251"
                  height="240"> -->
-            </div>
-            <p class="slider__toggles">
-              <button class="slider__toggle" type="button">Было</button>
-              <button class="slider__toggle" type="button">Стало</button>
-            </p>
           </div>
+          <p class="slider__toggles">
+            <button class="slider__toggle" type="button">Было</button>
+            <button class="slider__toggle" type="button">Стало</button>
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
-        <div class="wrapper">
+        <div class="contacts__wrapper wrapper">
           <h2 class="visually-hidden">Как нас найти</h2>
           <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <div class="contacts__img"></div>
+          <div class="contacts__map-img"></div>
           <h2 class="visually-hidden">Как до нас добраться - карта</h2>
           <!-- <iframe class="contacts__mapframe"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056438!2d30.320853351292428!3d59.93871916896568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573567411114!5m2!1sru!2sru"
                   width="320" height="400" style="border: 0;" allowfullscreen=""></iframe> -->
-          <iframe class="contacts__mapframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3291e2963d38dc5ad0f2d796d8de413f085cf1fd282d6e04bf5ac540c03fadf9&amp;source=constructor" width="320"
-                  height="400" style="border: 0;"></iframe>
+          <!-- <iframe class="contacts__mapframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3291e2963d38dc5ad0f2d796d8de413f085cf1fd282d6e04bf5ac540c03fadf9&amp;source=constructor" width="320" height="400" style="border: 0;"></iframe> -->
         </div>
       </section>
       <!--  На главной должен быть линк на верх страницы?
           На других страницах ссылка на главную? -->
-      <section class="page-footer__links">
+      <section class="page-footer__links footer-links wrapper">
         <h2 class="visually-hidden">Как с нами связаться</h2>
-        <div class="wrapper">
-          <a class="page-footer__logo" href="#">
-            <img class="logo-link__image" src="../img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="129" height="25">
-          </a>
-          <ul class="page-footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">VK</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <!--TODO Проверить скрин-ридером -->
-      <address class="page-footer__copyright copyright wrapper">
-        <!-- <section class="page-footer__copyright copyright wrapper"> -->
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт разработчика">
-          <span class="copyright__title">HTML Academy</span>
+        <a class="footer-links__item footer-logo" href="#">
+          <img class="footer-logo__image" src="../img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="124">
         </a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт веб-разработчика">
-          <!-- TODO изменить цвет иконки в редакторе -->
-          <img src="../img/htmlacademy.svg" alt="Лого HTML академии" width="27" height="34">
-        </a>
-      </address>
+
+        <ul class="footer-links__item social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+        </ul>
+
+        <address class="footer-links__item copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт разработчика">
+            <span class="copyright__title">HTML Academy</span>
+          </a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт веб-разработчика">
+            <!-- TODO изменить цвет иконки в редакторе -->
+            <img src="../img/htmlacademy.svg" alt="Лого HTML академии" width="27" height="34">
+          </a>
+        </address>
+
+      </section>
     </footer>
+
+    <!--TODO Проверить скрин-ридером -->
   </body>
 
 </html>

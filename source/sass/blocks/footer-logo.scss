@@ -1,0 +1,36 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    justify-content: flex-start;
+  }
+}
+
+
+.footer-logo__image {
+  width: 128px;
+  height: 24px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+// width: 128px;
+// height: 24px;
+
+// background-image: url("../img/logo-footer.svg");
+// background-repeat: no-repeat;
+// background-position: center;
+// background-size: contain;

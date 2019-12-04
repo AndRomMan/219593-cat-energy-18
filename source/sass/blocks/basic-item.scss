@@ -4,53 +4,127 @@ body {
 }
 
 .basic-item {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  // align-items: center;
   padding: 25px 0 25px 0;
-  // display: block;
 
   border: 1px solid $card_border_color;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $main_grey_color;
+    border: none;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.basic-item__wrapper {
+  //
 }
 
 .basic-item__img {
   width: 140px;
   height: 144px;
-  // display: block;
 }
 
 .basic-item__title {
-  // display: block;
-  line-height: 20px;
+  // line-height: 20px;
   text-transform: uppercase;
 
-  @include font(20px, 400, $title_font_color);
+  @include font(16px, 400, $title_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 20px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.basic-item__title--proposal {
+  text-align: center;
 }
 
 .basic-item__list {
-  line-height: 16px;
+  //
+}
 
+.basic-item__content {
+  // line-height: 16px;
+  // text-align: center;
   @include font_arial(12px, 400, $text_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 16px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.basic-item__content--proposal {
+  line-height: 1.2;
+  text-align: center;
 }
 
 .basic-item__volume {
-  // display: block;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .basic-item__taste {
-  // display: block;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .basic-item__price {
-  // display: block;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .basic-item__button {
-  // button
-  width: 100%;
+  // TODO изменить ширину кнопки для торговой карты
+  // Text: Заказать
 
-  line-height: 20px;
-  text-transform: uppercase;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
 
-  background-color: $main_green_color;
-  border: none;
-
-  @include font (16px, 400, $light_font_color);
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
+
+// ==================== tab
+// TODO размеры кнопки унифицировать
+// TODO размеры кнопки 250 или 245
+// width: 249px
+// ==================== desctop
+// TODO размеры кнопки 170 ?
+// width: 169px

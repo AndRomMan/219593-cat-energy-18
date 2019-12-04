@@ -5,62 +5,199 @@ body {
 
 .health-program {
   // display: block;
-}
+  position: relative;
 
-.health-program__back {
-  // display: block;
-  background-color: $main_green_color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 320px 305px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+
+    width: 100%;
+    height: 305px;
+
+    background-color: $main_green_color;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      top: -100px;
+      left: 50%;
+
+      display: inherit;
+      width: 50%;
+      height: 696px;
+    }
+  }
 }
 
 .health-program__header {
+  position: relative;
+
+  padding-top: 30px;
+
+  border-bottom: 1px solid transparent;
   // display: flex;
   // flex-direction: column;
+  // align-items: center;
 
-  img {
-    width: 280px;
-    height: 271px;
+  @media (min-width: $tablet-breakpoint) {
+    // align-items: flex-start;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 320px;
+    height: 305px;
+
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    // background-position: top center;
+    background-size: contain;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      top: -100px;
+      left: 50%;
+      z-index: -2;
+
+      display: inherit;
+      width: 720px;
+      height: 696px;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      // background-position: top right;
+      background-size: contain;
+    }
   }
 }
 
 .health-program__title {
-  line-height: 36px;
+  margin-bottom: 20px;
+  // line-height: 36px;
+
   text-align: center;
 
   @include font(36px, 400, $light_font_color);
-  // display: block;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 420px;
+    // line-height: 60px;
+
+    text-align: left;
+
+    @include font(60px, 400, $title_font_color);
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+
+  // }
 }
 
 .health-program__slogan {
+  margin-bottom: 310px;
   // display: block;
-  line-height: 14px;
+  // line-height: 14px;
+
   text-align: center;
   text-transform: uppercase;
 
   @include font(14px, 400, $light_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 420px;
+    margin-bottom: 50px;
+    // line-height: 20px;
+
+    text-align: left;
+
+    @include font(20px, 400, $title_font_color);
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+
+  // }
 }
 
-.health-program__link {
-  display: block;
+.health-program__img {
+  position: absolute;
+  // z-index: 0;
+  top: 170px;
+  left: 30px;
 
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  // button
-  // display: block;
+  width: 280px;
+  height: 271px;
 
-  background-color: $main_green_color;
+  @media (min-width: $tablet-breakpoint) {
+    z-index: -1;
 
-  @include font(14px, 400, $light_font_color);
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    top: 100px;
+    left: 500px;
+
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .health-program__list {
   // display: block;
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .health-program__item {
   // display: block;
+  // TODO перенесено в health-program-item
+  // position: relative;
 }
+
+.health-program__link {
+  // Text: Подобрать программу
+  margin-bottom: 50px;
+  // line-height: 18px;
+  // @include font(14px, 400, $light_font_color);
+
+  font-size: 14px;
+  // width: 280px
+  // height: 40px
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 245px;
+    margin-bottom: 530px;
+    // line-height: 20px;
+    // height: 52px;
+
+    font-size: 20px;
+
+    // @include font(20px, 400, $light_font_color);
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 380px;
+  }
+}
+
+// ==================== tab + desctop
+// font-size: 20px;
+// line-height: 20px;
+// width: 245px
+// height: 52px

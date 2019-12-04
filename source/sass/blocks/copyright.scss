@@ -4,17 +4,42 @@ body {
 }
 
 .copyright {
-  // display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-breakpoint) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__title {
   font-style: normal;
-  line-height: 16px;
+  // line-height: 16px;
 
   @include font_arial(16px, 400, $title_font_color);
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-
+// TODO добавить изменение цвета при hover
+// TODO SVG с возможностью изменения fill
 .copyright__link {
   // display: block;
+  // TODO добавить изменение цвета при hover
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

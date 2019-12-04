@@ -9,5 +9,15 @@
 
 .logo-link__image {
   width: 192px;
-  height: 39px;
+  height: 38px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 202px;
+    height: 59px;
+  }
 }

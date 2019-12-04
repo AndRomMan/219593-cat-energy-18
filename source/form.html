@@ -11,64 +11,66 @@
 
   <body>
     <header class="page-header">
-      <!-- Содержимое page-header будет вставлено после отработки на index.html -->
+      <!--TODO Содержимое page-header будет вставлено после отработки на index.html -->
     </header>
     <main class="form-main wrapper">
-      <!-- TODO убрать лишние классы формы -->
       <form class="customer-form form" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__proposal">Заполните анкету и мы подберем программу</p>
-        <fieldset class="form__fieldset">
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__field" for="cat-name"><span>Имя:*</span></label>
-              <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК" required>
-            </li>
 
-            <li class="form__item">
-              <label class="form__field" for="cat-weight"><span>Вес (кг):*</span></label>
-              <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-            </li>
+        <div class="form-wrapper">
+          <fieldset class="form__fieldset">
+            <ul class="form__list pet-list">
+              <li class="form__item">
+                <label class="form__field" for="cat-name"><span>Имя:*</span></label>
+                <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК" required>
+              </li>
 
-            <li class="form__item">
-              <label class="form__field" for="cat-age"><span>Возраст (лет):</span></label>
-              <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
+              <li class="form__item">
+                <label class="form__field" for="cat-weight"><span>Вес (кг):*</span></label>
+                <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+              </li>
 
-        <fieldset class="form__fieldset">
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__input" type="radio" name="cat-program" value="cat-grace" id="cat-grace">
-              <label class="form__field" for="cat-grace"><span>Похудение</span></label>
-            </li>
+              <li class="form__item">
+                <label class="form__field" for="cat-age"><span>Возраст (лет):</span></label>
+                <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
 
-            <li class="form__item">
-              <input class="form__input" type="radio" name="cat-program" value="cat-power" id="cat-power">
-              <label class="form__field" for="cat-power"><span>Набор массы</span>
-              </label>
-            </li>
+          <fieldset class="form__fieldset form__fieldset--wide-border">
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input" type="radio" name="cat-program" value="cat-grace" id="cat-grace">
+                <label class="form__field" for="cat-grace"><span>Похудение</span></label>
+              </li>
 
-            <li class="form__item">
-              <input class="form__input" type="radio" name="cat-program" value="cat-advice" id="cat-advice">
-              <label class="form__field" for="cat-advice"><span>Не знаю (Нужен ваш
-                  совет)</span></label>
-            </li>
-          </ul>
-        </fieldset>
+              <li class="form__item">
+                <input class="form__input" type="radio" name="cat-program" value="cat-power" id="cat-power">
+                <label class="form__field" for="cat-power"><span>Набор массы</span>
+                </label>
+              </li>
 
+              <li class="form__item">
+                <input class="form__input" type="radio" name="cat-program" value="cat-advice" id="cat-advice">
+                <label class="form__field" for="cat-advice"><span>Не знаю (Нужен ваш
+                    совет)</span></label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset">
           <legend class="form__section-title">
             <span>Контактные данные (владельца кота)</span>
           </legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__field form__field--icon-email" for="customer-email"><span>E-mail:*</span></label>
+          <ul class="form__list pet-owner-list">
+            <!-- TODO ограничить длину символов поля -->
+            <li class="form__item form__icon form__icon--email">
+              <label class="form__field" for="customer-email"><span>E-mail:*</span></label>
               <input class="form__input" type="email" name="customer-email" id="customer-email" placeholder="KUKLACHEV@GMAIL.COM" required>
             </li>
-            <li class="form__item">
-              <label class="form__field form__field--icon-phone" for="customer-phone"><span>Телефон:*</span></label>
+            <li class="form__item form__icon form__icon--phone">
+              <label class="form__field" for="customer-phone"><span>Телефон:*</span></label>
               <input class="form__input" type="tel" name="customer-phone" id="customer-phone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
@@ -88,33 +90,35 @@
           <legend class="form__section-title">
             <span>Дополнительно</span>
           </legend>
-          <ul class="form__list">
-            <li class="form__item food-item">
+          <ul class="form__list food-list">
+            <li class="form__item">
               <input class="form__input" type="checkbox" name="food-item-1" value="sweetener" id="food-item-1" checked>
               <label class="form__field" for="food-item-1"><span>Сахарозаменитель</span></label>
             </li>
-            <li class="form__item food-item">
+            <li class="form__item">
               <input class="form__input" type="checkbox" name="food-item-2" value="aqua" id="food-item-2">
               <label class="form__field" for="food-item-2"><span>Питьевая вода</span></label>
             </li>
-            <li class="form__item food-item">
+            <li class="form__item">
               <input class="form__input" type="checkbox" name="food-item-3" value="milk" id="food-item-3">
               <label class="form__field" for="food-item-3"><span>Молоко</span></label>
             </li>
-            <li class="form__item food-item">
+            <li class="form__item">
               <input class="form__input" type="checkbox" name="food-item-4" value="vitamins" id="food-item-4">
               <label class="form__field" for="food-item-4"><span>Витамины</span></label>
             </li>
           </ul>
         </fieldset>
-        <p><button class="form__button button" type="submit">Отправить заявку</button></p>
 
-        <p class="form__notice">* — Обязательные поля</p>
+        <div class="flex-wrapper">
+          <button class="form__button button button--green" type="submit">Отправить заявку</button>
+          <p class="form__notice">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
 
     <footer class="page-footer">
-      <!-- Содержимое page-footer будет вставлено после отработки на index.html -->
+      <!--TODO Содержимое page-footer будет вставлено после отработки на index.html -->
     </footer>
 
   </body>

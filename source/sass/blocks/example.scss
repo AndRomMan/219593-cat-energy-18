@@ -6,13 +6,52 @@ body {
 .example {
   // display: block;
   background-color: $main_grey_color;
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+  }
+}
+
+.example__text-wrapper {
+  flex-basis: 50%;
+  // // TODO убрать обводку
+
+  outline: 1px solid rgb(24, 106, 228);
+  //
+}
+
+.example__keypoints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  @media (min-width: $desktop-breakpoint) {
+    // width: 300px;
+  }
 }
 
 .example__title {
   // display: block;
-  line-height: 60px;
-
+  // line-height: 60px;
   @include font(36px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    // line-height: 60px;
+    font-size: 60px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .example__description {
@@ -20,18 +59,20 @@ body {
   line-height: 18px;
 
   @include font_arial(14px, 400, $text_font_color);
-}
 
-.example__item {
-  // display: block;
-}
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-.example__keypoints {
-  // keypoints
-  // display: block;
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .example__slider {
   // slider
   // display: block;
+  // // TODO убрать обводку
+  outline: 1px solid rgb(24, 106, 228);
 }

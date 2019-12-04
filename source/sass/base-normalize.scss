@@ -6,7 +6,8 @@
 //  https://hankchizljaw.com/wrote/a-modern-css-reset/
 //  https://medium.com/@stasonmars/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%B1%D1%80%D0%BE%D1%81-css-f5816963c82b
 // I suppose it makes sense
-
+// TODO убрать line-height для заголовков и кнопок
+// TODO line-height для текста задается в px
 html {
   box-sizing: border-box;
 }
@@ -18,11 +19,12 @@ html {
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   overflow: auto;
 
-  // line-height: 1.5;
+  line-height: 1.5;
 }
 
 ul[class],

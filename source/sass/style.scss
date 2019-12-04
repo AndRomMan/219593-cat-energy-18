@@ -7,14 +7,16 @@
 // page-header
 @import "blocks/page-header";
 @import "blocks/logo-link";
-@import "blocks/main-nav";
-@import "blocks/nav-list";
+@import "blocks/header-nav";
 
 // page-footer
 @import "blocks/page-footer";
+@import "blocks/footer-logo";
+@import "blocks/footer-links";
 @import "blocks/contacts";
 @import "blocks/social";
 @import "blocks/copyright";
+
 
 // index page-main
 @import "blocks/page-main";
@@ -34,13 +36,12 @@
 @import "blocks/additional-item";
 @import "blocks/banner";
 
-
 // form-main
 @import "blocks/form-main";
-@import "blocks/customer-form";
 @import "blocks/form";
-// @import "blocks/personal-data";
-// @import "blocks/personal-program";
-// @import "blocks/personal-comment";
-// @import "blocks/additional-product";
-// @import "blocks/food-item";
+
+// TODO добавить flex-wrap: wrap; для исключения переполнения
+// TODO править изменение шрифта по breakpoints
+// TODO проверить блоки у которых line-height: 1;
+
+// TODO оптимизоровать код для шрифта кнопки form

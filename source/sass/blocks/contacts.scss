@@ -3,23 +3,70 @@ body {
   // background-color: #cefc85;
 }
 
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   // display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 600px);
+    z-index: 2;
+
+    width: 500px;
+
+    background-color: $light_font_color;
+  }
 }
 
 .contacts__title {
-  // display: block;
-  line-height: 20px;
+  flex-basis: 50%;
+  // line-height: 20px;
+
   text-transform: uppercase;
 
   @include font(16px, 400, $title_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 30%;
+    // line-height: 25px;
+
+    font-size: 20px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .contacts__address {
-  // display: block;
-  line-height: 20px;
+  // line-height: 20px;
+  flex-basis: 50%;
 
   @include font_arial(14px, 400, $text_font_color);
+
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 30%;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    text-align: left;
+  }
 }
 
 .contacts__mapframe {
@@ -28,8 +75,6 @@ body {
 
 .contacts__map {
   position: relative;
-  // right: 0;
-  // left: 0;
   z-index: 0;
 
   height: 400px;
@@ -38,7 +83,7 @@ body {
   // background-color: $main_grey_color;
 }
 
-.contacts__img {
+.contacts__map-img {
   position: absolute;
   right: 0;
   left: 0;
@@ -53,15 +98,25 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media (min-width: $tablet-breakpoint) {
+    width: 768px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 1140px;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+
 
   &::after {
     content: "";
     position: absolute;
-    // top: 150px;
-    // left: calc(50% - 50px);
     top: 180px;
-    left: 130px;
-    // z-index: 3;
+    // left: 130px;
+    left: calc(50% - 30px);
 
     display: inline-block;
     width: 55px;
@@ -73,5 +128,17 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+
+    @media (min-width: $tablet-breakpoint) {
+      top: 150px;
+      left: calc(50% - 50px);
+
+      width: 113px;
+      height: 106px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      left: calc(50% + 280px);
+    }
   }
 }

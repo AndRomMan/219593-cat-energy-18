@@ -8,7 +8,6 @@ body {
 }
 
 .slider__photocards {
-  // position: relative;
   // display: block;
 }
 
@@ -20,17 +19,31 @@ body {
 }
 
 .slider__toggles {
-  // display: block;
+  //
 }
 
 .slider__toggle {
-  // display: block;
-  line-height: 20px;
+  // Text: Было / Стало
+  // line-height: 20px;
   text-transform: uppercase;
 
   background-color: transparent;
   border: none;
+  border-bottom: 1px dotted $border_color;
 
   @include font(16px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $border_color;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 }
-// before-mobile@1x.png

@@ -4,21 +4,52 @@ body {
 }
 
 .additional-products {
-  // display: block;
+  //
+}
+
+.additional-products__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .additional-products__title {
-  // display: block;
-  line-height: 24px;
-
+  // line-height: 24px;
   @include font(24px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    // line-height: 36px;
+    font-size: 36px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .additional-products__list {
-  // display: block;
+  // display: flex;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 75%;
+  }
 }
 
 .additional-products__item {
   // additional-item
-  // display: block;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }

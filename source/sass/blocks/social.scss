@@ -4,60 +4,86 @@ body {
 }
 
 .social {
-  // display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    justify-content: center;
+  }
 }
 
 .social__item {
-  // display: block;
+  margin: 0 10px 0 10px;
 }
 
 .social__link {
-  // position: relative;
-  width: 30px;
-  height: 30px;
+  display: block;
 
-  &::after {
-    content: "";
-    // position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 
-    display: inline-block;
-    // top: 0;
-    // left: 0;
-    // background-image: url("../img/vk.svg");
+  // TODO добавить изменение цвета при hover
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+  &:active {
+    opacity: 0.6;
   }
 }
+// TODO добавить изменение цвета при hover
 
 .social__link--vk {
-  &::after {
-    width: 23px;
-    height: 13px;
+  width: 22px;
+  height: 12px;
 
-    background-image: url("../img/icon-vk.svg");
+  background-image: url("../img/icon-vk.svg");
+
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 30px;
+    height: 16px;
   }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .social__link--insta {
-  &::after {
-    width: 17px;
-    height: 17px;
+  width: 16px;
+  height: 16px;
 
-    background-image: url("../img/icon-insta.svg");
+  background-image: url("../img/icon-insta.svg");
+
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 23px;
+    height: 23px;
   }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .social__link--fb {
-  &::after {
-    width: 11px;
-    height: 20px;
+  width: 10px;
+  height: 19px;
 
-    background-image: url("../img/icon-fb.svg");
+  background-image: url("../img/icon-fb.svg");
+
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 14px;
+    height: 28px;
   }
-}
 
-// icon-fb.svg  11x20
-// icon-vk.svg 23x13
-// icon-insta.svg 17x17
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}

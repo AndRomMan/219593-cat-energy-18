@@ -1,8 +1,32 @@
+// current checking sass compiling
+body {
+  // background-color: #a4d850;
+}
 
 .page-header {
-  // outline: 2px solid rgb(226, 25, 216);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  // height: 100px;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    // flex-direction: row;
+  }
 }
 
 .page-header__link {
   // .logo-link
+  // TODO убрать обводку
+  outline: 2px solid rgb(24, 106, 228);
+}
+
+.page-header__nav {
+  // TODO убрать обводку
+  outline: 2px solid rgb(24, 106, 228);
 }

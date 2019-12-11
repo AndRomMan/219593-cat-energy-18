@@ -4,7 +4,6 @@ body {
 }
 
 .health-program {
-  // display: block;
   position: relative;
 
   &::after {
@@ -37,15 +36,18 @@ body {
 .health-program__header {
   position: relative;
 
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 10px;
 
-  border-bottom: 1px solid transparent;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
+
+  // border-bottom: 1px solid transparent;
 
   @media (min-width: $tablet-breakpoint) {
-    // align-items: flex-start;
+    //
   }
 
   &::after {
@@ -85,17 +87,17 @@ body {
 }
 
 .health-program__title {
-  margin-bottom: 20px;
-  // line-height: 36px;
+  margin-bottom: 25px;
 
+  line-height: 36px;
   text-align: center;
 
   @include font(36px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
     width: 420px;
-    // line-height: 60px;
 
+    line-height: 60px;
     text-align: left;
 
     @include font(60px, 400, $title_font_color);
@@ -107,10 +109,9 @@ body {
 }
 
 .health-program__slogan {
-  margin-bottom: 310px;
-  // display: block;
-  // line-height: 14px;
+  margin-bottom: 28px;
 
+  line-height: 14px;
   text-align: center;
   text-transform: uppercase;
 
@@ -119,8 +120,8 @@ body {
   @media (min-width: $tablet-breakpoint) {
     width: 420px;
     margin-bottom: 50px;
-    // line-height: 20px;
 
+    line-height: 20px;
     text-align: left;
 
     @include font(20px, 400, $title_font_color);
@@ -132,13 +133,9 @@ body {
 }
 
 .health-program__img {
-  position: absolute;
-  // z-index: 0;
-  top: 170px;
-  left: 30px;
-
   width: 280px;
   height: 271px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-breakpoint) {
     z-index: -1;
@@ -157,47 +154,33 @@ body {
 }
 
 .health-program__list {
-  // display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @media (min-width: $desktop-breakpoint) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
 .health-program__item {
-  // display: block;
-  // TODO перенесено в health-program-item
-  // position: relative;
+  //
 }
 
 .health-program__link {
-  // Text: Подобрать программу
-  margin-bottom: 50px;
-  // line-height: 18px;
-  // @include font(14px, 400, $light_font_color);
-
   font-size: 14px;
-  // width: 280px
-  // height: 40px
+  // Text: Подобрать программу
 
   @media (min-width: $tablet-breakpoint) {
     width: 245px;
     margin-bottom: 530px;
-    // line-height: 20px;
     // height: 52px;
 
     font-size: 20px;
-
-    // @include font(20px, 400, $light_font_color);
   }
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 380px;
   }
 }
-
-// ==================== tab + desctop
-// font-size: 20px;
-// line-height: 20px;
-// width: 245px
-// height: 52px

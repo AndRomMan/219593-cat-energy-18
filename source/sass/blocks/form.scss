@@ -26,11 +26,13 @@ body {
 
 .form__list {
   // display: flex;
+  // flex-wrap: wrap;
 }
 
 .pet-list {
   .form__item {
     display: flex;
+    flex-wrap: wrap;
 
     .form__input {
       // flex-basis: 50%;
@@ -46,6 +48,7 @@ body {
   .form__item {
     display: flex;
     flex-basis: 100%;
+    flex-wrap: wrap;
     align-items: center;
 
     .form__input {
@@ -75,63 +78,6 @@ body {
     }
   }
 }
-
-
-// .form__item {
-//   outline: 1px solid rgb(252, 150, 150);
-
-//   @media (min-width: $tablet-breakpoint) {
-//     flex-basis: 50%;
-//   }
-
-//   @media (min-width: $desktop-breakpoint) {
-//     flex-basis: 25%;
-//   }
-// }
-
-// .list-pet-parameters {
-// display: flex;
-// flex-direction: column;
-// flex-wrap: wrap;
-
-// .form__item {
-// display: flex;
-// flex-basis: 100%;
-// justify-content: space-between;
-
-// outline: 1px solid rgb(252, 150, 150);
-
-
-//     @media (min-width: $tablet-breakpoint) {
-//       flex-basis: 50%;
-//     }
-
-//     @media (min-width: $desktop-breakpoint) {
-//       flex-basis: 25%;
-//     }
-//   }
-// }
-
-// .list-program {
-//   //
-// }
-
-// .list-contacts {
-//   //
-// }
-
-// .list-foods {
-// .form__item {
-//   @media (min-width: $tablet-breakpoint) {
-//     flex-basis: 50%;
-//   }
-
-//   @media (min-width: $desktop-breakpoint) {
-//     flex-basis: 25%;
-//   }
-// }
-// }
-
 
 .form__title {
   // display: block;
@@ -171,8 +117,6 @@ body {
   padding: 10px 10px 10px 10px;
 
   border: none;
-  // TODO убрать обводку
-  outline: 1px solid blue;
 
   // @media (min-width: $tablet-breakpoint) {
   //
@@ -243,6 +187,7 @@ body {
     position: absolute;
     // top: 0;
     right: 10px;
+
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -261,6 +206,7 @@ body {
 .form__icon--email::after {
   width: 17px;
   height: 17px;
+
   background-image: url("../img/icon-mail.svg");
 
 
@@ -276,6 +222,7 @@ body {
 .form__icon--phone::after {
   width: 20px;
   height: 20px;
+
   background-image: url("../img/icon-phone.svg");
 
 

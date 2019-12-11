@@ -10,6 +10,7 @@ body {
 .additional-products__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   // @media (min-width: $tablet-breakpoint) {
   //
@@ -37,6 +38,7 @@ body {
 
 .additional-products__list {
   // display: flex;
+  // flex-wrap: wrap;
 
   @media (min-width: $desktop-breakpoint) {
     flex-basis: 75%;

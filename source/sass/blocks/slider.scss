@@ -4,27 +4,36 @@ body {
 }
 
 .slider {
-  // display: block;
+  //
 }
 
 .slider__photocards {
-  // display: block;
+  display: block;
+  width: 320px;
+  height: 240px;
+  margin-left: -20px;
 }
 
 .slider__photo {
-  // position: absolute;
-  // display: block;
-  width: 311px;
-  height: 232px;
+  display: none;
+  width: 320px;
+  height: 240px;
 }
 
 .slider__toggles {
-  //
+  position: relative;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 39px 32px 44px;
 }
 
 .slider__toggle {
   // Text: Было / Стало
-  // line-height: 20px;
+  padding: 0;
+
+  line-height: 20px;
   text-transform: uppercase;
 
   background-color: transparent;
@@ -45,5 +54,76 @@ body {
 
   &:active {
     border-bottom: none;
+  }
+}
+
+.slider__indicator {
+  position: relative;
+
+  display: none;
+  width: 84px;
+  height: 15px;
+
+  background-color: $light_font_color;
+  border: 1px solid $border_color;
+  border-radius: 6px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    // left: 6px;
+    // left: 41px;
+
+    width: 35px;
+    height: 6px;
+    margin: 0 auto;
+
+    background-color: $main_green_color;
+    border-radius: 3px;
+  }
+}
+
+.slider__photo--before {
+  display: block;
+}
+
+.js-slider-before {
+  // .slider__photo--before {
+  //   display: block;
+  // }
+  .slider__toggles {
+    display: flex;
+  }
+
+
+  .slider__indicator {
+    display: block;
+
+    &::after {
+      left: 6px;
+    }
+  }
+}
+
+.js-slider-after {
+  .slider__toggles {
+    display: flex;
+  }
+
+  .slider__photo--before {
+    display: none;
+  }
+
+  .slider__photo--after {
+    display: block;
+  }
+
+  .slider__indicator {
+    display: block;
+
+    &::after {
+      left: 41px;
+    }
   }
 }

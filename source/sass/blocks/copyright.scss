@@ -7,6 +7,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  padding: 17px 0 19px 0;
 
   @media (min-width: $tablet-breakpoint) {
     justify-content: flex-end;
@@ -15,7 +17,7 @@ body {
 
 .copyright__title {
   font-style: normal;
-  // line-height: 16px;
+  line-height: 16px;
 
   @include font_arial(16px, 400, $title_font_color);
 
@@ -43,3 +45,26 @@ body {
     opacity: 0.6;
   }
 }
+
+.copyright__link--logo {
+  width: 32px;
+  height: 41px;
+
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // background-size: 28px 35px;
+}
+
+// .icon-logo {
+//   width: 60px;
+//   height: 60px;
+
+//   path {
+//     fill: $footer_icon_color;
+//   }
+// }
+
+// <!-- TODO изменить цвет иконки в редакторе -->
+// <!-- <img src="../img/htmlacademy.svg" alt="Лого HTML академии" width="27" height="34"> -->

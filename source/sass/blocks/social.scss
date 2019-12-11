@@ -8,6 +8,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 22px 63px 22px 54px;
 
   @media (min-width: $tablet-breakpoint) {
     justify-content: center;

@@ -5,19 +5,24 @@ body {
 
 .health-program-item {
   position: relative;
-  // border-bottom: 1px solid transparent;
 
-  padding: 40px 20px 40px 20px;
+  margin-bottom: 18px;
+  padding: 32px 20px 10px 19px;
 
   background-color: $main_grey_color;
-  // // TODO убрать обводку
-  outline: 1px solid rgb(24, 106, 228);
+  outline: 1px solid rgb(94, 0, 0);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .health-program-item__title {
-  margin-bottom: 40px;
-  padding-left: 100px;
-  // line-height: 24px;
+  margin-bottom: 30px;
+  padding-left: 72px;
+
+  line-height: 36px;
+  text-transform: uppercase;
 
   @include font(24px, 400, $title_font_color);
 
@@ -26,7 +31,6 @@ body {
     padding-left: 0;
 
     font-size: 36px;
-    // line-height: 37px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -36,8 +40,10 @@ body {
 }
 
 .health-program-item__description {
-  margin-bottom: 20px;
-  // line-height: 18px;
+  margin-bottom: 7px;
+  padding-bottom: 22px;
+
+  line-height: 18px;
 
   border-bottom: 1px solid $border_color;
 
@@ -47,7 +53,7 @@ body {
     width: 375px;
 
     font-size: 16px;
-    // line-height: 24px;
+    line-height: 24px;
 
     border: none;
   }
@@ -56,8 +62,10 @@ body {
 .health-program-item__link {
   display: block;
   padding-top: 10px;
+  padding-bottom: 10px;
   // line-height: 16px;
 
+  line-height: 20px;
   text-transform: uppercase;
 
   @include font(16px, 400, $title_font_color);
@@ -75,8 +83,9 @@ body {
     display: inline-block;
     width: 24px;
     height: 12px;
+    margin-left: 12px;
 
-    vertical-align: middle;
+    vertical-align: 1px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
@@ -96,7 +105,7 @@ body {
       width: 33px;
       height: 12px;
 
-      vertical-align: middle;
+      vertical-align: 1px;
 
       background-image: url("../img/icon-right-arrow-verylong.svg");
       background-repeat: no-repeat;
@@ -114,8 +123,8 @@ body {
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
-    left: 40px;
+    top: 26px;
+    left: 22px;
 
     width: 50px;
     height: 50px;
@@ -150,11 +159,12 @@ body {
 }
 
 .program-item__icon--slim::after {
-  top: 28px;
-  left: 48px;
+  // cat-slim
+  top: 25px;
+  left: 30px;
 
   width: 35px;
-  height: 50px;
+  height: 49px;
 
   background-image: url("../img/icon-cat-slim.svg");
 
@@ -176,8 +186,9 @@ body {
 }
 
 .program-item__icon--pro::after {
-  top: 41px;
-  left: 31px;
+  // cat-pro
+  top: 37px;
+  left: 13px;
 
   width: 67px;
   height: 28px;

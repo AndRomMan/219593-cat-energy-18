@@ -6,17 +6,15 @@
 
 // page-header
 @import "blocks/page-header";
-@import "blocks/logo-link";
 @import "blocks/header-nav";
 
 // page-footer
 @import "blocks/page-footer";
+@import "blocks/contacts";
 @import "blocks/footer-logo";
 @import "blocks/footer-links";
-@import "blocks/contacts";
 @import "blocks/social";
 @import "blocks/copyright";
-
 
 // index page-main
 @import "blocks/page-main";
@@ -40,8 +38,14 @@
 @import "blocks/form-main";
 @import "blocks/form";
 
-// TODO добавить flex-wrap: wrap; для исключения переполнения
+// TODO для кнопок лучше задать height-line один раз для всех breakpoints
+
 // TODO править изменение шрифта по breakpoints
-// TODO проверить блоки у которых line-height: 1;
 
 // TODO оптимизоровать код для шрифта кнопки form
+
+// TODO для псевдоэлементов display: block там где нужно
+
+// TODO <sup>*</sup>
+
+// TODO = 3 = 2 числа после запятой в дроби достаточно!

@@ -4,76 +4,38 @@ body {
 }
 
 .keypoints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // align-items: center;
+
+  // @media (min-width: $tablet-breakpoint) {
   //
+  // }
+
+  @media (min-width: $desktop-breakpoint) {
+    // width: 300px;
+  }
 }
 
 .keypoints__item {
-  // TODO убрать обводку
-  outline: 1px solid rgb(24, 187, 228);
+  margin-bottom: 23px;
+  // flex-basis: 45%;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.keypoints__item--weight,
-.keypoints__item--time-spent {
-  .keypoints__value,
-  .keypoints__option {
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .keypoints__value {
-    // Text: 5 кг
-    // line-height: 24px;
-    display: block;
-
-    @include font(24px, 400, $title_font_color);
-
-    @media (min-width: $tablet-breakpoint) {
-      font-size: 30px;
-    }
-  }
-
-  .keypoints__option {
-    // display: block;
-    // Text: снижение веса
-    // line-height: 12px;
-    @include font(12px, 400, $text_font_color);
-
-    @media (min-width: $tablet-breakpoint) {
-      font-size: 14px;
-    }
-  }
+.keypoints__item:last-child {
+  margin-bottom: 0;
 }
 
-.keypoints__item--food-cost {
-  .keypoints__value,
-  .keypoints__option {
-    // Text: Затраты на питание: 15 000 руб.
-    // display: inline-block;
-    vertical-align: top;
-    // line-height: 14px;
-    text-transform: uppercase;
 
-    @include font(14px, 400, $title_font_color);
+.item-bordered {
+  position: relative;
 
-    @media (min-width: $tablet-breakpoint) {
-      font-size: 20px;
-    }
-  }
-}
-
-.keypoints__item--grow {
-  flex-grow: 1;
-}
-
-.keypoints__item--border {
-  // TODO править flex-basis
-  flex-basis: 100px;
-  // border: 1px solid $border_color;
-  // TODO установить нормальный border
-
-  border: 4px solid rgb(112, 112, 112);
-  border-radius: 3px;
-
+  flex-basis: 44.2%;
+  padding-top: 10px;
 
   @media (min-width: $tablet-breakpoint) {
     flex-basis: 200px;
@@ -81,5 +43,64 @@ body {
 
   @media (min-width: $desktop-breakpoint) {
     flex-basis: 300px;
+  }
+}
+
+.item-bordered__value {
+  display: block;
+  padding: 10px 10px 14px 10px;
+  // Text: 5 кг
+  // line-height: 24px;
+
+  line-height: 30px;
+
+  border: 1px solid $border_color;
+  border-radius: 3px;
+
+  @include font(24px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 30px;
+  }
+}
+
+.item-bordered__option {
+  position: absolute;
+  top: 57px;
+  left: 17px;
+
+  display: block;
+  width: 90px;
+  padding: 0 12px 0 10px;
+  // width: 90px;
+  // Text: снижение веса
+
+  line-height: 12px;
+  text-transform: lowercase;
+
+  background-color: $main_grey_color;
+
+  @include font_arial(12px, 400, $text_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 14px;
+  }
+}
+
+.item-wide__value,
+.item-wide__option {
+  // Text: Затраты на питание: 15 000 руб.
+}
+
+.item-wide {
+  flex-grow: 1;
+  padding-top: 10px;
+
+  line-height: 24px;
+
+  @include font(14px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    font-size: 20px;
   }
 }

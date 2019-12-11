@@ -6,27 +6,72 @@ body {
 .page-header {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  // height: 100px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // flex-direction: row;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
 .page-header__link {
   // .logo-link
-  // TODO убрать обводку
-  outline: 2px solid rgb(24, 106, 228);
+  padding-top: 11px;
+  padding-bottom: 16px;
+
+  cursor: default;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.page-header__link--inner-page {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+// TODO = 2 = сделать hover state
+.page-header__logo {
+  width: 190px;
+  height: 38px;
+
+  @media (min-width: $tablet-breakpoint) {
+    // width: 184px;
+    // height: 61px;
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    // width: 184px;
+    // height: 55px;
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__nav {
-  // TODO убрать обводку
-  outline: 2px solid rgb(24, 106, 228);
+  //
 }

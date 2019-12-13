@@ -10,15 +10,26 @@ body {
   padding: 32px 20px 10px 19px;
 
   background-color: $main_grey_color;
-  outline: 1px solid rgb(94, 0, 0);
+  outline: 1px solid #5e0000;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 32px;
+    padding: 76px 20px 50px 53px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 46.8%;
+    margin-bottom: 0;
+    padding: 74px 10px 50px 53px;
+  }
 }
 
 .health-program-item__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-left: 72px;
 
   line-height: 36px;
@@ -28,20 +39,24 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     width: 375px;
+    // width: 380px;
+    margin-bottom: 15px;
     padding-left: 0;
 
     font-size: 36px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: 50px;
-    padding-left: 150px;
+    margin-bottom: 65px;
+    padding-left: 162px;
   }
 }
 
 .health-program-item__description {
   margin-bottom: 7px;
+  padding-top: 10px;
   padding-bottom: 22px;
+  // padding-bottom: 10px;
 
   line-height: 18px;
 
@@ -51,16 +66,35 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     width: 375px;
+    // width: 380px;
+    margin-bottom: 25px;
+    // padding-bottom: 10px;
 
     font-size: 16px;
     line-height: 24px;
 
     border: none;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 470px;
+    margin-bottom: 0;
+  }
+}
+
+.health-program-item__description--narrow {
+  @media (min-width: $tablet-breakpoint) {
+    width: 344px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 470px;
+  }
 }
 
 .health-program-item__link {
   display: block;
+  margin-top: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   // line-height: 16px;
@@ -72,6 +106,7 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     width: 375px;
+    // width: 380px;
 
     font-size: 20px;
     // line-height: 20px;
@@ -91,6 +126,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-left: 24px;
+
+      vertical-align: 4px;
+    }
+
+    // @media (min-width: $desktop-breakpoint) {
+    //
+    // }
   }
 
   // TODO убрать hover и focus
@@ -111,6 +156,10 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+
+      @media (min-width: $tablet-breakpoint) {
+        vertical-align: 4px;
+      }
     }
   }
 
@@ -133,16 +182,16 @@ body {
     border-radius: 50%;
 
     @media (min-width: $tablet-breakpoint) {
-      top: 60px;
-      left: 450px;
+      top: 90px;
+      left: 448px;
 
       width: 200px;
       height: 200px;
     }
 
     @media (min-width: $desktop-breakpoint) {
-      top: 30px;
-      left: 40px;
+      top: 44px;
+      left: 53px;
 
       width: 100px;
       height: 100px;
@@ -169,16 +218,16 @@ body {
   background-image: url("../img/icon-cat-slim.svg");
 
   @media (min-width: $tablet-breakpoint) {
-    top: 60px;
-    left: 470px;
+    top: 79px;
+    left: 476px;
 
     width: 140px;
     height: 194px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    top: 28px;
-    left: 48px;
+    top: 38px;
+    left: 66px;
 
     width: 70px;
     height: 97px;
@@ -196,16 +245,16 @@ body {
   background-image: url("../img/icon-cat-pro.svg");
 
   @media (min-width: $tablet-breakpoint) {
-    top: 101px;
-    left: 419px;
+    top: 134px;
+    left: 412px;
 
     width: 268px;
     height: 112px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    top: 21px;
-    left: 20px;
+    top: 66px;
+    left: 35px;
 
     width: 134px;
     height: 56px;

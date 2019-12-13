@@ -1,7 +1,6 @@
 // checking sass
 body {
   min-width: 320px;
-
   // background-color: #f8823d;
 }
 
@@ -22,7 +21,6 @@ $desktop-breakpoint: 1300px;
 $desktop-wrapper: 1300px;
 $desktop-padding: 40px;
 
-
 // --------------------------
 // basic colors
 // font
@@ -34,6 +32,7 @@ $main_green_color: #68b738;
 $main_grey_color: #f2f2f2;
 $green_button_color_hvr: #5eaa2f;
 $grey_button_color_hvr: #ebebeb;
+// $slim-cat_background_color: #eaeaea;
 
 // border
 $border_color: #cdcdcd;
@@ -41,36 +40,17 @@ $border_color: #cdcdcd;
 // catalog
 // fonts
 $additional_font_color: #222222;
-// border
-// $additional_border_color: #cdcdcd;
-// TODO проверить border - часть из них
-// TODO $border_color: #cdcdcd;
-//  TODO opacity: 0.5;
-
-// TODO убрать card-border
 $card_border_color: #ededed;
 // --------------------------
-// input
-// $input_font_color: #222222;
-$additional_font_color: #222222;
-
-// $input_border_color: #cdcdcd;
-$border_color: #cdcdcd;
 $input_border_color_active: #444444;
 $input_border_color_error: #ff8282;
 
 // checkbox
-// $checkbox_border_color: #cdcdcd;
-$border_color: #cdcdcd;
 $checkbox_border_color_hvr: #bababa;
-
 // radiobutton
-// $radio_border_color: #cdcdcd;
-$border_color: #cdcdcd;
 $radio_border_color_hvr: #bababa;
 
 // icon colors
-// index
 // $arrow_color: #3e4242;
 // header
 $menu_icon_color: #222222;

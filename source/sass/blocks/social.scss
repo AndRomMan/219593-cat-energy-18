@@ -6,17 +6,31 @@ body {
 .social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 22px 63px 22px 54px;
+  // padding: 22px 63px 22px 52px;
+  padding: 22px 0 22px 0;
+
 
   @media (min-width: $tablet-breakpoint) {
-    justify-content: center;
+    flex-basis: 50%;
+    // justify-content: space-between;
+    padding: 0;
   }
 }
 
 .social__item {
-  margin: 0 10px 0 10px;
+  display: flex;
+  flex-basis: 19.5%;
+  justify-content: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 14%;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 8%;
+  }
 }
 
 .social__link {

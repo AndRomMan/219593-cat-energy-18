@@ -10,17 +10,22 @@
 
 // page-footer
 @import "blocks/page-footer";
+// section contacts
 @import "blocks/contacts";
-@import "blocks/footer-logo";
+// section footer-links
 @import "blocks/footer-links";
+@import "blocks/footer-logo";
 @import "blocks/social";
 @import "blocks/copyright";
 
 // index page-main
 @import "blocks/page-main";
+// section health-program
 @import "blocks/health-program";
 @import "blocks/health-program-item";
+// section advantages
 @import "blocks/advantages";
+// section example
 @import "blocks/example";
 @import "blocks/keypoints";
 @import "blocks/slider";
@@ -49,3 +54,6 @@
 // TODO <sup>*</sup>
 
 // TODO = 3 = 2 числа после запятой в дроби достаточно!
+
+
+// TODO сделать скрипт для замены картинок в секции slider

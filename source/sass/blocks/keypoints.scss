@@ -8,10 +8,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   // align-items: center;
-
-  // @media (min-width: $tablet-breakpoint) {
-  //
-  // }
+  @media (min-width: $tablet-breakpoint) {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   @media (min-width: $desktop-breakpoint) {
     // width: 300px;
@@ -24,12 +26,18 @@ body {
 
   text-align: center;
   text-transform: uppercase;
-}
 
-.keypoints__item:last-child {
-  margin-bottom: 0;
-}
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 0;
+  }
 
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .item-bordered {
   position: relative;
@@ -38,7 +46,12 @@ body {
   padding-top: 10px;
 
   @media (min-width: $tablet-breakpoint) {
-    flex-basis: 200px;
+    flex-basis: 162px;
+    padding-top: 0;
+
+    &:first-child {
+      margin-right: 42px;
+    }
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -47,10 +60,10 @@ body {
 }
 
 .item-bordered__value {
-  display: block;
-  padding: 10px 10px 14px 10px;
   // Text: 5 кг
   // line-height: 24px;
+  display: block;
+  padding: 10px 10px 14px 10px;
 
   line-height: 30px;
 
@@ -60,11 +73,14 @@ body {
   @include font(24px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    padding: 18px 10px 22px 10px;
+
     font-size: 30px;
   }
 }
 
 .item-bordered__option {
+  // Text: снижение веса
   position: absolute;
   top: 57px;
   left: 17px;
@@ -72,8 +88,6 @@ body {
   display: block;
   width: 90px;
   padding: 0 12px 0 10px;
-  // width: 90px;
-  // Text: снижение веса
 
   line-height: 12px;
   text-transform: lowercase;
@@ -83,13 +97,24 @@ body {
   @include font_arial(12px, 400, $text_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    top: 65px;
+    left: 11px;
+
+    width: 140px;
+    padding: 0;
+
     font-size: 14px;
+
+    background-color: $light_font_color;
   }
 }
 
-.item-wide__value,
-.item-wide__option {
-  // Text: Затраты на питание: 15 000 руб.
+.item-bordered__option--weight {
+  @media (min-width: $tablet-breakpoint) {
+    left: 23px;
+
+    width: 117px;
+  }
 }
 
 .item-wide {
@@ -101,6 +126,18 @@ body {
   @include font(14px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    flex-grow: 0;
+    width: 180px;
+    margin-left: auto;
+    padding-top: 0;
+
     font-size: 20px;
+    line-height: 30px;
+    text-align: right;
   }
+}
+
+.item-wide__value,
+.item-wide__option {
+  // Text: Затраты на питание: 15 000 руб.
 }

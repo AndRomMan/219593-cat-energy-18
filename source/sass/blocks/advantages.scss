@@ -6,6 +6,17 @@ body {
 .advantages {
   padding-top: 7px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 36px;
+    padding-bottom: 32px;
+
+    border-bottom: 1px solid $main_grey_color;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .advantages__title {
@@ -16,12 +27,14 @@ body {
   @include font(36px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 52px;
+
     font-size: 60px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 27px;
+  }
 }
 
 .advantages__list {
@@ -29,25 +42,53 @@ body {
   padding-bottom: 10px;
 
   @media (min-width: $tablet-breakpoint) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // padding-bottom: 10px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    // justify-content: center;
+  }
 }
 
 .advantages__item {
+  position: relative;
+
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 45.7%;
+    margin-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 20.1%;
+    // flex-basis: 245px;
+    margin-bottom: 10px;
+  }
 }
+
+.advantages__item:nth-last-child(-n+2) {
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 0;
+  }
+}
+
+// @media (min-width: $tablet-breakpoint) {
+//
+// }
+
+// @media (min-width: $desktop-breakpoint) {
+//
+// }
 
 .advantages__icon {
   position: relative;
-  // content: "1";
-  // line-height: 281px;
-  // @include font(281px, 400, $main_grey_color);
 
   &::before {
     content: "";
@@ -80,6 +121,11 @@ body {
 
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-width: $tablet-breakpoint) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -105,7 +151,6 @@ body {
 
 .advantages__text {
   padding-top: 2px;
-  // padding-bottom: 5px;
   padding-left: 80px;
 
   line-height: 18px;
@@ -114,13 +159,78 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     flex-basis: 350px;
-    padding: 100px 20px 10px 20px;
+    width: 260px;
+    padding: 112px 0 50px 0;
 
     font-size: 16px;
     line-height: 24px;
 
     @media (min-width: $desktop-breakpoint) {
       flex-basis: 300px;
+      width: 100%;
     }
   }
 }
+
+.advantages__num {
+  //   Text: 1
+  position: absolute;
+
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    top: -40px;
+    z-index: -1;
+
+    display: block;
+
+    line-height: 1;
+
+    @include font(281px, 400, $main_grey_color);
+  }
+}
+
+
+// .advantages__num--1 {
+//   @media (min-width: $tablet-breakpoint) {
+//     left: 118px;
+//   }
+// }
+
+// .advantages__num--2 {
+//   @media (min-width: $tablet-breakpoint) {
+//     left: 111px;
+//   }
+// }
+
+// .advantages__num--3 {
+//   @media (min-width: $tablet-breakpoint) {
+//     left: 113px;
+//   }
+// }
+
+// .advantages__num--4 {
+//   @media (min-width: $tablet-breakpoint) {
+//     left: 113px;
+//   }
+// }
+
+// content: "1";
+// line-height: 281px;
+// @include font(281px, 400, $main_grey_color);
+
+// .text-num {
+//   position: relative;
+
+//   &::after {
+//     position: absolute;
+//     //
+//   }
+// }
+
+// .text-num--1 {
+//   &::after {
+//     contain: "1";
+//     //
+//   }
+// }

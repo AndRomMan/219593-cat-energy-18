@@ -68,8 +68,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: stretch;
   justify-content: flex-end;
+  align-items: stretch;
   // margin-left: auto;
 
   @media (min-width: $tablet-breakpoint) {
@@ -111,6 +111,8 @@ body {
   @media (min-width: $desktop-breakpoint) {
     font-size: 20px;
     color: $light_font_color;
+
+    // background-color: $main_green_color;
   }
 
   &::before {

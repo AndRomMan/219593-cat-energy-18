@@ -11,6 +11,7 @@
 
   <body>
     <header class="page-header wrapper">
+      <!-- <div class="wrapper"> -->
       <a class="page-header__link" href="#">
         <!-- TODO для внутренних страниц -->
         <!-- <a class="page-header__link page-header__link--inner-page" href="#"> -->
@@ -36,6 +37,7 @@
           </li>
         </ul>
       </nav>
+      <!-- </div> -->
     </header>
 
     <main class="page-main">
@@ -43,9 +45,11 @@
       <section class="health-program">
         <h2 class="visually-hidden">Подобрать программу здоровья</h2>
         <header class="health-program__header wrapper">
+
           <h2 class="health-program__title">Функциональное питание для котов
           </h2>
           <p class="health-program__slogan">Занялся собой? Займись котом!</p>
+
           <img class="health-program__img" src="../img/index-can-mobile@1x.png" alt="Кэт-энерджи с курицей для вашего кота" width="280" height="271">
           <a class="health-program__link button button--green" href="form.html">Подобрать программу</a>
         </header>
@@ -58,42 +62,47 @@
           </li>
           <li class="health-program__item health-program-item">
             <h3 class="health-program-item__title program-item__icon program-item__icon--pro">Набор массы</h3>
-            <p class="health-program-item__description">
-              Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые
-              мышцы!
+            <p class="health-program-item__description health-program-item__description--narrow">
+              Заработать авторитет среди дворовых&nbsp;котов и&nbsp;даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
             <a class="health-program-item__link" href="catalog.html">Каталог pro</a>
           </li>
         </ul>
       </section>
 
-      <section class="advantages wrapper">
-        <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__icon advantages__icon--leaf">
-            <p class="advantages__text">
-              Функциональное питание содержит только полезные питательные вещества.
-            </p>
-          </li>
-          <li class="advantages__item advantages__icon advantages__icon--powder">
-            <p class="advantages__text">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
-          </li>
-          <li class="advantages__item advantages__icon advantages__icon--dining">
-            <p class="advantages__text">
-              Замените один-два приема обычной еды на наше функциональное питание.
-            </p>
-          </li>
-          <li class="advantages__item advantages__icon advantages__icon--clock">
-            <p class="advantages__text">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
-          </li>
-        </ul>
+      <section class="advantages">
+        <div class="wrapper">
+          <h2 class="advantages__title">Как это работает</h2>
+          <ol class="advantages__list">
+            <li class="advantages__item advantages__icon advantages__icon--leaf">
+              <!-- TODO добавить aria для чтения? -->
+              <span class="advantages__num advantages__num--1">1</span>
+              <p class="advantages__text">
+                Функциональное питание содержит только полезные питательные вещества.
+              </p>
+            </li>
+            <li class="advantages__item advantages__icon advantages__icon--powder">
+              <span class="advantages__num advantages__num--2">2</span>
+              <p class="advantages__text">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              </p>
+            </li>
+            <li class="advantages__item advantages__icon advantages__icon--dining">
+              <span class="advantages__num advantages__num--3">3</span>
+              <p class="advantages__text">
+                Замените один-два приема обычной еды на наше функциональное питание.
+              </p>
+            </li>
+            <li class="advantages__item advantages__icon advantages__icon--clock">
+              <span class="advantages__num advantages__num--4">4</span>
+              <p class="advantages__text">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
+              </p>
+            </li>
+          </ol>
+        </div>
       </section>
-
       <section class="example">
         <div class="wrapper">
           <div class="example__text-wrapper">
@@ -101,13 +110,12 @@
             <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
               Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-              этом он не менял своих привычек и по-прежнему спит по 16 часов в
-              день.
+              этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__keypoints keypoints">
               <div class="keypoints__item item-bordered">
                 <span class="item-bordered__value">5 кг</span>
-                <span class="item-bordered__option">снижение веса</span>
+                <span class="item-bordered__option item-bordered__option--weight">снижение веса</span>
               </div>
               <div class="keypoints__item item-bordered">
                 <span class="item-bordered__value">60 дней</span>
@@ -140,7 +148,10 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="contacts__wrapper wrapper">
           <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
         </div>
         <div class="contacts__map">
           <div class="contacts__map-img"></div>
@@ -154,43 +165,66 @@
       </section>
       <!--  На главной должен быть линк на верх страницы?
           На других страницах ссылка на главную? -->
-      <section class="page-footer__links footer-links">
+      <section class="page-footer__links">
         <div class="wrapper">
-
-          <h2 class="visually-hidden">Как с нами связаться</h2>
-          <a class="footer-links__item footer-logo" href="#">
-            <img class="footer-logo__image" src="../img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="124">
-          </a>
-
-          <ul class="footer-links__item social">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">VK</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-          </ul>
-
-          <address class="footer-links__item copyright">
-
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт разработчика">
-              <span class="copyright__title">HTML Academy</span>
+          <div class="footer-links">
+            <h2 class="visually-hidden">Как с нами связаться</h2>
+            <a class="footer-links__item footer-logo" href="#">
+              <img class="footer-logo__image" src="../img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="24">
             </a>
 
-            <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт веб-разработчика">
-              <!-- <img src="../img/htmlacademy.svg" alt="Лого HTML академии" width="27" height="34"> -->
-            </a>
+            <ul class="footer-links__item social">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
 
-          </address>
+              <!-- <li class="social__item">
+                <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li> -->
+
+            </ul>
+
+            <address class="footer-links__item copyright">
+
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт разработчика">
+                <span class="copyright__title">HTML Academy</span>
+              </a>
+
+              <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетите сайт веб-разработчика">
+                <!-- <img src="../img/htmlacademy.svg" alt="Лого HTML академии" width="27" height="34"> -->
+              </a>
+
+            </address>
+          </div>
         </div>
       </section>
     </footer>

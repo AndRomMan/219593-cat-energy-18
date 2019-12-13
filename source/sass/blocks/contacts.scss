@@ -10,6 +10,14 @@ body {
   padding-bottom: 10px;
 
   background-color: $main_grey_color;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 238px;
+  }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .contacts__wrapper {
@@ -29,9 +37,11 @@ body {
 
   background-color: $light_font_color;
 
-  // @media (min-width: $tablet-breakpoint) {
-  //
-  // }
+  @media (min-width: $tablet-breakpoint) {
+    top: 41px;
+
+    padding: 64px 72px 57px 72px;
+  }
 
   @media (min-width: $desktop-breakpoint) {
     position: absolute;
@@ -58,7 +68,7 @@ body {
     flex-basis: 30%;
 
     font-size: 20px;
-    line-height: 25px;
+    line-height: 26px;
   }
 
   // @media (min-width: $desktop-breakpoint) {
@@ -75,9 +85,13 @@ body {
 
 
   @media (min-width: $tablet-breakpoint) {
+    display: flex;
     flex-basis: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: flex-start;
 
-    font-size: 20px;
+    font-size: 16px;
     text-align: right;
   }
 
@@ -145,11 +159,11 @@ body {
     background-size: contain;
 
     @media (min-width: $tablet-breakpoint) {
-      top: 150px;
-      left: calc(50% - 50px);
+      top: 147px;
+      left: calc(50% - 59px);
 
-      width: 113px;
-      height: 106px;
+      width: 118px;
+      height: 111px;
     }
 
     @media (min-width: $desktop-breakpoint) {

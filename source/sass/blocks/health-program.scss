@@ -23,12 +23,14 @@ body {
     }
 
     @media (min-width: $desktop-breakpoint) {
-      top: -100px;
+      top: 0;
       left: 50%;
 
       display: inherit;
-      width: 50%;
-      height: 696px;
+      width: 50vw;
+      // .health-program__header::after - фото кота на зеленом фоне
+      // 696px (высота фото кота) - (top: -169px)(смещение фото вверх)
+      height: calc(696px - 169px);
     }
   }
 }
@@ -43,11 +45,20 @@ body {
   padding-top: 28px;
   padding-bottom: 10px;
 
-
   // border-bottom: 1px solid transparent;
 
   @media (min-width: $tablet-breakpoint) {
-    //
+    align-items: flex-start;
+    margin-bottom: 510px;
+    padding-top: 30px;
+    padding-left: 117px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 0;
+    padding-top: 53px;
+    padding-left: 120px;
+    // margin-bottom: 510px;
   }
 
   &::after {
@@ -62,7 +73,7 @@ body {
 
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
-    // background-position: top center;
+    background-position: top center;
     background-size: contain;
 
     @media (min-width: $tablet-breakpoint) {
@@ -70,7 +81,9 @@ body {
     }
 
     @media (min-width: $desktop-breakpoint) {
-      top: -100px;
+      // top: -169 ставить для псевдоэлемента
+      // .health-program::after - зеленый фон
+      top: -169px;
       left: 50%;
       z-index: -2;
 
@@ -79,9 +92,6 @@ body {
       height: 696px;
 
       background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      // background-position: top right;
-      background-size: contain;
     }
   }
 }
@@ -95,7 +105,8 @@ body {
   @include font(36px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    width: 420px;
+    width: 450px;
+    margin-bottom: 42px;
 
     line-height: 60px;
     text-align: left;
@@ -118,8 +129,9 @@ body {
   @include font(14px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    width: 420px;
-    margin-bottom: 50px;
+    // width: 420px;
+    width: 450px;
+    margin-bottom: 47px;
 
     line-height: 20px;
     text-align: left;
@@ -127,9 +139,9 @@ body {
     @include font(20px, 400, $title_font_color);
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 52px;
+  }
 }
 
 .health-program__img {
@@ -138,15 +150,21 @@ body {
   margin-bottom: 3px;
 
   @media (min-width: $tablet-breakpoint) {
+    position: absolute;
+    top: 230px;
+    right: 0;
+    left: 0;
     z-index: -1;
 
     width: 709px;
     height: 609px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    top: 100px;
-    left: 500px;
+    // TODO править позицию изображения после загрузки адаптивных
+    top: -28px;
+    left: 283px;
 
     width: 552px;
     height: 499px;
@@ -173,14 +191,15 @@ body {
   // Text: Подобрать программу
 
   @media (min-width: $tablet-breakpoint) {
-    width: 245px;
-    margin-bottom: 530px;
+    width: 247px;
+    // margin-bottom: 530px;
     // height: 52px;
+    padding: 16px 10px 16px 10px;
 
     font-size: 20px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: 380px;
+    margin-bottom: 250px;
   }
 }

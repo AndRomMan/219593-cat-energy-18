@@ -4,21 +4,41 @@ body {
 }
 
 .example {
+  position: relative;
+
   background-color: $main_grey_color;
 
-  // @media (min-width: $tablet-breakpoint) {
-  //
-  // }
+  @media (min-width: $tablet-breakpoint) {
+    background-color: transparent;
+  }
 
   @media (min-width: $desktop-breakpoint) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 620px;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $main_grey_color;
+
+    // background-color: rgb(95, 130, 153);
   }
 }
 
 .example__text-wrapper {
   // flex-basis: 50%;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 76px;
+  }
 }
 
 .example__keypoints {
@@ -34,6 +54,9 @@ body {
   @include font(36px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 65px;
+    padding-top: 43px;
+
     font-size: 60px;
   }
 
@@ -51,6 +74,9 @@ body {
   @include font_arial(14px, 400, $text_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 42px;
+    padding-right: 10px;
+
     font-size: 16px;
     line-height: 24px;
   }

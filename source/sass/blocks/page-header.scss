@@ -29,7 +29,7 @@ body {
 
 .page-header__link {
   // .logo-link
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 15px;
 
   cursor: default;
@@ -84,4 +84,8 @@ body {
   @media (min-width: $desktop-breakpoint) {
     flex-basis: 50%;
   }
+}
+
+.page-header__health-program {
+  //
 }

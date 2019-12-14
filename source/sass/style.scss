@@ -7,22 +7,16 @@
 // page-header
 @import "blocks/page-header";
 @import "blocks/header-nav";
-
-// page-footer
-@import "blocks/page-footer";
-// section contacts
-@import "blocks/contacts";
-// section footer-links
-@import "blocks/footer-links";
-@import "blocks/footer-logo";
-@import "blocks/social";
-@import "blocks/copyright";
+// section health-program
+@import "blocks/health-program";
 
 // index page-main
 @import "blocks/page-main";
-// section health-program
-@import "blocks/health-program";
-@import "blocks/health-program-item";
+
+// section program-set
+// @import "program-set";
+// @import "health-program-list";
+// @import "blocks/health-program-item";
 // section advantages
 @import "blocks/advantages";
 // section example
@@ -43,6 +37,15 @@
 @import "blocks/form-main";
 @import "blocks/form";
 
+// page-footer
+@import "blocks/page-footer";
+// section contacts
+@import "blocks/contacts";
+// section footer-links
+@import "blocks/footer-links";
+@import "blocks/footer-logo";
+@import "blocks/social";
+@import "blocks/copyright";
 // TODO для кнопок лучше задать height-line один раз для всех breakpoints
 
 // TODO править изменение шрифта по breakpoints

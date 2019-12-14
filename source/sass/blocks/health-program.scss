@@ -1,17 +1,17 @@
 // current checking sass compiling
 body {
-  // background-color: #cefc85;
+  // background-color: #fcd285;
 }
 
 .health-program {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -3;
+    z-index: -2;
 
     width: 100%;
     height: 305px;
@@ -23,19 +23,55 @@ body {
     }
 
     @media (min-width: $desktop-breakpoint) {
-      top: 0;
       left: 50%;
 
       display: inherit;
-      width: 50vw;
-      // .health-program__header::after - фото кота на зеленом фоне
-      // 696px (высота фото кота) - (top: -169px)(смещение фото вверх)
-      height: calc(696px - 169px);
+      width: 50%;
+      height: 698px;
     }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 320px;
+    height: 305px;
+    margin: 0 auto;
+
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      top: 0;
+      left: 50%;
+      z-index: -2;
+      // display: block;
+
+      width: 720px;
+      height: 696px;
+      margin: 0 0;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    position: static;
   }
 }
 
-.health-program__header {
+.health-program__wrapper {
   position: relative;
 
   display: flex;
@@ -49,50 +85,17 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     align-items: flex-start;
-    margin-bottom: 510px;
+    // margin-bottom: 510px;
     padding-top: 30px;
+    padding-bottom: 518px;
     padding-left: 117px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 0;
     padding-top: 53px;
+    padding-bottom: 180px;
     padding-left: 120px;
-    // margin-bottom: 510px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    width: 320px;
-    height: 305px;
-
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-
-    @media (min-width: $tablet-breakpoint) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-breakpoint) {
-      // top: -169 ставить для псевдоэлемента
-      // .health-program::after - зеленый фон
-      top: -169px;
-      left: 50%;
-      z-index: -2;
-
-      display: inherit;
-      width: 720px;
-      height: 696px;
-
-      background-image: url("../img/index-background-desktop@1x.jpg");
-    }
   }
 }
 
@@ -171,24 +174,11 @@ body {
   }
 }
 
-.health-program__list {
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  @media (min-width: $desktop-breakpoint) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-.health-program__item {
-  //
-}
-
 .health-program__link {
-  font-size: 14px;
   // Text: Подобрать программу
+  margin-bottom: 10px;
+
+  font-size: 14px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 247px;
@@ -200,6 +190,6 @@ body {
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: 250px;
+    // margin-bottom: 250px;
   }
 }

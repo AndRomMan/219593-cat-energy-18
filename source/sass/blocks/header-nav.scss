@@ -5,7 +5,9 @@ body {
 
 .header-nav {
   position: relative;
-  // margin-left: auto;
+  // TODO убрать outline
+
+  outline: 1px solid red;
 }
 
 .header-nav__toggle {
@@ -28,6 +30,7 @@ body {
   }
 }
 
+// Класс добавляется для ЗАкрытого состояния меню
 .header-nav--closed {
   .header-nav__toggle {
     display: block;
@@ -46,6 +49,7 @@ body {
   }
 }
 
+// Класс добавляется для открытого состояния меню
 .header-nav--opened {
   .header-nav__toggle {
     display: block;

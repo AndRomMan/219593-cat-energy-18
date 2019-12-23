@@ -3,26 +3,25 @@
 @import "fonts";
 @import "mixins";
 @import "blocks/button";
+@import "blocks/inner-page.scss";
 
 // page-header
 @import "blocks/page-header";
-@import "blocks/logo-link";
 @import "blocks/header-nav";
-
-// page-footer
-@import "blocks/page-footer";
-@import "blocks/footer-logo";
-@import "blocks/footer-links";
-@import "blocks/contacts";
-@import "blocks/social";
-@import "blocks/copyright";
-
+// section health-program
+@import "blocks/health-program";
 
 // index page-main
 @import "blocks/page-main";
-@import "blocks/health-program";
-@import "blocks/health-program-item";
+
+// section program-set
+@import "blocks/program-set";
+@import "blocks/program-item";
+
+// section advantages
 @import "blocks/advantages";
+
+// section example
 @import "blocks/example";
 @import "blocks/keypoints";
 @import "blocks/slider";
@@ -32,6 +31,7 @@
 @import "blocks/basic-products";
 @import "blocks/basic-item";
 @import "blocks/products-proposal";
+// =======
 @import "blocks/additional-products";
 @import "blocks/additional-item";
 @import "blocks/banner";
@@ -40,8 +40,36 @@
 @import "blocks/form-main";
 @import "blocks/form";
 
-// TODO добавить flex-wrap: wrap; для исключения переполнения
+// page-footer
+@import "blocks/page-footer";
+// section contacts
+@import "blocks/contacts";
+// section footer-links
+@import "blocks/footer-links";
+@import "blocks/footer-logo";
+@import "blocks/social";
+@import "blocks/copyright";
+
+// TODO background body
+
+// TODO для кнопок лучше задать height-line один раз для всех breakpoints
+
 // TODO править изменение шрифта по breakpoints
-// TODO проверить блоки у которых line-height: 1;
 
 // TODO оптимизоровать код для шрифта кнопки form
+
+// TODO для псевдоэлементов display: block там где нужно
+
+// TODO <sup>*</sup>
+
+// TODO = 3 = 2 числа после запятой в дроби достаточно!
+
+
+// TODO сделать скрипт для замены картинок в секции slider
+
+
+// TODO сделать одинаковым цвет шрифта в меню сайта
+
+// TODO Проверить скрин-ридером
+
+// TODO фон контактов серый для неглавных страниц

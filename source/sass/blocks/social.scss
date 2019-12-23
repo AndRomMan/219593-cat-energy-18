@@ -5,17 +5,38 @@ body {
 
 .social {
   display: flex;
+  // flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 17px;
+  padding-right: 70px;
+  padding-bottom: 16px;
+  padding-left: 60px;
 
   @media (min-width: $tablet-breakpoint) {
-    justify-content: center;
+    width: 250px;
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 62px;
+    padding-bottom: 5px;
+    padding-left: 44px;
   }
 }
 
 .social__item {
-  margin: 0 10px 0 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    //
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    //
+  }
 }
 
 .social__link {
@@ -48,10 +69,6 @@ body {
     width: 30px;
     height: 16px;
   }
-
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 }
 
 .social__link--insta {
@@ -65,10 +82,6 @@ body {
     width: 23px;
     height: 23px;
   }
-
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 }
 
 .social__link--fb {
@@ -82,8 +95,4 @@ body {
     width: 14px;
     height: 28px;
   }
-
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 }

@@ -4,75 +4,123 @@ body {
 }
 
 .example {
-  // display: block;
+  position: relative;
+
   background-color: $main_grey_color;
 
-  // @media (min-width: $tablet-breakpoint) {
-  //
-  // }
+  @media (min-width: $tablet-breakpoint) {
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    // background-color: $main_grey_color;
+
+    background-color: transparent;
+
+    @media (min-width: $tablet-breakpoint) {
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 42.7%;
+
+      background-color: $main_grey_color;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 70.5%;
+    }
+  }
+}
+
+.example__wrapper {
+  // position: relative;
+  padding-top: 10px;
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 34px;
+    padding-bottom: 53px;
+  }
 
   @media (min-width: $desktop-breakpoint) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 31px;
   }
 }
 
 .example__text-wrapper {
-  flex-basis: 50%;
-  // // TODO убрать обводку
+  margin-bottom: 11px;
 
-  outline: 1px solid rgb(24, 106, 228);
-  //
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 37%;
+    margin-bottom: 0;
+  }
 }
 
 .example__keypoints {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  // @media (min-width: $tablet-breakpoint) {
   //
-  // }
-
-  @media (min-width: $desktop-breakpoint) {
-    // width: 300px;
-  }
 }
 
 .example__title {
-  // display: block;
-  // line-height: 60px;
+  margin-bottom: 13px;
+  padding-top: 9px;
+  padding-bottom: 5px;
+
+  line-height: 60px;
+
   @include font(36px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    // line-height: 60px;
+    margin-bottom: 49px;
+    // padding-top: 43px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     font-size: 60px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 121px;
+    padding-top: 56px;
+    padding-bottom: 20px;
+  }
 }
 
 .example__description {
-  // display: block;
+  width: 270px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   line-height: 18px;
 
   @include font_arial(14px, 400, $text_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    width: 100%;
+    margin-bottom: 38px;
+    padding-right: 20px;
+
     font-size: 16px;
     line-height: 24px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 53px;
+  }
 }
 
 .example__slider {
-  // slider
-  // display: block;
-  // // TODO убрать обводку
-  outline: 1px solid rgb(24, 106, 228);
+  // margin-bottom: 79px;
 }

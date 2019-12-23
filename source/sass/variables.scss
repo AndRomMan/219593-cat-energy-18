@@ -1,24 +1,27 @@
 // checking sass
 body {
-  // background-color: #f8823d;
   min-width: 320px;
+
+  // background-color: #f8823d;
 }
 
 // 320 mobile
-$mobile-wrapper: 320px;
-$mobile-padding: 20px;
+$mobile-wrapper: 280px;
+$mobile-width: 320px;
+$mobile-padding: 0;
+$mobile-width-only: 768;
 
 // 768 tablet
 $tablet-breakpoint: 768px;
-$tablet-wrapper: 768px;
-$tablet-padding: 30px;
+$tablet-width: 768px;
+$tablet-wrapper: 708px;
+$tablet-padding: 0;
 
 // 1300 desktop
 $desktop-breakpoint: 1300px;
-// $desktop-wrapper: 1440px;
-$desktop-wrapper: 1300px;
-$desktop-padding: 40px;
-
+$desktop-wrapper: 1220px;
+$desktop-width: 1300px;
+$desktop-padding: 0;
 
 // --------------------------
 // basic colors
@@ -31,48 +34,23 @@ $main_green_color: #68b738;
 $main_grey_color: #f2f2f2;
 $green_button_color_hvr: #5eaa2f;
 $grey_button_color_hvr: #ebebeb;
+// $slim-cat_background_color: #eaeaea;
 
 // border
 $border_color: #cdcdcd;
-// --------------------------
-// catalog
-// fonts
-$additional_font_color: #222222;
-// border
-// $additional_border_color: #cdcdcd;
-// TODO проверить border - часть из них
-// TODO $border_color: #cdcdcd;
-//  TODO opacity: 0.5;
-
-// TODO убрать card-border
-$card_border_color: #ededed;
-// --------------------------
-// input
-// $input_font_color: #222222;
-$additional_font_color: #222222;
-
-// $input_border_color: #cdcdcd;
-$border_color: #cdcdcd;
-$input_border_color_active: #444444;
-$input_border_color_error: #ff8282;
+// все цвета получаем из border_color + opacity=0.5
+$input_active: #444444;
+$input_error: #ff8282;
 
 // checkbox
-// $checkbox_border_color: #cdcdcd;
-$border_color: #cdcdcd;
-$checkbox_border_color_hvr: #bababa;
-
-// radiobutton
-// $radio_border_color: #cdcdcd;
-$border_color: #cdcdcd;
-$radio_border_color_hvr: #bababa;
+$check_radio_hvr: #bababa;
 
 // icon colors
-// index
 // $arrow_color: #3e4242;
 // header
 $menu_icon_color: #222222;
 // footer
-// $footer_icon_color: #666666;
+$footer_icon_color: #666666;
 $footer_icon_color_hvr: #68b738;
 
 

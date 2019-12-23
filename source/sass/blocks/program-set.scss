@@ -1,0 +1,30 @@
+// current checking sass compiling
+body {
+  // background-color: #cefc85;
+}
+
+.program-set {
+  //
+}
+
+.program-set__wrapper {
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 81px;
+  }
+}
+
+.program-set__list {
+  // program-list
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

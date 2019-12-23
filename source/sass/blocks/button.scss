@@ -28,6 +28,7 @@ body {
   &:focus,
   &:active {
     background-color: $green_button_color_hvr;
+    cursor: pointer;
   }
 
   &:active {

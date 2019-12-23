@@ -6,12 +6,17 @@ body {
 .footer-logo {
   display: flex;
   justify-content: center;
+  padding-top: 39px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-breakpoint) {
     justify-content: flex-start;
+    width: 180px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
-
 
 .footer-logo__image {
   width: 128px;
@@ -26,11 +31,3 @@ body {
     opacity: 0.6;
   }
 }
-
-// width: 128px;
-// height: 24px;
-
-// background-image: url("../img/logo-footer.svg");
-// background-repeat: no-repeat;
-// background-position: center;
-// background-size: contain;

@@ -1,66 +1,27 @@
 // current checking sass compiling
 body {
-  // background-color: #cefc85;
+  // background-color: #fcd285;
 }
 
 .health-program {
-  // display: block;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: -3;
-
-    width: 100%;
-    height: 305px;
-
-    background-color: $main_green_color;
-
-    @media (min-width: $tablet-breakpoint) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-breakpoint) {
-      top: -100px;
-      left: 50%;
-
-      display: inherit;
-      width: 50%;
-      height: 696px;
-    }
-  }
-}
-
-.health-program__header {
-  position: relative;
-
-  padding-top: 30px;
-
-  border-bottom: 1px solid transparent;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-
-  @media (min-width: $tablet-breakpoint) {
-    // align-items: flex-start;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
+    right: 0;
     left: 0;
     z-index: -1;
 
-    width: 320px;
+    width: 100%;
     height: 305px;
+    margin: 0 auto;
 
+    background-color: $main_green_color;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
-    // background-position: top center;
+    background-position: top center;
     background-size: contain;
 
     @media (min-width: $tablet-breakpoint) {
@@ -68,34 +29,80 @@ body {
     }
 
     @media (min-width: $desktop-breakpoint) {
-      top: -100px;
+      top: 0;
       left: 50%;
       z-index: -2;
 
-      display: inherit;
-      width: 720px;
+      display: block;
+      width: 50%;
       height: 696px;
+      margin: 0;
 
+      background-color: $main_green_color;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      // background-position: top right;
-      background-size: contain;
+      background-position: top left;
+      // background-size: cover;
+      background-size: 720px 696px;
     }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    position: static;
+  }
+}
+
+.health-program__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-bottom: 520px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 0;
+    padding-top: 33px;
+    padding-bottom: 180px;
+  }
+}
+
+.health-program__text-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 420px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 81px;
   }
 }
 
 .health-program__title {
-  margin-bottom: 20px;
-  // line-height: 36px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
+  line-height: 36px;
   text-align: center;
 
   @include font(36px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    width: 420px;
-    // line-height: 60px;
+    // width: 450px;
+    margin-bottom: 21px;
 
+    line-height: 60px;
     text-align: left;
 
     @include font(60px, 400, $title_font_color);
@@ -107,97 +114,78 @@ body {
 }
 
 .health-program__slogan {
-  margin-bottom: 310px;
-  // display: block;
-  // line-height: 14px;
+  margin-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
+  line-height: 14px;
   text-align: center;
   text-transform: uppercase;
 
   @include font(14px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    width: 420px;
-    margin-bottom: 50px;
-    // line-height: 20px;
+    margin-bottom: 38px;
 
+    line-height: 20px;
     text-align: left;
 
     @include font(20px, 400, $title_font_color);
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 43px;
+  }
 }
 
 .health-program__img {
-  position: absolute;
-  // z-index: 0;
-  top: 170px;
-  left: 30px;
-
   width: 280px;
   height: 271px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-breakpoint) {
+    position: absolute;
+    top: 230px;
+    left: 0;
     z-index: -1;
 
-    width: 709px;
+    width: 708px;
     height: 609px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    top: 100px;
-    left: 500px;
+    // TODO править позицию изображения после загрузки адаптивных
+    top: -28px;
+    left: 475px;
 
     width: 552px;
     height: 499px;
   }
 }
 
-.health-program__list {
-  // display: block;
-  @media (min-width: $desktop-breakpoint) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.health-program__item {
-  // display: block;
-  // TODO перенесено в health-program-item
-  // position: relative;
-}
-
 .health-program__link {
   // Text: Подобрать программу
-  margin-bottom: 50px;
-  // line-height: 18px;
-  // @include font(14px, 400, $light_font_color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // margin-bottom: 10px;
 
   font-size: 14px;
-  // width: 280px
-  // height: 40px
 
   @media (min-width: $tablet-breakpoint) {
-    width: 245px;
-    margin-bottom: 530px;
-    // line-height: 20px;
+    position: static;
+
+    width: 247px;
+    // margin-bottom: 530px;
     // height: 52px;
+    padding: 16px 10px 16px 10px;
 
     font-size: 20px;
-
-    // @include font(20px, 400, $light_font_color);
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: 380px;
+    // margin-bottom: 250px;
+    width: 244px;
   }
 }
-
-// ==================== tab + desctop
-// font-size: 20px;
-// line-height: 20px;
-// width: 245px
-// height: 52px

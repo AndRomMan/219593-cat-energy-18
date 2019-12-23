@@ -4,29 +4,116 @@ body {
 }
 
 .page-header {
+  // margin-bottom: 10px;
+
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+}
+
+.page-header__wrapper {
+  // position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  // height: 100px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // flex-direction: row;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
 .page-header__link {
   // .logo-link
-  // TODO убрать обводку
-  outline: 2px solid rgb(24, 106, 228);
+  position: relative;
+  // padding-top: 20px;
+  // TODO на внутренних страницах padding изменился ?
+
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  cursor: default;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 30%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 50%;
+  }
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: $border_color;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.page-header__link--inner-page {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo {
+  width: 190px;
+  height: 38px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__nav {
-  // TODO убрать обводку
-  outline: 2px solid rgb(24, 106, 228);
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 70%;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 50%;
+  }
+}
+
+.page-header__health-program {
+  //
 }

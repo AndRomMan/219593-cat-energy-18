@@ -7,49 +7,97 @@ body {
   //
 }
 
-.additional-products__wrapper {
+.additional-products__title-wrapper {
   display: flex;
-  flex-direction: column;
-
-  // @media (min-width: $tablet-breakpoint) {
+  align-items: center;
+  margin-bottom: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  // @media (min-width: $desktop-breakpoint) {
   //
   // }
 
-  @media (min-width: $desktop-breakpoint) {
-    flex-direction: row;
-    justify-content: space-between;
+  @include green_line;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 60px;
   }
 }
 
 .additional-products__title {
+  position: relative;
+
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   // line-height: 24px;
+
+  line-height: 36px;
+
+  outline: 1px solid lightcoral;
+
   @include font(24px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    // line-height: 36px;
+    width: $tablet-wrapper;
+
     font-size: 36px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-wrapper;
+  }
+
+  span {
+    display: block;
+    width: 247px;
+
+    background-color: $light_font_color;
+
+    @media (min-width: $tablet-breakpoint) {
+      width: 411px;
+      padding-left: 37px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      width: 373px;
+      padding-left: 0;
+    }
+  }
+}
+
+.additional-products__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 83px;
+  }
 }
 
 .additional-products__list {
-  // display: flex;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 67px;
+  }
 
   @media (min-width: $desktop-breakpoint) {
-    flex-basis: 75%;
+    flex-basis: 73.5%;
+    margin-bottom: 0;
   }
 }
 
 .additional-products__item {
   // additional-item
-  // @media (min-width: $tablet-breakpoint) {
-  //
-  // }
-
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 }

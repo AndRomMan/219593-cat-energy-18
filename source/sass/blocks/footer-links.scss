@@ -5,36 +5,33 @@ body {
 
 
 .footer-links {
+  background-color: $main_grey_color;
+}
+
+.footer-links__wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 44px 0 56px 0;
+    padding-top: 44px;
+    padding-bottom: 44px;
   }
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 }
 
 .footer-links__item {
-  display: flex;
-  flex-basis: 100%;
-  flex-wrap: wrap;
+  position: relative;
 
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $border_color;
 
   &:last-child {
     border: none;
   }
 
   @media (min-width: $tablet-breakpoint) {
-    justify-content: space-between;
-
     border-bottom: none;
   }
-
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 }

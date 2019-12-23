@@ -7,7 +7,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @media (min-width: $tablet-breakpoint) {
     justify-content: flex-start;
     align-items: center;
@@ -16,14 +18,15 @@ body {
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // width: 300px;
+    // justify-content: space-between;
+    // justify-content: flex-start;
+    width: 366px;
   }
 }
 
 .keypoints__item {
-  margin-bottom: 23px;
+  // margin-bottom: 23px;
   // flex-basis: 45%;
-
   text-align: center;
   text-transform: uppercase;
 
@@ -34,16 +37,18 @@ body {
   // @media (min-width: $desktop-breakpoint) {
   //
   // }
+
   &:last-child {
     margin-bottom: 0;
   }
 }
 
 .item-bordered {
-  position: relative;
-
-  flex-basis: 44.2%;
-  padding-top: 10px;
+  // position: relative;
+  display: flex;
+  flex-basis: 124px;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-breakpoint) {
     flex-basis: 162px;
@@ -55,14 +60,14 @@ body {
   }
 
   @media (min-width: $desktop-breakpoint) {
-    flex-basis: 300px;
+    //
   }
 }
 
 .item-bordered__value {
   // Text: 5 кг
   // line-height: 24px;
-  display: block;
+  align-self: stretch;
   padding: 10px 10px 14px 10px;
 
   line-height: 30px;
@@ -81,15 +86,11 @@ body {
 
 .item-bordered__option {
   // Text: снижение веса
-  position: absolute;
-  top: 57px;
-  left: 17px;
-
-  display: block;
-  width: 90px;
-  padding: 0 12px 0 10px;
+  width: 80px;
+  margin-top: -8px;
 
   line-height: 12px;
+  text-align: center;
   text-transform: lowercase;
 
   background-color: $main_grey_color;
@@ -97,31 +98,29 @@ body {
   @include font_arial(12px, 400, $text_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    top: 65px;
-    left: 11px;
-
-    width: 140px;
-    padding: 0;
+    width: 131px;
 
     font-size: 14px;
 
     background-color: $light_font_color;
   }
-}
 
-.item-bordered__option--weight {
-  @media (min-width: $tablet-breakpoint) {
-    left: 23px;
-
-    width: 117px;
+  @media (min-width: $desktop-breakpoint) {
+    background-color: $main_grey_color;
   }
 }
 
+
 .item-wide {
+  // display: flex;
   flex-grow: 1;
-  padding-top: 10px;
+  // justify-content: center;
+  // align-self: stretch;
+  padding-top: 18px;
+  padding-bottom: 10px;
 
   line-height: 24px;
+  // text-align: center;
 
   @include font(14px, 400, $title_font_color);
 
@@ -129,15 +128,30 @@ body {
     flex-grow: 0;
     width: 180px;
     margin-left: auto;
-    padding-top: 0;
+    padding: 0;
 
     font-size: 20px;
     line-height: 30px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 52px;
+    padding-bottom: 10px;
+
+    text-align: left;
   }
 }
 
 .item-wide__value,
 .item-wide__option {
   // Text: Затраты на питание: 15 000 руб.
+}
+
+.item-wide__option {
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 60px;
+  }
 }

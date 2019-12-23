@@ -12,32 +12,59 @@ body {
     background-color: transparent;
   }
 
-  @media (min-width: $desktop-breakpoint) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   &::after {
     content: "";
     position: absolute;
-    top: 620px;
-    z-index: -1;
+    // background-color: $main_grey_color;
 
-    width: 100%;
-    height: 100%;
+    background-color: transparent;
 
-    background-color: $main_grey_color;
+    @media (min-width: $tablet-breakpoint) {
+      bottom: 0;
+      left: 0;
+      z-index: -1;
 
-    // background-color: rgb(95, 130, 153);
+      width: 100%;
+      height: 42.7%;
+
+      background-color: $main_grey_color;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      height: 70.5%;
+    }
+  }
+}
+
+.example__wrapper {
+  // position: relative;
+  padding-top: 10px;
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 34px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 31px;
   }
 }
 
 .example__text-wrapper {
-  // flex-basis: 50%;
-  margin-bottom: 31px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-breakpoint) {
-    margin-bottom: 76px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 37%;
+    margin-bottom: 0;
   }
 }
 
@@ -46,44 +73,52 @@ body {
 }
 
 .example__title {
-  margin-bottom: 23px;
-  padding-top: 19px;
+  margin-bottom: 13px;
+  padding-top: 9px;
+  padding-bottom: 5px;
 
   line-height: 60px;
 
   @include font(36px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    margin-bottom: 65px;
-    padding-top: 43px;
+    margin-bottom: 49px;
+    // padding-top: 43px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     font-size: 60px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 121px;
+    padding-top: 56px;
+    padding-bottom: 20px;
+  }
 }
 
 .example__description {
-  margin-bottom: 15px;
-  padding-right: 2px;
+  width: 270px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   line-height: 18px;
 
   @include font_arial(14px, 400, $text_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    margin-bottom: 42px;
-    padding-right: 10px;
+    width: 100%;
+    margin-bottom: 38px;
+    padding-right: 20px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 53px;
+  }
 }
 
 .example__slider {

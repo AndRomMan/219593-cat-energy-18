@@ -38,14 +38,18 @@ body {
     height: 18px;
 
     background-image: url("../img/icon-mobile-menu.svg");
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
   }
 
   .header-nav__item {
     display: none;
-  }
 
-  @media (min-width: $tablet-breakpoint) {
-    display: none;
+    @media (min-width: $tablet-breakpoint) {
+      display: block;
+    }
   }
 }
 
@@ -57,14 +61,14 @@ body {
     height: 18px;
 
     background-image: url("../img/icon-close.svg");
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
   }
 
   .header-nav__item {
     display: block;
-  }
-
-  @media (min-width: $tablet-breakpoint) {
-    display: none;
   }
 }
 
@@ -81,9 +85,9 @@ body {
     align-items: center;
   }
 
-  @media (min-width: $desktop-breakpoint) {
-    //
-  }
+  // @media (min-width: $desktop-breakpoint) {
+  //   //
+  // }
 }
 
 .header-nav__item {
@@ -99,43 +103,25 @@ body {
   @include font(20px, 500, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    // display: block;
     margin-left: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
 
     font-weight: 400;
     font-size: 18px;
-    // letter-spacing: -0.5px;
 
     border: none;
 
-    @include font(18px, 400, $additional_font_color);
+    @include font(18px, 400, $title_font_color);
   }
 
   @media (min-width: $desktop-breakpoint) {
     font-size: 20px;
     color: $light_font_color;
-
-    // background-color: $main_green_color;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -20px;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: $border_color;
-
-    @media (min-width: $tablet-breakpoint) {
-      display: none;
-    }
-  }
-
-  &:last-child::after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -152,11 +138,11 @@ body {
   }
 }
 
-.header-nav__item:last-child {
-  @media (min-width: $tablet-breakpoint) {
-    //
-  }
-}
+// .header-nav__item:last-child {
+//   @media (min-width: $tablet-breakpoint) {
+//     //
+//   }
+// }
 
 .header-nav__item a {
   &:hover {

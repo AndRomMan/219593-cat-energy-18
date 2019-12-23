@@ -1,9 +1,12 @@
 // checking sass
 body {
-  // TODO убрать фон
-  background-color: #dae6a7;
+  // TODO убрать фон body
+  // background-color: #b190b4;
 }
 
+.inner-page {
+  //
+}
 
 img {
   // TODO убрать outline
@@ -50,11 +53,44 @@ img {
   color: $color;
 }
 
-// TODO переделать в псевдоэлемент для карточек товара
-.wrapper--product-cards {
-  @media (max-width: $mobile-width-only) {
-    padding-right: 0;
-    padding-left: 0;
+@mixin green_line {
+  &::after {
+    // линия слева
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+
+    width: 50%;
+    height: 3px;
+    margin-top: 3px;
+
+    background-color: transparent;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-top: 5px;
+
+      background-color: $main_green_color;
+    }
+  }
+
+  &::before {
+    // линия справа
+    content: "";
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+
+    width: 50%;
+    height: 3px;
+    margin-top: 3px;
+
+    background-color: $main_green_color;
+
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-top: 5px;
+    }
   }
 }
 

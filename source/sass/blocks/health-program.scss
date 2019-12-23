@@ -6,32 +6,6 @@ body {
 .health-program {
   position: relative;
 
-  // Зеленый фон за фоновым изображением кошки - лишний код
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: -2;
-
-  //   width: 100%;
-  //   height: 305px;
-
-  // background-color: $main_green_color;
-
-  // @media (min-width: $tablet-breakpoint) {
-  //   display: none;
-  // }
-
-  // @media (min-width: $desktop-breakpoint) {
-  //   left: 50%;
-
-  //   display: block;
-  //   width: 50%;
-  //   height: 696px;
-  // }
-  // }
-
   &::after {
     content: "";
     position: absolute;
@@ -67,7 +41,8 @@ body {
       background-color: $main_green_color;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: top left;
-      background-size: cover;
+      // background-size: cover;
+      background-size: 720px 696px;
     }
   }
 
@@ -83,27 +58,40 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 28px;
+  padding-top: 7px;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-breakpoint) {
     align-items: flex-start;
-    // margin-bottom: 510px;
-    padding-top: 30px;
-    padding-bottom: 518px;
-    padding-left: 87px;
+    padding-top: 10px;
+    padding-bottom: 520px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 0;
-    padding-top: 53px;
+    padding-top: 33px;
     padding-bottom: 180px;
-    padding-left: 81px;
+  }
+}
+
+.health-program__text-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 420px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 81px;
   }
 }
 
 .health-program__title {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   line-height: 36px;
   text-align: center;
@@ -111,8 +99,8 @@ body {
   @include font(36px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    width: 450px;
-    margin-bottom: 42px;
+    // width: 450px;
+    margin-bottom: 21px;
 
     line-height: 60px;
     text-align: left;
@@ -126,7 +114,9 @@ body {
 }
 
 .health-program__slogan {
-  margin-bottom: 28px;
+  margin-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   line-height: 14px;
   text-align: center;
@@ -135,9 +125,7 @@ body {
   @include font(14px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    // width: 420px;
-    width: 450px;
-    margin-bottom: 47px;
+    margin-bottom: 38px;
 
     line-height: 20px;
     text-align: left;
@@ -146,31 +134,30 @@ body {
   }
 
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: 52px;
+    margin-bottom: 43px;
   }
 }
 
 .health-program__img {
   width: 280px;
   height: 271px;
-  margin-bottom: 3px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-breakpoint) {
     position: absolute;
     top: 230px;
-    right: 0;
     left: 0;
     z-index: -1;
 
-    width: 709px;
+    width: 708px;
     height: 609px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   @media (min-width: $desktop-breakpoint) {
     // TODO править позицию изображения после загрузки адаптивных
     top: -28px;
-    left: 283px;
+    left: 475px;
 
     width: 552px;
     height: 499px;
@@ -179,11 +166,16 @@ body {
 
 .health-program__link {
   // Text: Подобрать программу
-  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // margin-bottom: 10px;
 
   font-size: 14px;
 
   @media (min-width: $tablet-breakpoint) {
+    position: static;
+
     width: 247px;
     // margin-bottom: 530px;
     // height: 52px;
@@ -194,5 +186,6 @@ body {
 
   @media (min-width: $desktop-breakpoint) {
     // margin-bottom: 250px;
+    width: 244px;
   }
 }

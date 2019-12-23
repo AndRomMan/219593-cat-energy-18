@@ -4,22 +4,24 @@ body {
 }
 
 .slider {
-  //
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    //
+  }
 }
 
 .slider__photocards {
   display: block;
   width: 320px;
   height: 240px;
-  margin-left: -20px;
 
 
   @media (min-width: $tablet-breakpoint) {
     width: 690px;
     height: 517px;
-    margin: auto;
-
-    // background-color: $main_grey_color;
   }
 
   // @media (min-width: $desktop-breakpoint) {
@@ -48,15 +50,16 @@ body {
   display: none;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 39px 32px 44px;
+  align-self: stretch;
+  padding: 32px 39px 32px 43px;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 20px 69px 32px 69px;
+    padding: 20px 69px 20px 69px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    padding: 41px 0 41px 120px;
+  }
 }
 
 .slider__toggle {

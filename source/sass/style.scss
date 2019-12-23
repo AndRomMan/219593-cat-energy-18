@@ -3,6 +3,7 @@
 @import "fonts";
 @import "mixins";
 @import "blocks/button";
+@import "blocks/inner-page.scss";
 
 // page-header
 @import "blocks/page-header";
@@ -14,11 +15,12 @@
 @import "blocks/page-main";
 
 // section program-set
-// @import "program-set";
-// @import "health-program-list";
-// @import "blocks/health-program-item";
+@import "blocks/program-set";
+@import "blocks/program-item";
+
 // section advantages
 @import "blocks/advantages";
+
 // section example
 @import "blocks/example";
 @import "blocks/keypoints";
@@ -29,6 +31,7 @@
 @import "blocks/basic-products";
 @import "blocks/basic-item";
 @import "blocks/products-proposal";
+// =======
 @import "blocks/additional-products";
 @import "blocks/additional-item";
 @import "blocks/banner";
@@ -46,6 +49,9 @@
 @import "blocks/footer-logo";
 @import "blocks/social";
 @import "blocks/copyright";
+
+// TODO background body
+
 // TODO для кнопок лучше задать height-line один раз для всех breakpoints
 
 // TODO править изменение шрифта по breakpoints
@@ -60,3 +66,10 @@
 
 
 // TODO сделать скрипт для замены картинок в секции slider
+
+
+// TODO сделать одинаковым цвет шрифта в меню сайта
+
+// TODO Проверить скрин-ридером
+
+// TODO фон контактов серый для неглавных страниц

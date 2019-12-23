@@ -1,35 +1,26 @@
 // checking sass
 body {
   min-width: 320px;
+
   // background-color: #f8823d;
 }
 
 // 320 mobile
-// $mobile-wrapper: 320px;
-// $mobile-padding: 20px;
-// $mobile-width-only: 768;
 $mobile-wrapper: 280px;
+$mobile-width: 320px;
 $mobile-padding: 0;
 $mobile-width-only: 768;
 
-
 // 768 tablet
-// $tablet-breakpoint: 768px;
-// $tablet-wrapper: 768px;
-// $tablet-padding: 30px;
-
 $tablet-breakpoint: 768px;
+$tablet-width: 768px;
 $tablet-wrapper: 708px;
 $tablet-padding: 0;
 
 // 1300 desktop
 $desktop-breakpoint: 1300px;
-
-// $desktop-wrapper: 1440px;
-// $desktop-wrapper: 1300px;
-// $desktop-padding: 40px;
-
 $desktop-wrapper: 1220px;
+$desktop-width: 1300px;
 $desktop-padding: 0;
 
 // --------------------------
@@ -47,19 +38,12 @@ $grey_button_color_hvr: #ebebeb;
 
 // border
 $border_color: #cdcdcd;
-// --------------------------
-// catalog
-// fonts
-$additional_font_color: #222222;
-$card_border_color: #ededed;
-// --------------------------
-$input_border_color_active: #444444;
-$input_border_color_error: #ff8282;
+// все цвета получаем из border_color + opacity=0.5
+$input_active: #444444;
+$input_error: #ff8282;
 
 // checkbox
-$checkbox_border_color_hvr: #bababa;
-// radiobutton
-$radio_border_color_hvr: #bababa;
+$check_radio_hvr: #bababa;
 
 // icon colors
 // $arrow_color: #3e4242;

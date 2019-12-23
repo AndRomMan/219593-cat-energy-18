@@ -4,7 +4,16 @@ body {
 }
 
 .page-header {
-  // position: relative;
+  // margin-bottom: 10px;
+
+
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .page-header__wrapper {
@@ -29,7 +38,11 @@ body {
 
 .page-header__link {
   // .logo-link
-  padding-top: 20px;
+  position: relative;
+  // padding-top: 20px;
+  // TODO на внутренних страницах padding изменился ?
+
+  padding-top: 13px;
   padding-bottom: 15px;
 
   cursor: default;
@@ -46,6 +59,21 @@ body {
   // @media (min-width: $desktop-breakpoint) {
   //
   // }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: $border_color;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
 }
 
 .page-header__link--inner-page {

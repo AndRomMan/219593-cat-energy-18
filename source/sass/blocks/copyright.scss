@@ -5,28 +5,33 @@ body {
 
 .copyright {
   display: flex;
-  // flex-shrink: 1;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 17px 0 19px 0;
+  padding-top: 18px;
+  // padding-bottom: 26px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-breakpoint) {
-    flex-basis: 25%;
     justify-content: flex-end;
-    // justify-content: space-between;
+    width: 180px;
     padding: 0;
-
-
-    // padding-left: 73px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 .copyright__title {
+  margin-right: 10px;
+
   font-style: normal;
   line-height: 16px;
 
   @include font_arial(16px, 400, $title_font_color);
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-right: 0;
+  }
 
   &:hover,
   &:focus {
@@ -41,6 +46,8 @@ body {
 // TODO добавить изменение цвета при hover
 // TODO SVG с возможностью изменения fill
 .copyright__link {
+  padding-top: 5px;
+  padding-bottom: 5px;
   // display: block;
   // TODO добавить изменение цвета при hover
   &:hover,
@@ -56,30 +63,14 @@ body {
 .copyright__link--logo {
   width: 32px;
   height: 41px;
+  margin-left: 10px;
 
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  // background-size: 28px 35px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-left: 18px;
   }
-
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 }
-
-// .icon-logo {
-//   width: 60px;
-//   height: 60px;
-
-//   path {
-//     fill: $footer_icon_color;
-//   }
-// }
-
-// <!-- TODO изменить цвет иконки в редакторе -->
-// <!-- <img src="../img/htmlacademy.svg" alt="Лого HTML академии" width="27" height="34"> -->

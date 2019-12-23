@@ -3,7 +3,7 @@ body {
   // background-color: #cefc85;
 }
 
-.health-program-item {
+.program-item {
   position: relative;
 
   margin-bottom: 18px;
@@ -28,7 +28,7 @@ body {
   }
 }
 
-.health-program-item__title {
+.program-item__title {
   margin-bottom: 20px;
   padding-left: 72px;
 
@@ -52,7 +52,7 @@ body {
   }
 }
 
-.health-program-item__description {
+.program-item__description {
   margin-bottom: 7px;
   padding-top: 10px;
   padding-bottom: 22px;
@@ -82,7 +82,7 @@ body {
   }
 }
 
-.health-program-item__description--narrow {
+.program-item__description--narrow {
   @media (min-width: $tablet-breakpoint) {
     width: 344px;
   }
@@ -92,7 +92,7 @@ body {
   }
 }
 
-.health-program-item__link {
+.program-item__link {
   display: block;
   margin-top: auto;
   padding-top: 10px;

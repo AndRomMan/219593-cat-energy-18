@@ -3,17 +3,28 @@ body {
   // background-color: #cefc85;
 }
 
-// .health-program__list {
-//   padding-top: 10px;
-//   padding-bottom: 10px;
+.program-set {
+  //
+}
 
-//   @media (min-width: $desktop-breakpoint) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-// }
+.program-set__wrapper {
+  padding-top: 20px;
+  padding-bottom: 10px;
 
-// .health-program__item {
-//   //
-// }
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 81px;
+  }
+}
+
+.program-set__list {
+  // program-list
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

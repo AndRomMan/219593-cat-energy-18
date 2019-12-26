@@ -24,6 +24,10 @@ body {
     background-position: top center;
     background-size: contain;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
     @media (min-width: $tablet-breakpoint) {
       display: none;
     }
@@ -41,8 +45,12 @@ body {
       background-color: $main_green_color;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: top left;
-      // background-size: cover;
-      background-size: 720px 696px;
+      // background-size: 720px 696px;
+      background-size: 720px auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
@@ -99,7 +107,6 @@ body {
   @include font(36px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
-    // width: 450px;
     margin-bottom: 21px;
 
     line-height: 60px;
@@ -107,10 +114,6 @@ body {
 
     @include font(60px, 400, $title_font_color);
   }
-
-  // @media (min-width: $desktop-breakpoint) {
-
-  // }
 }
 
 .health-program__slogan {
@@ -145,7 +148,7 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     position: absolute;
-    top: 230px;
+    top: 232px;
     left: 0;
     z-index: -1;
 
@@ -155,9 +158,8 @@ body {
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // TODO править позицию изображения после загрузки адаптивных
-    top: -28px;
-    left: 475px;
+    top: -27px;
+    left: 450px;
 
     width: 552px;
     height: 499px;
@@ -169,7 +171,6 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  // margin-bottom: 10px;
 
   font-size: 14px;
 
@@ -177,15 +178,12 @@ body {
     position: static;
 
     width: 247px;
-    // margin-bottom: 530px;
-    // height: 52px;
     padding: 16px 10px 16px 10px;
 
     font-size: 20px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // margin-bottom: 250px;
     width: 244px;
   }
 }

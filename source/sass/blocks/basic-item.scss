@@ -6,11 +6,8 @@ body {
 .basic-item {
   display: flex;
   flex-wrap: wrap;
-  // padding-top: 20px;
   width: 320px;
-  // padding-right: 20px;
   padding-bottom: 24px;
-  // padding-left: 20px;
 
   border: 1px solid $border_color;
   border-bottom: none;
@@ -63,27 +60,40 @@ body {
 .basic-item__img {
   width: 140px;
   height: 144px;
-  // margin-bottom: 20px;
-
-  // background-color: transparent;
-
 
   @media (min-width: $tablet-breakpoint) {
     position: absolute;
-    // TODO править позицию изображения товара
-    top: -100px;
+    top: -45px;
     left: 0;
-    // display: none;
 
     width: 324px;
-    // height: 174px;
-    height: 208px;
+    // big
+    // height: 208px;
+    // small
+    height: 172px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-breakpoint) {
     width: 245px;
+    // big
+    // height: 208px;
+    // small
+    // height: 172;
+  }
+}
+
+.basic-item__img--big {
+  @media (min-width: $tablet-breakpoint) {
+    top: -81px;
+    // big
+
     height: 208px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    // big
+    // height: 208px;
   }
 }
 
@@ -118,8 +128,6 @@ body {
 }
 
 .description-list {
-  // text-align: center;
-  // width: 100px;
   line-height: 16px;
 
   @include font_arial(12px, 400, $text_font_color);
@@ -139,7 +147,6 @@ body {
 
 .description-list__item {
   display: flex;
-  // flex-grow: 1;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -158,24 +165,24 @@ body {
 .basic-item__volume {
   //
   @media (min-width: $tablet-breakpoint) {
-    // padding-top: 8px;
-    // padding-bottom: 6px;
+    //
+    //
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // line-height: 1.5;
+    //
   }
 }
 
 .basic-item__taste {
   @media (min-width: $tablet-breakpoint) {
-    //   padding-top: 8px;
-    //   padding-bottom: 10px;
+    //
+    //
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // padding-top: 8px;
-    // padding-bottom: 6px;
+    //
+    //
   }
 }
 

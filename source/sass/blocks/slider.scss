@@ -24,9 +24,10 @@ body {
     height: 517px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    // width: 636px;
+    // height: 517px;
+  }
 }
 
 .slider__photo {
@@ -39,9 +40,10 @@ body {
     height: 517px;
   }
 
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
+  @media (min-width: $desktop-breakpoint) {
+    // width: auto;
+    // height: 517px;
+  }
 }
 
 .slider__toggles {

@@ -5,6 +5,10 @@ body {
   // background-color: #f8823d;
 }
 
+$retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
+// (min-resolution: $retina-dpi),
+// (min-resolution: $retina-dppx)
 // 320 mobile
 $mobile-wrapper: 280px;
 $mobile-width: 320px;
@@ -13,8 +17,8 @@ $mobile-width-only: 768;
 
 // 768 tablet
 $tablet-breakpoint: 768px;
-$tablet-width: 768px;
 $tablet-wrapper: 708px;
+$tablet-width: 768px;
 $tablet-padding: 0;
 
 // 1300 desktop

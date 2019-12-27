@@ -8,9 +8,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 18px;
-  // padding-bottom: 26px;
-  padding-bottom: 18px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-breakpoint) {
     justify-content: flex-end;
@@ -22,7 +21,8 @@ body {
 }
 
 .copyright__title {
-  margin-right: 10px;
+  width: 120px;
+  // margin-right: 10px;
 
   font-style: normal;
   line-height: 16px;
@@ -33,23 +33,13 @@ body {
     margin-right: 0;
   }
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
 
   &:active {
     opacity: 0.6;
   }
 }
 
-// TODO добавить изменение цвета при hover
-// TODO SVG с возможностью изменения fill
 .copyright__link {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  // display: block;
-  // TODO добавить изменение цвета при hover
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -60,17 +50,32 @@ body {
   }
 }
 
-.copyright__link--logo {
-  width: 32px;
-  height: 41px;
-  margin-left: 10px;
+.copyright__logo-link {
+  width: 27px;
+  height: 34px;
 
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  .copyright__icon {
+    width: 27px;
+    height: 34px;
+  }
+
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .copyright__icon {
+      path {
+        fill: $footer_icon_color_hvr;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-breakpoint) {
-    margin-left: 18px;
+    margin-left: 23px;
   }
 }

@@ -6,7 +6,6 @@ body {
 
 .form-header {
   margin-bottom: 33px;
-  // TODO изменился padding form-header
   padding-top: 5px;
 
   @media (min-width: $tablet-breakpoint) {
@@ -508,6 +507,10 @@ body {
 
   @include font(16px, 400, $text_font_color);
 
+  &:focus {
+    outline: 2px solid $input_active;
+  }
+
   @media (min-width: $tablet-breakpoint) {
     width: 631px;
     height: 175px;
@@ -677,9 +680,6 @@ body {
   // justify-content: flex-start;
 
   width: 100%;
-  // TODO убрать outline
-
-  outline: 1px solid brown;
   // padding-top: 10px;
   // padding-bottom: 10px;
 
@@ -857,21 +857,19 @@ input[type="tel"] {
     border: 1px solid $border_color;
     cursor: pointer;
   }
-}
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-.form__response {
   &:focus {
     outline: 2px solid $input_active;
   }
+
+  &:focus:invalid {
+    outline: 2px solid $input_error;
+  }
+
+  // &:invalid {
+  //   outline: 2px solid $input_error;
+  // }
 }
-
-// &:error {
-//   outline: 2px solid $input_error;
-// }
-
 
 input[type="checkbox"],
 input[type="radio"] {

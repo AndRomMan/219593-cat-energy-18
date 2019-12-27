@@ -1,34 +1,30 @@
-// current checking sass compiling
+// checking sass compiling
 body {
   // background-color: #cefc85;
 }
 
 .social {
   display: flex;
-  // flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 17px;
-  padding-right: 70px;
-  padding-bottom: 16px;
-  padding-left: 60px;
+  padding-top: 16px;
+  padding-right: 77px;
+  padding-bottom: 10px;
+  padding-left: 68px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 250px;
     padding: 0;
     padding-top: 5px;
-    padding-right: 62px;
+    padding-right: 66px;
     padding-bottom: 5px;
-    padding-left: 44px;
+    padding-left: 49px;
   }
 }
 
 .social__item {
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  margin: 5px;
 
   @media (min-width: $tablet-breakpoint) {
     //
@@ -39,60 +35,75 @@ body {
   }
 }
 
+.social__icon {
+  //
+}
+
 .social__link {
   display: block;
 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-
-  // TODO добавить изменение цвета при hover
   &:hover,
   &:focus {
-    opacity: 0.8;
+    outline: none;
+
+    .social__icon {
+      path {
+        fill: $footer_icon_color_hvr;
+      }
+
+      circle {
+        fill: $footer_icon_color_hvr;
+      }
+    }
   }
 
   &:active {
     opacity: 0.6;
   }
 }
-// TODO добавить изменение цвета при hover
 
 .social__link--vk {
-  width: 22px;
-  height: 12px;
-
-  background-image: url("../img/icon-vk.svg");
-
+  // background-image: url("../img/icon-vk.svg");
+  .social__icon {
+    width: 22px;
+    height: 12px;
+  }
 
   @media (min-width: $tablet-breakpoint) {
-    width: 30px;
-    height: 16px;
+    .social__icon {
+      width: 30px;
+      height: 16px;
+    }
   }
 }
 
 .social__link--insta {
-  width: 16px;
-  height: 16px;
+  // background-image: url("../img/icon-insta.svg");
 
-  background-image: url("../img/icon-insta.svg");
-
+  .social__icon {
+    width: 16px;
+    height: 16px;
+  }
 
   @media (min-width: $tablet-breakpoint) {
-    width: 23px;
-    height: 23px;
+    .social__icon {
+      width: 23px;
+      height: 23px;
+    }
   }
 }
 
 .social__link--fb {
-  width: 10px;
-  height: 19px;
-
-  background-image: url("../img/icon-fb.svg");
-
+  // background-image: url("../img/icon-fb.svg");
+  .social__icon {
+    width: 10px;
+    height: 19px;
+  }
 
   @media (min-width: $tablet-breakpoint) {
-    width: 14px;
-    height: 28px;
+    .social__icon {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

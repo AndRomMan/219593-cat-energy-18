@@ -1,16 +1,6 @@
 // checking sass
 body {
-  // TODO убрать фон body
   // background-color: #b190b4;
-}
-
-.inner-page {
-  //
-}
-
-img {
-  // TODO убрать outline
-  outline: 1px solid brown;
 }
 
 .wrapper {
@@ -18,9 +8,8 @@ img {
   margin: 0 auto;
   padding-right: $mobile-padding;
   padding-left: $mobile-padding;
-  // TODO убрать outline
-
-  outline: 1px solid blue;
+  // TODO wrapper outline
+  // outline: 1px solid blue;
 
   @media (min-width: $tablet-breakpoint) {
     width: $tablet-wrapper;

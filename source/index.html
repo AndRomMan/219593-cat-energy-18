@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js" async></script>
   </head>
 
   <body>
@@ -139,19 +140,19 @@
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="slider__photo slider__photo--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до начала программы оздоровления" width="320"
-                     height="240">
+                <img class="slider__photo slider__photo--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до начала программы оздоровления" width="320" height="240">
               </picture>
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="slider__photo slider__photo--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот по окончании программы оздоровления" width="320"
-                     height="240">
+                <img class="slider__photo slider__photo--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот по окончании программы оздоровления" width="320" height="240">
               </picture>
             </div>
             <div class="slider__toggles">
               <button class="slider__toggle slider__toggle--before" type="button">Было</button>
-              <div class="slider__indicator"></div>
+              <div class="slider__indicator">
+                <span class="slider__control-handle"></span>
+              </div>
               <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
             </div>
           </div>

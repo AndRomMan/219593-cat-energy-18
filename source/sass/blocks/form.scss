@@ -6,7 +6,6 @@ body {
 
 .form-header {
   margin-bottom: 33px;
-  // TODO изменился padding form-header
   padding-top: 5px;
 
   @media (min-width: $tablet-breakpoint) {
@@ -681,9 +680,6 @@ body {
   // justify-content: flex-start;
 
   width: 100%;
-  // TODO убрать outline
-
-  outline: 1px solid brown;
   // padding-top: 10px;
   // padding-bottom: 10px;
 

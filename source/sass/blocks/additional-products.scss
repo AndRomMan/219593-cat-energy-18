@@ -35,8 +35,6 @@ body {
 
   line-height: 36px;
 
-  outline: 1px solid lightcoral;
-
   @include font(24px, 400, $title_font_color);
 
   @media (min-width: $tablet-breakpoint) {

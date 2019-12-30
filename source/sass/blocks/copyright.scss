@@ -50,6 +50,10 @@ body {
   }
 }
 
+.copyright__icon {
+  fill: $footer_icon_color;
+}
+
 .copyright__logo-link {
   width: 27px;
   height: 34px;
@@ -59,15 +63,12 @@ body {
     height: 34px;
   }
 
-
   &:hover,
   &:focus {
     outline: none;
 
     .copyright__icon {
-      path {
-        fill: $footer_icon_color_hvr;
-      }
+      fill: $footer_icon_color_hvr;
     }
   }
 

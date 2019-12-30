@@ -36,7 +36,7 @@ body {
 }
 
 .social__icon {
-  //
+  fill: $footer_icon_color;
 }
 
 .social__link {
@@ -47,13 +47,7 @@ body {
     outline: none;
 
     .social__icon {
-      path {
-        fill: $footer_icon_color_hvr;
-      }
-
-      circle {
-        fill: $footer_icon_color_hvr;
-      }
+      fill: $footer_icon_color_hvr;
     }
   }
 

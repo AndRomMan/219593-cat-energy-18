@@ -1,14 +1,13 @@
-let navMain = document.querySelector('.header-nav');
-let navToggle = document.querySelector('.header-nav__toggle');
-let slider = document.querySelector('.slider');
-let buttonBefore = document.querySelector('.slider__toggle--before');
-let buttonAfter = document.querySelector('.slider__toggle--after');
-let sliderIndicator = document.querySelector('.slider__indicator');
+var navMain = document.querySelector('.header-nav');
+var navToggle = document.querySelector('.header-nav__toggle');
+var slider = document.querySelector('.slider');
+var buttonBefore = document.querySelector('.slider__toggle--before');
+var buttonAfter = document.querySelector('.slider__toggle--after');
+var sliderIndicator = document.querySelector('.slider__indicator');
 
 // svg4everybody();
 
 navMain.classList.add('header-nav--closed');
-slider.classList.add('slider--before');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('header-nav--opened')) {
@@ -19,6 +18,8 @@ navToggle.addEventListener('click', function () {
     navMain.classList.add('header-nav--opened');
   }
 });
+
+slider.classList.add('slider--before');
 
 buttonBefore.addEventListener('click', function () {
   if (slider.classList.contains('slider--after')) {

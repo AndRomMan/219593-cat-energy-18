@@ -1,5 +1,13 @@
+// TODO сделать проверку на существование
+// var bannerClose = document.querySelector('.js-banner-close');
+// if (bannerClose) {
+// bannerClose.addEventListener('click', function() {
+// ...
+// });
+// }
 var navMain = document.querySelector('.header-nav');
 var navToggle = document.querySelector('.header-nav__toggle');
+
 var slider = document.querySelector('.slider');
 var buttonBefore = document.querySelector('.slider__toggle--before');
 var buttonAfter = document.querySelector('.slider__toggle--after');
@@ -7,6 +15,7 @@ var sliderIndicator = document.querySelector('.slider__indicator');
 
 // svg4everybody();
 
+if (navMain) {
 navMain.classList.add('header-nav--closed');
 
 navToggle.addEventListener('click', function () {
@@ -18,7 +27,9 @@ navToggle.addEventListener('click', function () {
     navMain.classList.add('header-nav--opened');
   }
 });
+};
 
+if (slider) {
 slider.classList.add('slider--before');
 
 buttonBefore.addEventListener('click', function () {
@@ -44,3 +55,4 @@ sliderIndicator.addEventListener('click', function () {
     slider.classList.add('slider--before');
   }
 });
+};

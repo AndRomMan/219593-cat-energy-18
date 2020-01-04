@@ -19,7 +19,8 @@
     </div>
     <header class="page-header">
       <div class="page-header__wrapper wrapper">
-        <a class="page-header__link" href="#">
+        <!-- <a class="page-header__link" href="#"> -->
+        <a class="page-header__link">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -29,7 +30,7 @@
         <!-- Классы для переключения состояния меню и внешнего вида кнопок:  header-nav--opened и header-nav--closed
         при загрузке script.js происходит подключение класса header-nav--closed и меню переходит в закрытое состояние, иначе меню остается открытым и кнопка открытия меню не отображается -->
         <nav class="page-header__nav header-nav">
-          <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="header-nav__toggle" type="button" aria-label="Главное меню сайта"></button>
           <ul class="header-nav__list">
             <li class="header-nav__item header-nav__item--active">
               <a href="#">главная</a>
@@ -50,7 +51,7 @@
             <h2 class="health-program__title">Функциональное питание для котов
             </h2>
             <p class="health-program__slogan">Занялся собой? Займись котом!</p>
-            <a class="health-program__link button button--green" href="form.html">Подобрать программу</a>
+            <a class="health-program__link button button--green" href="form.html" aria-label="Подобрать программу оздоровления">Подобрать программу</a>
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
@@ -75,7 +76,7 @@
               <h3 class="program-item__title program-item__icon program-item__icon--slim">Похудение</h3>
               <p class="program-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить
                 лишний вес.</p>
-              <a class="program-item__link" href="catalog.html#slim">Каталог Slim</a>
+              <a class="program-item__link" href="catalog.html#slim" aria-label="Перейти в каталог - раздел Slim">Каталог Slim</a>
             </li>
             <li class="program-list__item program-item">
               <h3 class="program-item__title program-item__icon program-item__icon--pro">Набор массы</h3>
@@ -83,7 +84,7 @@
                 Заработать авторитет среди дворовых&nbsp;котов и&nbsp;даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="program-item__link" href="catalog.html#pro">Каталог pro</a>
+              <a class="program-item__link" href="catalog.html#pro" aria-label="Перейти в каталог - раздел Pro">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -168,11 +169,11 @@
               </picture>
             </div>
             <div class="slider__toggles">
-              <button class="slider__toggle slider__toggle--before" type="button">Было</button>
+              <button class="slider__toggle slider__toggle--before" type="button" aria-label="Таким кот был">Было</button>
               <div class="slider__indicator">
                 <span class="slider__control-handle"></span>
               </div>
-              <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
+              <button class="slider__toggle slider__toggle--after" type="button" aria-label="Таким кот стал">Стало</button>
             </div>
           </div>
         </div>

@@ -1,10 +1,3 @@
-// TODO сделать проверку на существование
-// var bannerClose = document.querySelector('.js-banner-close');
-// if (bannerClose) {
-// bannerClose.addEventListener('click', function() {
-// ...
-// });
-// }
 var navMain = document.querySelector('.header-nav');
 var navToggle = document.querySelector('.header-nav__toggle');
 

@@ -3,7 +3,6 @@
 @import "fonts";
 @import "mixins";
 @import "blocks/button";
-@import "blocks/inner-page.scss";
 
 // page-header
 @import "blocks/page-header";
@@ -50,17 +49,12 @@
 @import "blocks/social";
 @import "blocks/copyright";
 
-// TODO разобраться с векторными изображениями
-// TODO внести изменения в footer внутренних страниц
-// TODO добавить aria-label для чтения?
-// <span class="visually-hidden">VK</span>
+
+// TODO добавить aria-label для screen-readers
+// TODO Проверить скрин-ридером
 
 // TODO править изменение шрифта по breakpoints
 
-// TODO сделать скрипт для замены картинок в секции slider
+// TODO проверить на переполнение контентом
 
-// TODO Проверить скрин-ридером
-
-// TODO скрипт для IE11 поддерживающий svg спрайты
-
-// TODO исправить подчеркивание под кнопками БЫЛО СТАЛО
+// TODO проверить на переполнение блоками и на недостачу блоков

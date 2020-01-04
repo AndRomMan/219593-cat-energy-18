@@ -7,6 +7,11 @@ body {
   position: relative;
 }
 
+.contacts--inner-page {
+  background-color: $main_grey_color;
+}
+
+
 .contacts__text-wrapper {
   display: flex;
   flex-wrap: wrap;

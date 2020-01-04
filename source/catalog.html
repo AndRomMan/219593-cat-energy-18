@@ -19,19 +19,19 @@
     </div>
     <header class="page-header">
       <div class="page-header__wrapper wrapper">
-        <a class="page-header__link page-header__link--inner-page" href="index.html">
+        <a class="page-header__link page-header__link--inner-page" href="index.html" aria-label="Перейти на главную">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo" src="img/logo-mobile.svg" alt="КЭТ ЭНЕРДЖИ" width="184" height="38">
           </picture>
         </a>
-        <nav class="page-header__nav header-nav">
-          <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="page-header__nav header-nav header-nav--inner-page">
+          <button class="header-nav__toggle" type="button" aria-label="Главное меню сайта"></button>
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <!-- <a href="#">главная</a> -->
-              <a href="index.html">главная</a>
+              <a href="index.html" aria-label="Перейти на главную страницу">главная</a>
             </li>
             <li class="header-nav__item header-nav__item--active">
               <!-- <a href="catalog.html">каталог продукции</a> -->
@@ -350,7 +350,7 @@
     </main>
 
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
+      <section class="page-footer__contacts contacts contacts--inner-page">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="contacts__text-wrapper wrapper">
           <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>

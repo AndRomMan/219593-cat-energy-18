@@ -89,6 +89,8 @@ gulp.task('copyToBuild', function () {
   'source/fonts/**/*.{woff,woff2}',
   'source/*.ico',
   'source/js/*.min.js',
+  // 'source/img/favicon/*.*',
+
   ], {
   base: 'source'
   })
@@ -100,6 +102,13 @@ gulp.task('imgCopyToBuild', function () {
   ['source/img/compressed/*.{png,jpg,svg,webp}','!source/img/compressed/sprite']
   )
   .pipe(gulp.dest('build/img'));
+});
+
+gulp.task('faviconCopyToBuild', function () {
+  return gulp.src(
+    'source/img/favicon/*.*'
+  )
+  .pipe(gulp.dest('build'));
 });
 
 gulp.task('jsCompressor', function () {
@@ -166,6 +175,7 @@ gulp.task('build', gulp.series(
   'svgSpriteToBuild',
   'copyToBuild',
   'imgCopyToBuild',
+  'faviconCopyToBuild',
   'jsCompressor',
   'css',
   'includeSpriteInHtml',

@@ -87,8 +87,8 @@ gulp.task('svgSpriteToBuild', function () {
 gulp.task('copyToBuild', function () {
   return gulp.src([
   'source/fonts/**/*.{woff,woff2}',
-  'source/*.ico',
-  'source/js/*.min.js',
+  'source/*.ico'
+  // 'source/js/*.min.js',
   // 'source/img/favicon/*.*',
 
   ], {
@@ -134,7 +134,6 @@ gulp.task('css', function () {
     // .pipe(server.stream());
 });
 
-
 gulp.task('includeSpriteInHtml', function () {
   return gulp.src('source/*.html')
   .pipe(posthtml([ include() ]))
@@ -172,6 +171,7 @@ gulp.task('server', function () {
 // ========== complex build tasks ==========
 gulp.task('build', gulp.series(
   'cleanBuild',
+  'imageCompression',
   'svgSpriteToBuild',
   'copyToBuild',
   'imgCopyToBuild',
@@ -182,4 +182,16 @@ gulp.task('build', gulp.series(
   'htmlMinify'
   ));
 
-gulp.task('start', gulp.series('build', 'server'));
+gulp.task('start', gulp.series(
+  // 'build',
+  // 'cleanBuild',
+  // 'imageCompression',
+  // 'svgSpriteToBuild',
+  // 'copyToBuild',
+  // 'imgCopyToBuild',
+  // 'faviconCopyToBuild',
+  'jsCompressor',
+  'css',
+  'includeSpriteInHtml',
+  'htmlMinify',
+  'server'));

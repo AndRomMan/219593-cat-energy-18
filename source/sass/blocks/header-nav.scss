@@ -7,10 +7,25 @@ body {
   position: relative;
 }
 
+.header-nav--inner-page {
+  .header-nav__item {
+    @media (min-width: $desktop-breakpoint) {
+      color: $title_font_color;
+    }
+  }
+
+  .header-nav__item--active a {
+    @media (min-width: $desktop-breakpoint) {
+      border-bottom: 2px solid $main_green_color;
+    }
+  }
+}
+
 .header-nav__toggle {
   position: absolute;
   top: -43px;
   right: 0;
+  z-index: 2;
 
   display: none;
   width: 24px;

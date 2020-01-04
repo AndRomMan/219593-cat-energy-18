@@ -163,8 +163,6 @@ body {
   @media (min-width: $desktop-breakpoint) {
     width: 570px;
     margin-bottom: 0;
-
-    outline: 1px solid rgb(10, 110, 1);
   }
 }
 
@@ -251,8 +249,6 @@ body {
     width: 570px;
     margin: 0;
     padding-bottom: 12px;
-
-    outline: 1px solid rgb(10, 110, 1);
   }
 
   &::before {

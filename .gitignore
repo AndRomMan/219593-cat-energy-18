@@ -6,10 +6,9 @@
 *.pdf
 *.psd
 *.sublime*
+template-gulpfile.js
 build/
-source/arch/
 node_modules/
 npm-debug.*
-source/css/*.css
-source/css/*.map
+source/css/
 Thumbs.db

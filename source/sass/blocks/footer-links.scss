@@ -17,12 +17,14 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 46px;
-    padding-bottom: 46px;
+    // padding-top: 46px;
+    // padding-bottom: 46px;
+    padding-top: 48px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding-top: 49px;
+    padding-top: 48px;
     padding-bottom: 46px;
   }
 }

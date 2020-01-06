@@ -29,7 +29,6 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "image": "gulp imageCompression",
     "build": "gulp build",
     "start": "gulp start"
   },

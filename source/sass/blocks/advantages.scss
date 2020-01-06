@@ -70,10 +70,8 @@ body {
 
 .advantages__item {
   position: relative;
-  // TODO компенсация пропадания текста
 
   min-height: 60px;
-  // margin-bottom: 24px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-breakpoint) {

@@ -4,21 +4,20 @@ body {
 }
 
 .basic-item {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   width: 320px;
+  padding-right: 20px;
   padding-bottom: 24px;
+  padding-left: 20px;
 
   border: 1px solid $border_color;
   border-bottom: none;
-
-  &:last-child {
-    border-bottom: 1px solid $border_color;
-  }
+  // @include item-border;
 
   @media (min-width: $tablet-breakpoint) {
-    position: relative;
-
     flex-direction: column;
     width: 324px;
     margin-bottom: 139px;
@@ -56,6 +55,7 @@ body {
   //
   // }
 }
+
 
 .basic-item__img {
   width: 140px;
@@ -99,7 +99,7 @@ body {
 
 .basic-item__title {
   width: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-top: 21px;
 
   line-height: 20px;

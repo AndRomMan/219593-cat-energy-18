@@ -7,10 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- TODO скопировать preload на другие страницы -->
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,17 +16,16 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Магазин фитнес еды для котов. Ваш кот ест и становится здоровее.">
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48" type="image/vnd.microsoft.icon">
   </head>
 
   <body>
-    <div class="svg-sprite">
-      <!-- style="display:none" -->
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
       <div class="page-header__wrapper wrapper">
-        <!-- <a class="page-header__link" href="#"> -->
         <a class="page-header__link">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
@@ -36,8 +33,7 @@
             <img class="page-header__logo" src="img/logo-mobile.svg" alt="КЭТ ЭНЕРДЖИ" width="184" height="38">
           </picture>
         </a>
-        <!-- Классы для переключения состояния меню и внешнего вида кнопок:  header-nav--opened и header-nav--closed
-        при загрузке script.js происходит подключение класса header-nav--closed и меню переходит в закрытое состояние, иначе меню остается открытым и кнопка открытия меню не отображается -->
+        <!-- Классы для переключения состояния меню и внешнего вида кнопок:  header-nav--opened и header-nav--closed при загрузке script.js происходит подключение класса header-nav--closed и меню переходит в закрытое состояние, иначе меню остается открытым и кнопка открытия меню не отображается -->
         <nav class="page-header__nav header-nav">
           <button class="header-nav__toggle" type="button" aria-label="Главное меню сайта"></button>
           <ul class="header-nav__list">
@@ -57,9 +53,10 @@
         <div class="health-program__wrapper wrapper">
           <div class="health-program__text-wrapper">
             <h2 class="visually-hidden">Подобрать программу здоровья</h2>
-            <h2 class="health-program__title">Функциональное питание для котов
-            </h2>
-            <p class="health-program__slogan">Занялся собой? Займись котом!</p>
+            <h2 class="health-program__title">Функциональное питание для котов</h2>
+            <p class="health-program__slogan">
+              Занялся собой? Займись котом!
+            </p>
             <a class="health-program__link button button--green" href="form.html" aria-label="Подобрать программу оздоровления">Подобрать программу</a>
           </div>
           <picture>
@@ -83,15 +80,15 @@
           <ul class="program-set__list program-list">
             <li class="program-list__item program-item">
               <h3 class="program-item__title program-item__icon program-item__icon--slim">Похудение</h3>
-              <p class="program-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить
-                лишний вес.</p>
+              <p class="program-item__description">
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+              </p>
               <a class="program-item__link" href="catalog.html#slim" aria-label="Перейти в каталог - раздел Slim">Каталог Slim</a>
             </li>
             <li class="program-list__item program-item">
               <h3 class="program-item__title program-item__icon program-item__icon--pro">Набор массы</h3>
               <p class="program-item__description program-item__description--narrow">
-                Заработать авторитет среди дворовых&nbsp;котов и&nbsp;даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                Заработать авторитет среди дворовых&nbsp;котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a class="program-item__link" href="catalog.html#pro" aria-label="Перейти в каталог - раздел Pro">Каталог pro</a>
             </li>
@@ -134,9 +131,7 @@
           <div class="example__text-wrapper">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__description">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-              Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-              этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__keypoints keypoints">
               <div class="keypoints__item item-bordered">
@@ -154,7 +149,8 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <!-- скрипты управления и отображения кнопок слайдера подключаются при загрузке скрипта, иначе отображается только фото состояния ДО -->
+            <!-- скрипты управления и отображения кнопок слайдера подключаются при загрузке скрипта,
+               иначе отображается только фото состояния ДО -->
             <!-- slider--before включает slider__photo--before -->
             <!-- slider--after включает slider__photo--after -->
             <div class="slider__photocards">
@@ -195,54 +191,51 @@
         <div class="contacts__text-wrapper wrapper">
           <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
           <p class="contacts__address">
-            <span>ул. Большая<br> Конюшенная, д. 19/8</span>
+            <span>ул. Большая<br>Конюшенная, д. 19/8</span>
             <span>Санкт-Петербург</span>
           </p>
         </div>
         <div class="contacts__map">
           <h2 class="visually-hidden">Как до нас добраться - карта</h2>
           <div class="contacts__map-img"></div>
-          <!-- <iframe class="contacts__mapframe"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056438!2d30.320853351292428!3d59.93871916896568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573567411114!5m2!1sru!2sru"
-                  width="320" height="400" style="border: 0;" allowfullscreen=""></iframe> -->
-          <!-- <iframe class="contacts__mapframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3291e2963d38dc5ad0f2d796d8de413f085cf1fd282d6e04bf5ac540c03fadf9&amp;source=constructor" width="320"
-                  height="400" style="border: 0;"></iframe> -->
+          <!-- <iframe title="Google карта" aria-label="Как до нас добраться - карта." class="contacts__mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6131938183592!2d30.322139022741986!3d59.93871421128104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578168362763!5m2!1sru!2sru" width="320" height="364" style="border: 0;" allowfullscreen=""></iframe> -->
+          <!-- <iframe title="Яндекс карта" class="contacts__mapframe" aria-label="Как до нас добраться - карта." src="https://yandex.ru/map-widget/v1/?um=constructor%3A25ea7edc65c0b68f51194d7cf9913955edd9e957d5fbb80581f08569bc11086a&amp;source=constructor" width="320" height="364" style="border: 0;"></iframe> -->
         </div>
       </section>
       <section class="page-footer__links footer-links">
         <div class="footer-links__wrapper wrapper">
           <h2 class="visually-hidden">Как с нами связаться</h2>
-          <a class="footer-links__item footer-logo" href="#">
-            <img class="footer-links__logo footer-logo__image" src="img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="24">
+          <a class="footer-logo footer-links__item" href="#">
+            <img class="footer-logo__image" src="img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="24">
           </a>
-          <ul class="footer-links__item social">
+          <ul class="social footer-links__item">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" aria-label="Страница разработчика Вконтакте">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Вконтакте">
                 <svg class="social__icon" width="22" height="12" role="img">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank" aria-label="Страница разработчика Instagram">
+              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Instagram">
                 <svg class="social__icon" width="16" height="16" role="img">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank" aria-label="Страница разработчика Facebook">
+              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Facebook">
                 <svg class="social__icon" width="10" height="19" role="img">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <address class="footer-links__item copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Посетите сайт разработчика">
+          <address class="copyright footer-links__item">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Посетите сайт разработчика">
               <span class="copyright__title">HTML Academy</span>
             </a>
-            <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Academy">
+            <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Сайт HTML Academy">
               <svg class="copyright__icon" width="27" height="34" role="img">
                 <use xlink:href="#htmlacademy"></use>
               </svg>
@@ -251,7 +244,6 @@
         </div>
       </section>
     </footer>
-    <!-- <script src="js/svg4everybody.min.js"></script> -->
     <script src="js/picturefill.min.js" async></script>
     <script src="js/script.min.js"></script>
   </body>

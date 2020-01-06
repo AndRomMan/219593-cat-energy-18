@@ -23,7 +23,8 @@ gulp.task('htmlMinify', () => {
   return gulp.src('build/*.html')
     .pipe(htmlmin(
       { collapseWhitespace: true },
-      {collapseInlineTagWhitespace: true}
+      {collapseInlineTagWhitespace: true},
+      {removeComments: true}
       ))
     .pipe(gulp.dest('build'));
 });
@@ -87,8 +88,8 @@ gulp.task('svgSpriteToBuild', function () {
 gulp.task('copyToBuild', function () {
   return gulp.src([
   'source/fonts/**/*.{woff,woff2}',
+  'source/js/*.min.js',
   'source/*.ico'
-  // 'source/js/*.min.js',
   // 'source/img/favicon/*.*',
 
   ], {
@@ -183,13 +184,12 @@ gulp.task('build', gulp.series(
   ));
 
 gulp.task('start', gulp.series(
-  // 'build',
   // 'cleanBuild',
   // 'imageCompression',
   // 'svgSpriteToBuild',
-  // 'copyToBuild',
   // 'imgCopyToBuild',
   // 'faviconCopyToBuild',
+  'copyToBuild',
   'jsCompressor',
   'css',
   'includeSpriteInHtml',

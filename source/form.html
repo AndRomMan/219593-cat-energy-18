@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кэт энерджи - форма заказа</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
-    <!-- favicons -->
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,12 +16,12 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Магазин фитнес еды для котов. Мы подберем правильные продукты питания для вашего кота">
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48" type="image/vnd.microsoft.icon">
   </head>
 
-  <body class="inner-page">
-    <div class="svg-sprite">
-      <!-- style="display:none" -->
+  <body>
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
@@ -38,15 +37,12 @@
           <button class="header-nav__toggle" type="button" aria-label="Главное меню сайта"></button>
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <!-- <a href="#">главная</a> -->
               <a href="index.html">главная</a>
             </li>
             <li class="header-nav__item">
               <a href="catalog.html">каталог продукции</a>
-              <!-- <a href="#">каталог продукции</a> -->
             </li>
-            <li class="header-nav__item  header-nav__item--active">
-              <!-- <a href="form.html">подбор программы</a> -->
+            <li class="header-nav__item header-nav__item--active">
               <a href="#">подбор программы</a>
             </li>
           </ul>
@@ -206,54 +202,51 @@
         <div class="contacts__text-wrapper wrapper">
           <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
           <p class="contacts__address">
-            <span>ул. Большая<br> Конюшенная, д. 19/8</span>
+            <span>ул. Большая<br>Конюшенная, д. 19/8</span>
             <span>Санкт-Петербург</span>
           </p>
         </div>
         <div class="contacts__map">
           <h2 class="visually-hidden">Как до нас добраться - карта</h2>
           <div class="contacts__map-img"></div>
-          <!-- <iframe class="contacts__mapframe"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056438!2d30.320853351292428!3d59.93871916896568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573567411114!5m2!1sru!2sru"
-                  width="320" height="400" style="border: 0;" allowfullscreen=""></iframe> -->
-          <!-- <iframe class="contacts__mapframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3291e2963d38dc5ad0f2d796d8de413f085cf1fd282d6e04bf5ac540c03fadf9&amp;source=constructor" width="320"
-                  height="400" style="border: 0;"></iframe> -->
+          <!-- <iframe title="Google карта" aria-label="Как до нас добраться - карта." class="contacts__mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6131938183592!2d30.322139022741986!3d59.93871421128104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578168362763!5m2!1sru!2sru" width="320" height="364" style="border: 0;" allowfullscreen=""></iframe> -->
+          <!-- <iframe title="Яндекс карта" class="contacts__mapframe" aria-label="Как до нас добраться - карта." src="https://yandex.ru/map-widget/v1/?um=constructor%3A25ea7edc65c0b68f51194d7cf9913955edd9e957d5fbb80581f08569bc11086a&amp;source=constructor" width="320" height="364" style="border: 0;"></iframe> -->
         </div>
       </section>
       <section class="page-footer__links footer-links">
         <div class="footer-links__wrapper wrapper">
           <h2 class="visually-hidden">Как с нами связаться</h2>
-          <a class="footer-links__item footer-logo" href="#">
-            <img class="footer-links__logo footer-logo__image" src="img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="24">
+          <a class="footer-logo footer-links__item" href="#">
+            <img class="footer-logo__image" src="img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="24">
           </a>
-          <ul class="footer-links__item social">
+          <ul class="social footer-links__item">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" aria-label="Страница разработчика Вконтакте">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Вконтакте">
                 <svg class="social__icon" width="22" height="12" role="img">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank" aria-label="Страница разработчика Instagram">
+              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Instagram">
                 <svg class="social__icon" width="16" height="16" role="img">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank" aria-label="Страница разработчика Facebook">
+              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Facebook">
                 <svg class="social__icon" width="10" height="19" role="img">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <address class="footer-links__item copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Посетите сайт разработчика">
+          <address class="copyright footer-links__item">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Посетите сайт разработчика">
               <span class="copyright__title">HTML Academy</span>
             </a>
-            <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Academy">
+            <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Сайт HTML Academy">
               <svg class="copyright__icon" width="27" height="34" role="img">
                 <use xlink:href="#htmlacademy"></use>
               </svg>

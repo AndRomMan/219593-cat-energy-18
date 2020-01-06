@@ -8,31 +8,33 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 17px;
   padding-right: 77px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   padding-left: 68px;
+
 
   @media (min-width: $tablet-breakpoint) {
     width: 250px;
     padding: 0;
     padding-top: 5px;
-    padding-right: 66px;
+    padding-right: 40px;
     padding-bottom: 5px;
-    padding-left: 49px;
+    padding-left: 76px;
   }
 }
 
 .social__item {
   margin: 5px;
 
-  @media (min-width: $tablet-breakpoint) {
-    //
-  }
+  line-height: 1;
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
 
-  @media (min-width: $desktop-breakpoint) {
-    //
-  }
+  // @media (min-width: $desktop-breakpoint) {
+  //
+  // }
 }
 
 .social__icon {

@@ -4,18 +4,22 @@ body {
 }
 
 .footer-logo {
+  // margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding-top: 38px;
+  align-items: center;
+  // min-height: 95px;
+  padding-top: 39px;
   padding-bottom: 31px;
 
   @media (min-width: $tablet-breakpoint) {
-    justify-content: flex-start;
-    width: 180px;
+    margin-right: auto;
     padding: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
+
+  // @media (min-width: $desktop-breakpoint) {
+  //   margin-right: auto;
+  // }
 }
 
 .footer-logo__image {

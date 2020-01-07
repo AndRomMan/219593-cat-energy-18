@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кэт энерджи - новые товары</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,7 +20,7 @@
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48" type="image/vnd.microsoft.icon">
   </head>
 
-  <body class="inner-page">
+  <body>
     <div class="svg-sprite">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -43,37 +43,37 @@
       <section class="page-footer__links footer-links">
         <div class="footer-links__wrapper wrapper">
           <h2 class="visually-hidden">Как с нами связаться</h2>
-          <a class="footer-links__item footer-logo" href="#">
-            <img class="footer-links__logo footer-logo__image" src="img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="24">
+          <a class="footer-logo footer-links__item" href="#">
+            <img class="footer-logo__image" src="img/logo-footer.svg" alt="Интернет-магазин фитнес еды для котиков" width="128" height="24">
           </a>
-          <ul class="footer-links__item social">
+          <ul class="social footer-links__item">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" aria-label="Страница разработчика Вконтакте">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Вконтакте">
                 <svg class="social__icon" width="22" height="12" role="img">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank" aria-label="Страница разработчика Instagram">
+              <a class="social__link social__link--insta" href="https://instagram.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Instagram">
                 <svg class="social__icon" width="16" height="16" role="img">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank" aria-label="Страница разработчика Facebook">
+              <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy" target="_blank" rel="noopener" aria-label="Страница разработчика Facebook">
                 <svg class="social__icon" width="10" height="19" role="img">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <address class="footer-links__item copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Посетите сайт разработчика">
+          <address class="copyright footer-links__item">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Посетите сайт разработчика">
               <span class="copyright__title">HTML Academy</span>
             </a>
-            <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Academy">
+            <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Сайт HTML Academy">
               <svg class="copyright__icon" width="27" height="34" role="img">
                 <use xlink:href="#htmlacademy"></use>
               </svg>

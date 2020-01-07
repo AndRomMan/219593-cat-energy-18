@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   padding-top: 56px;
   padding-bottom: 31px;
 
@@ -27,7 +27,7 @@ body {
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
     width: 708px;
-    height: 200px;
+    min-height: 200px;
     padding-top: 36px;
     padding-right: 105px;
     padding-bottom: 31px;
@@ -43,7 +43,7 @@ body {
   @media (min-width: $desktop-breakpoint) {
     flex-direction: column;
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     padding: 0;
     padding-top: 54px;
     padding-bottom: 32px;

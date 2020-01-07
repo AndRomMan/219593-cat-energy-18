@@ -11,17 +11,18 @@ body {
 
   background-color: $main_grey_color;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 32px;
     padding: 76px 20px 50px 53px;
+
+    &:nth-child(n+3) {
+      margin-top: 20px;
+    }
   }
 
   @media (min-width: $desktop-breakpoint) {
-    flex-basis: 46.8%;
+    // flex-basis: 46.8%;
+    width: 570px;
     margin-bottom: 0;
     padding: 74px 10px 50px 53px;
   }
@@ -117,7 +118,7 @@ body {
     display: inline-block;
     width: 24px;
     height: 12px;
-    margin-left: 12px;
+    margin-left: 13px;
 
     vertical-align: 1px;
 

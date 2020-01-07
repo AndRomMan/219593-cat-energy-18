@@ -122,8 +122,8 @@ body {
 }
 
 .additional-item__button {
-  flex-basis: 100%;
   // Text: Заказать
+  width: 100%;
   // line-height: 20px;
 
   @include font(16px, 400, $light_font_color);

@@ -66,12 +66,13 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  min-height: 200px;
   padding-top: 7px;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-breakpoint) {
     align-items: flex-start;
-    padding-top: 10px;
+    padding-top: 14px;
     padding-bottom: 520px;
   }
 
@@ -97,6 +98,7 @@ body {
 }
 
 .health-program__title {
+  width: 260px;
   margin-bottom: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -107,6 +109,7 @@ body {
   @include font(36px, 400, $light_font_color);
 
   @media (min-width: $tablet-breakpoint) {
+    width: 420px;
     margin-bottom: 21px;
 
     line-height: 60px;
@@ -148,7 +151,7 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     position: absolute;
-    top: 232px;
+    top: 235px;
     left: 0;
     z-index: -1;
 

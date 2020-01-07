@@ -9,10 +9,12 @@ body {
 
 .program-set__wrapper {
   padding-top: 20px;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-breakpoint) {
     padding-top: 0;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-breakpoint) {

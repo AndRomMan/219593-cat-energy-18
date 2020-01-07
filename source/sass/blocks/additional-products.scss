@@ -13,14 +13,15 @@ body {
   margin-bottom: 6px;
   padding-top: 12px;
   padding-bottom: 12px;
-  // @media (min-width: $desktop-breakpoint) {
-  //
-  // }
 
   @include green_line;
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 58px;
   }
 }
 
@@ -59,8 +60,9 @@ body {
     }
 
     @media (min-width: $desktop-breakpoint) {
-      width: 373px;
-      padding-left: 0;
+      width: 413px;
+      margin-left: -40px;
+      padding-left: 40px;
     }
   }
 }

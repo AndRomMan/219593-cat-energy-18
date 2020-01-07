@@ -14,15 +14,18 @@ body {
   @media (min-width: $tablet-breakpoint) {
     justify-content: flex-end;
     width: 180px;
+    margin-left: auto;
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  // @media (min-width: $desktop-breakpoint) {
+  //   margin-left: auto;
+  // }
 }
 
 .copyright__title {
   width: 120px;
-  // margin-right: 10px;
 
   font-style: normal;
   line-height: 16px;

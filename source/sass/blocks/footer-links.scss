@@ -3,7 +3,6 @@ body {
   // background-color: #cefc85;
 }
 
-
 .footer-links {
   background-color: $main_grey_color;
 }
@@ -12,33 +11,35 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // padding-top: 46px;
-    // padding-bottom: 46px;
-    padding-top: 48px;
-    padding-bottom: 45px;
+    padding-top: 49px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: $desktop-breakpoint) {
+    justify-content: space-between;
     padding-top: 48px;
     padding-bottom: 46px;
   }
 }
 
 .footer-links__item {
-  position: relative;
+  align-self: stretch;
 
   border-bottom: 1px solid $border_color;
 
-  &:last-child {
-    border: none;
+  @media (min-width: $tablet-breakpoint) {
+    align-self: center;
+
+    border-bottom: none;
   }
 
-  @media (min-width: $tablet-breakpoint) {
+  &:last-child {
     border-bottom: none;
   }
 }

@@ -8,9 +8,9 @@ body {
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $tablet-breakpoint) {
-    //
-  }
+  // @media (min-width: $tablet-breakpoint) {
+  //
+  // }
 }
 
 .slider__photocards {
@@ -19,7 +19,6 @@ body {
   display: block;
   width: 320px;
   height: 240px;
-  // outline: 1px dotted red;
 
   @media (min-width: $tablet-breakpoint) {
     width: 690px;
@@ -35,7 +34,6 @@ body {
   display: none;
   width: 320px;
   height: 240px;
-  // background-color: lightblue;
 
   @media (min-width: $tablet-breakpoint) {
     width: 690px;
@@ -46,9 +44,6 @@ body {
     position: absolute;
     top: 0;
     left: 40px;
-
-    // width: auto;
-    // height: 517px;
   }
 }
 
@@ -59,24 +54,14 @@ body {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
-  // padding: 32px 39px 32px 43px;
-  padding: 25px 39px 28px 43px;
-  // padding-top: 25px;
-  // padding-bottom: 28px;
-
+  padding: 26px 39px 28px 43px;
 
   @media (min-width: $tablet-breakpoint) {
-    // padding: 20px 69px 20px 69px;
     padding: 14px 69px 14px 69px;
-    // padding-top: 14px;
-    // padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    // padding: 41px 0 41px 120px;
     padding: 35px 0 38px 120px;
-    // padding-top: 35px;
-    // padding-bottom: 38px;
   }
 }
 
@@ -112,9 +97,7 @@ body {
 
 .slider__indicator {
   display: none;
-  // display: flex;
   justify-content: flex-start;
-  // justify-content: space-around;
   align-items: center;
   width: 84px;
   height: 14px;
@@ -150,6 +133,7 @@ body {
   margin-left: 6px;
 
   background-color: $main_green_color;
+  border: none;
   border-radius: 3px;
 
   @media (min-width: $tablet-breakpoint) {
@@ -177,7 +161,6 @@ body {
       right: 0;
       bottom: 0;
       left: 0;
-      // z-index: 1;
 
       width: 8px;
       height: 8px;
@@ -191,6 +174,10 @@ body {
   // @media (min-width: $desktop-breakpoint) {
   //
   // }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .slider__photo--before {

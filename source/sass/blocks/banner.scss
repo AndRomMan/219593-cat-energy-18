@@ -11,9 +11,10 @@ body {
   align-items: center;
   width: 280px;
   min-height: 289px;
-  padding-top: 56px;
+  padding-top: 55px;
   padding-bottom: 31px;
 
+  background-color: $main-green-color;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -28,7 +29,7 @@ body {
     flex-direction: row;
     width: 708px;
     min-height: 200px;
-    padding-top: 36px;
+    padding-top: 34px;
     padding-right: 105px;
     padding-bottom: 31px;
     padding-left: 81px;
@@ -81,6 +82,8 @@ body {
 
 .banner__text {
   width: 180px;
+  margin: 0;
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
 

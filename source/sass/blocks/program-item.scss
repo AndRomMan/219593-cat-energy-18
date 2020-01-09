@@ -6,6 +6,7 @@ body {
 .program-item {
   position: relative;
 
+  margin: 0;
   margin-bottom: 18px;
   padding: 32px 20px 10px 19px;
 
@@ -29,7 +30,9 @@ body {
 }
 
 .program-item__title {
+  margin: 0;
   margin-bottom: 20px;
+  padding: 0;
   padding-left: 72px;
 
   line-height: 36px;
@@ -53,7 +56,9 @@ body {
 }
 
 .program-item__description {
+  margin: 0;
   margin-bottom: 7px;
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 22px;
   // padding-bottom: 10px;
@@ -97,9 +102,11 @@ body {
   margin-top: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  // line-height: 16px;
 
+  font: inherit;
+  // line-height: 16px;
   line-height: 20px;
+  color: inherit;
   text-transform: uppercase;
 
   @include font(16px, 400, $title_font_color);

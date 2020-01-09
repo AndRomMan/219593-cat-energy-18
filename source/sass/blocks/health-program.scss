@@ -72,13 +72,13 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     align-items: flex-start;
-    padding-top: 14px;
+    padding-top: 9px;
     padding-bottom: 520px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 0;
-    padding-top: 33px;
+    padding-top: 30px;
     padding-bottom: 180px;
   }
 }
@@ -99,7 +99,9 @@ body {
 
 .health-program__title {
   width: 260px;
+  margin: 0;
   margin-bottom: 5px;
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -120,7 +122,9 @@ body {
 }
 
 .health-program__slogan {
+  margin: 0;
   margin-bottom: 8px;
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -147,11 +151,11 @@ body {
 .health-program__img {
   width: 280px;
   height: 271px;
-  margin-bottom: 33px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-breakpoint) {
     position: absolute;
-    top: 235px;
+    top: 230px;
     left: 0;
     z-index: -1;
 
@@ -161,7 +165,7 @@ body {
   }
 
   @media (min-width: $desktop-breakpoint) {
-    top: -27px;
+    top: -30px;
     left: 450px;
 
     width: 552px;
@@ -170,12 +174,14 @@ body {
 }
 
 .health-program__link {
-  // Text: Подобрать программу
   position: absolute;
   bottom: 0;
   left: 0;
+  // Text: Подобрать программу
+  // font: inherit;
 
   font-size: 14px;
+  // color: inherit;
 
   @media (min-width: $tablet-breakpoint) {
     position: static;

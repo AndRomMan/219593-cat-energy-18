@@ -5,6 +5,8 @@ body {
 
 .footer-logo {
   // margin: 0 auto;
+  // font: inherit;
+  // color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +15,8 @@ body {
   padding-bottom: 31px;
 
   @media (min-width: $tablet-breakpoint) {
+    justify-content: flex-start;
+    width: 170px;
     margin-right: auto;
     padding: 0;
   }

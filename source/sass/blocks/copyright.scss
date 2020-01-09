@@ -13,7 +13,7 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     justify-content: flex-end;
-    width: 180px;
+    width: 170px;
     margin-left: auto;
     padding: 0;
     padding-top: 10px;
@@ -43,6 +43,9 @@ body {
 }
 
 .copyright__link {
+  font: inherit;
+  color: inherit;
+
   &:hover,
   &:focus {
     opacity: 0.8;

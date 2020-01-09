@@ -14,7 +14,7 @@ body {
     }
   }
 
-  .header-nav__item--active a {
+  .header-nav__link--active {
     @media (min-width: $desktop-breakpoint) {
       border-bottom: 2px solid $main_green_color;
     }
@@ -58,6 +58,7 @@ body {
 
   .header-nav__item {
     display: none;
+    padding: 0;
 
     @media (min-width: $tablet-breakpoint) {
       display: block;
@@ -90,6 +91,10 @@ body {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: stretch;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
   // margin-left: auto;
 
   @media (min-width: $tablet-breakpoint) {
@@ -105,14 +110,30 @@ body {
 .header-nav__item {
   position: relative;
 
-  padding-top: 22px;
-  padding-bottom: 20px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
 
   @include font(20px, 500, $title_font_color);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: $border_color;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-breakpoint) {
     // display: block;
@@ -132,22 +153,6 @@ body {
     font-size: 20px;
     color: $light_font_color;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: $border_color;
-
-    @media (min-width: $tablet-breakpoint) {
-      display: none;
-    }
-  }
 }
 
 // .header-nav__item:last-child {
@@ -156,7 +161,10 @@ body {
 //   }
 // }
 
-.header-nav__item a {
+.header-nav__link {
+  font: inherit;
+  color: inherit;
+
   &:hover {
     opacity: 0.6;
   }
@@ -166,8 +174,8 @@ body {
   }
 }
 
-.header-nav__item--active a {
-  padding-bottom: 7px;
+.header-nav__link--active {
+  padding-bottom: 5px;
 
   border-bottom: 2px solid #68b738;
   cursor: default;
@@ -176,9 +184,9 @@ body {
     opacity: 1;
   }
 
-  // @media (min-width: $tablet-breakpoint) {
-  //
-  // }
+  @media (min-width: $tablet-breakpoint) {
+    // padding-bottom: 6px;
+  }
 
   @media (min-width: $desktop-breakpoint) {
     border-bottom: 2px solid $light_font_color;

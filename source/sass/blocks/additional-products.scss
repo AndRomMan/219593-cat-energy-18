@@ -30,6 +30,7 @@ body {
 
   width: $mobile-wrapper;
   margin: 0 auto;
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   // line-height: 24px;
@@ -81,12 +82,16 @@ body {
   @media (min-width: $desktop-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 83px;
+    margin-bottom: 85px;
   }
 }
 
 .additional-products__list {
-  margin-bottom: 38px;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+
+  list-style: none;
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 67px;

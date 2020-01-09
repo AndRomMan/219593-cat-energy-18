@@ -43,7 +43,6 @@ $grey_button_color_hvr: #ebebeb;
 
 // border
 $border_color: #cdcdcd;
-// все цвета получаем из border_color + opacity=0.5
 $input_active: #444444;
 $input_error: #ff8282;
 
@@ -64,5 +63,11 @@ $footer_icon_color_hvr: #68b738;
 // }
 
 // @media (min-width: $desktop-breakpoint) {
+//
+// }
+
+// .button:hover,
+// .button:focus,
+// .button:active {
 //
 // }

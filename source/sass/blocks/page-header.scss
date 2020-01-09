@@ -26,13 +26,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 53px;
+    padding-bottom: 53px;
   }
 }
 
@@ -43,7 +43,10 @@ body {
   width: 200px;
   min-height: 55px;
   padding-top: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
+
+  font: inherit;
+  color: inherit;
 
   cursor: default;
 

@@ -43,7 +43,7 @@ body {
 
   @media (min-width: $tablet-breakpoint) {
     padding-top: 34px;
-    padding-bottom: 53px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -73,7 +73,9 @@ body {
 }
 
 .example__title {
+  margin: 0;
   margin-bottom: 13px;
+  padding: 0;
   padding-top: 9px;
   padding-bottom: 5px;
 
@@ -98,8 +100,10 @@ body {
 }
 
 .example__description {
-  width: 270px;
+  width: 275px;
+  margin: 0;
   margin-bottom: 10px;
+  padding: 0;
   padding-top: 5px;
   padding-bottom: 5px;
 

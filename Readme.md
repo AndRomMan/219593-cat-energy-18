@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Роман Демин](https://up.htmlacademy.ru/adaptive/18/user/219593).
+* Студент: [Роман Демин](https://htmlacademy.ru/profile/id219593).
 * Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
 ---

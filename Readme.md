@@ -1,7 +1,5 @@
 # Личный проект «Кэт энерджи»
 
-  [Сайт в интернете](https://demindesign.ru/cat-energy/).
-
 * Студент: [Роман Демин](https://htmlacademy.ru/profile/id219593).
 * Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
